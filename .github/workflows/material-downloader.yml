@@ -1,0 +1,45 @@
+name: Writing Materials Downloader
+
+on:
+  schedule:
+    # Run at :30, after the archiver (which runs at :00)
+    - cron: '30 * * * *'
+  workflow_dispatch:
+    inputs:
+      source_type:
+        description: 'Source type to process (youtube, podcast, news, blogs)'
+        required: false
+        default: ''
+      source_key:
+        description: 'Specific source key to process'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  download:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Download Writing Materials
+        env:
+          SOURCE_TYPE: ${{ github.event.inputs.source_type }}
+          SOURCE_KEY: ${{ github.event.inputs.source_key }}
+          YT_COOKIES_FROM_BROWSER: chrome
+        run: |
+          cd scripts && python3 material_downloader.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add writing-materials/
+          git diff --staged --quiet || git commit -m "chore: download writing materials [automated]"
+          git push
