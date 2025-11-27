@@ -1,16 +1,37 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "sources": [
     {
       "key": "anthropic-ai",
       "name": "Anthropic AI",
-      "type": "youtube_channel",
+      "type": "youtube",
       "url": "https://www.youtube.com/@anthropic-ai",
       "enabled": true,
       "options": {
         "extract_transcript": true,
         "transcript_languages": ["en"],
         "max_entries_per_run": 10
+      }
+    },
+    {
+      "key": "guigu101",
+      "name": "矽谷101",
+      "type": "podcast",
+      "url": "https://podcasts.apple.com/tw/podcast/%E7%A1%85%E8%B0%B7101/id1498541229",
+      "enabled": true,
+      "options": {
+        "use_ytdlp": true,
+        "max_entries_per_run": 10
+      }
+    },
+    {
+      "key": "hackernews",
+      "name": "Hacker News",
+      "type": "news",
+      "url": "https://hackernewsrss.com/feed.xml",
+      "enabled": true,
+      "options": {
+        "max_entries_per_run": 30
       }
     }
   ]

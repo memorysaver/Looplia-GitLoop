@@ -4,8 +4,9 @@ An AI-powered GitHub Action that uses Claude Code to auto-generate articles, ope
 
 ## Features
 
-- **RSS Archiver**: Automatically fetches and archives content from YouTube channels, podcasts, and blogs
+- **Subscription Archiver**: Automatically fetches and archives content from YouTube, podcasts, blogs, and news aggregators
 - **Metadata Extraction**: Extracts rich metadata including transcripts from YouTube videos
+- **Hybrid Podcast Support**: RSS discovery + yt-dlp enrichment for Apple Podcasts
 - **Auto-commit**: Automatically commits archived content to the repository
 - **Hourly Schedule**: Runs every hour to keep content up-to-date
 
@@ -14,36 +15,42 @@ An AI-powered GitHub Action that uses Claude Code to auto-generate articles, ope
 ```
 Looplia-GitLoop/
 ├── .github/workflows/
-│   └── rss-archiver.yml      # GitHub Action workflow
+│   └── rss-archiver.yml           # GitHub Action workflow
 ├── config/
-│   └── sources.json          # RSS source configuration
+│   └── sources.json               # Source configuration
 ├── scripts/
-│   ├── archiver.py           # Main archiver script
-│   ├── youtube_handler.py    # YouTube-specific logic
-│   ├── feed_handler.py       # RSS/Atom handler
-│   ├── utils.py              # Utility functions
-│   └── requirements.txt      # Python dependencies
-└── rss/
-    └── {source-key}/         # Archived content per source
-        ├── index.json        # Index of all entries
-        └── {entry-id}.json   # Individual entry files
+│   ├── archiver.py                # Main archiver script
+│   ├── youtube_handler.py         # YouTube-specific logic
+│   ├── podcast_handler.py         # Podcast handler (RSS + yt-dlp)
+│   ├── feed_handler.py            # Blog/News RSS handler
+│   ├── utils.py                   # Utility functions
+│   └── requirements.txt           # Python dependencies
+└── subscriptions/                 # Archived content by type
+    ├── youtube/
+    │   └── {channel-key}/
+    ├── podcast/
+    │   └── {podcast-key}/
+    ├── blogs/
+    │   └── {blog-key}/
+    └── news/
+        └── {source-key}/
 ```
 
 ## Configuration
 
 ### Adding Sources
 
-Edit `config/sources.json` to add new RSS sources:
+Edit `config/sources.json` to add new sources:
 
 ```json
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "sources": [
     {
-      "key": "my-channel",
-      "name": "My YouTube Channel",
-      "type": "youtube_channel",
-      "url": "https://www.youtube.com/@channel-name",
+      "key": "anthropic-ai",
+      "name": "Anthropic AI",
+      "type": "youtube",
+      "url": "https://www.youtube.com/@anthropic-ai",
       "enabled": true,
       "options": {
         "extract_transcript": true,
@@ -52,18 +59,25 @@ Edit `config/sources.json` to add new RSS sources:
       }
     },
     {
-      "key": "my-podcast",
-      "name": "My Podcast",
+      "key": "guigu101",
+      "name": "矽谷101",
       "type": "podcast",
-      "url": "https://example.com/podcast/feed.xml",
-      "enabled": true
+      "url": "https://podcasts.apple.com/tw/podcast/%E7%A1%85%E8%B0%B7101/id1498541229",
+      "enabled": true,
+      "options": {
+        "use_ytdlp": true,
+        "max_entries_per_run": 10
+      }
     },
     {
-      "key": "my-blog",
-      "name": "My Blog",
-      "type": "blog",
-      "url": "https://example.com/blog/feed.xml",
-      "enabled": true
+      "key": "hackernews",
+      "name": "Hacker News",
+      "type": "news",
+      "url": "https://hackernewsrss.com/feed.xml",
+      "enabled": true,
+      "options": {
+        "max_entries_per_run": 30
+      }
     }
   ]
 }
@@ -71,12 +85,12 @@ Edit `config/sources.json` to add new RSS sources:
 
 ### Source Types
 
-| Type | Description |
-|------|-------------|
-| `youtube_channel` | YouTube channel (extracts metadata + transcripts) |
-| `youtube_playlist` | YouTube playlist |
-| `podcast` | Podcast RSS feed |
-| `blog` | Blog RSS/Atom feed |
+| Type | Folder | Handler | Description |
+|------|--------|---------|-------------|
+| `youtube` | `/youtube/` | YouTubeHandler | YouTube channels/playlists with transcript extraction |
+| `podcast` | `/podcast/` | PodcastHandler | Apple Podcasts, Spotify, RSS feeds with yt-dlp enrichment |
+| `blogs` | `/blogs/` | FeedHandler | Blog RSS/Atom feeds |
+| `news` | `/news/` | FeedHandler | News aggregators (HackerNews, etc.) |
 
 ### Options
 
@@ -84,6 +98,7 @@ Edit `config/sources.json` to add new RSS sources:
 |--------|------|---------|-------------|
 | `extract_transcript` | boolean | `true` | Extract transcripts (YouTube only) |
 | `transcript_languages` | array | `["en"]` | Preferred transcript languages |
+| `use_ytdlp` | boolean | `false` | Use yt-dlp for podcast enrichment |
 | `max_entries_per_run` | integer | `10` | Max entries to process per run |
 
 ## Usage
@@ -93,7 +108,7 @@ Edit `config/sources.json` to add new RSS sources:
 The archiver runs automatically every hour via GitHub Actions. You can also trigger it manually:
 
 1. Go to **Actions** tab
-2. Select **RSS Archiver** workflow
+2. Select **Subscription Archiver** workflow
 3. Click **Run workflow**
 4. Optionally specify:
    - `source_key`: Process only a specific source
@@ -154,8 +169,43 @@ FORCE_REPROCESS=true python archiver.py
     "url": "https://cdn.example.com/episode.mp3",
     "type": "audio/mpeg"
   },
+  "duration": "01:23:45",
+  "enriched_via": "rss",
   "archived_at": "2024-01-15T10:30:00Z"
 }
+```
+
+### News Entry (HackerNews)
+
+```json
+{
+  "id": "entry-id",
+  "source_type": "news",
+  "title": "Article Title",
+  "link": "https://example.com/article",
+  "published": "2024-01-15T08:00:00Z",
+  "domain": "example.com",
+  "comments_url": "https://news.ycombinator.com/item?id=12345",
+  "hn_id": "12345",
+  "points": 150,
+  "comments_count": 42,
+  "archived_at": "2024-01-15T10:30:00Z"
+}
+```
+
+## Self-Hosted Runner
+
+This project uses a self-hosted GitHub Actions runner for:
+- Bypassing YouTube bot detection
+- Using local browser cookies for authentication
+
+```bash
+# Check runner status
+cd ~/actions-runner && ./svc.sh status
+
+# Start/stop runner
+cd ~/actions-runner && ./svc.sh start
+cd ~/actions-runner && ./svc.sh stop
 ```
 
 ## License
