@@ -1,0 +1,21 @@
+{
+  "source_key": "hackernews",
+  "source_name": "Hacker News",
+  "source_type": "news",
+  "source_url": "https://hackernewsrss.com/feed.xml",
+  "created_at": "2025-11-27T06:27:28.468152+00:00",
+  "archived_ids": [
+    "2025-11-25"
+  ],
+  "entries": [
+    {
+      "id": "2025-11-25",
+      "title": "Hacker News Front Page: November 25, 2025",
+      "published": "2025-11-26T14:00:40+00:00",
+      "archived_at": "2025-11-27T06:27:28.467626+00:00",
+      "file": "2025-11-25.json"
+    }
+  ],
+  "last_updated": "2025-11-27T06:27:28.468155+00:00",
+  "total_entries": 1
+}
