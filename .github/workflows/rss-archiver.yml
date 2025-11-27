@@ -14,13 +14,21 @@ on:
         description: 'Force reprocess existing entries'
         required: false
         default: 'false'
+      runner:
+        description: 'Runner to use (self-hosted or ubuntu-latest)'
+        required: false
+        default: 'self-hosted'
+        type: choice
+        options:
+          - self-hosted
+          - ubuntu-latest
 
 permissions:
   contents: write
 
 jobs:
   archive:
-    runs-on: ubuntu-latest
+    runs-on: ${{ github.event.inputs.runner || 'self-hosted' }}
 
     steps:
       - name: Checkout repository
@@ -50,6 +58,7 @@ jobs:
         env:
           SOURCE_KEY: ${{ github.event.inputs.source_key }}
           FORCE_REPROCESS: ${{ github.event.inputs.force_reprocess }}
+          YT_COOKIES_FROM_BROWSER: chrome  # Use Chrome cookies on self-hosted
         run: |
           cd scripts && python archiver.py
 

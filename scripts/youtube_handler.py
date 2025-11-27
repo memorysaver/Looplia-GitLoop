@@ -3,6 +3,7 @@
 YouTube Handler - Uses yt-dlp to extract metadata and transcripts.
 """
 
+import os
 import re
 from typing import Optional
 
@@ -12,6 +13,9 @@ import yt_dlp
 from utils import get_logger
 
 logger = get_logger(__name__)
+
+# Check for browser cookies environment variable
+COOKIES_FROM_BROWSER = os.environ.get("YT_COOKIES_FROM_BROWSER", "").strip()
 
 
 class YouTubeHandler:
@@ -138,6 +142,11 @@ class YouTubeHandler:
             "subtitleslangs": self.options.get("transcript_languages", ["en"]),
             "subtitlesformat": "json3",
         }
+
+        # Use browser cookies if available (for self-hosted runners)
+        if COOKIES_FROM_BROWSER:
+            ydl_opts["cookiesfrombrowser"] = (COOKIES_FROM_BROWSER,)
+            logger.info(f"Using cookies from browser: {COOKIES_FROM_BROWSER}")
 
         enriched = {
             "id": entry["id"],
