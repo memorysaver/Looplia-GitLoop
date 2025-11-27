@@ -3,7 +3,49 @@
   "source_type": "youtube",
   "url": "https://www.youtube.com/watch?v=LpGpwhORWr0",
   "title": "Claude works with you on slides, spreadsheets, and contract redlines",
-  "published": "2025-11-24T18:52:03+00:00",
-  "author": "Anthropic",
-  "archived_at": "2025-11-27T05:48:54.521324+00:00"
+  "description": "See Claude Opus 4.5 tackle real work tasks—building board decks, transforming spreadsheet data, redlining contracts. Not generating drafts you'll throw away. Actual outputs you can download and use immediately.\n\nTry it: claude.ai",
+  "channel": "Anthropic",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "channel_url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+  "uploader": "Anthropic",
+  "duration": 99,
+  "duration_string": "1:39",
+  "view_count": 45766,
+  "like_count": 1003,
+  "comment_count": 54,
+  "published": "20251124",
+  "thumbnail": "https://i.ytimg.com/vi/LpGpwhORWr0/maxresdefault.jpg",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/LpGpwhORWr0/3.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/LpGpwhORWr0/3.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/LpGpwhORWr0/2.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/LpGpwhORWr0/2.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/LpGpwhORWr0/1.jpg",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": null,
+  "archived_at": "2025-11-27T06:00:58.805810+00:00"
 }

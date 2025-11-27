@@ -3,7 +3,104 @@
   "source_type": "youtube",
   "url": "https://www.youtube.com/watch?v=fOxC44g8vig",
   "title": "Claude Agent Skills Explained",
-  "published": "2025-11-26T22:09:15+00:00",
-  "author": "Anthropic",
-  "archived_at": "2025-11-27T05:48:53.026604+00:00"
+  "description": "Agent Skills are organized folders that package expertise that Claude can automatically invoke when relevant to the task at hand.\n\nJoin the Claude Developer Discord - https://anthropic.com/discord\nLearn more about Agent Skills - https://www.claude.com/blog/skills\n\n00:06 Introducing Agent Skills\n00:30 How Agent Skills work\n01:08 Agent Skills vs Claude.md\n01:42 Agent Skills vs MCP Servers\n02:05 Agent Skills vs Subagents\n02:33 Putting it all together\n02:48 Summary",
+  "channel": "Anthropic",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "channel_url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+  "uploader": "Anthropic",
+  "duration": 194,
+  "duration_string": "3:14",
+  "view_count": 10445,
+  "like_count": 595,
+  "comment_count": 51,
+  "published": "20251126",
+  "thumbnail": "https://i.ytimg.com/vi/fOxC44g8vig/maxresdefault.jpg",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/fOxC44g8vig/3.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/fOxC44g8vig/3.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/fOxC44g8vig/2.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/fOxC44g8vig/2.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/fOxC44g8vig/1.jpg",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": [
+    {
+      "start_time": 0,
+      "end_time": 6.0,
+      "title": "<Untitled Chapter 1>"
+    },
+    {
+      "start_time": 6.0,
+      "title": "Introducing Agent Skills",
+      "end_time": 30.0
+    },
+    {
+      "start_time": 30.0,
+      "title": "How Agent Skills work",
+      "end_time": 68.0
+    },
+    {
+      "start_time": 68.0,
+      "title": "Agent Skills vs Claude.md",
+      "end_time": 102.0
+    },
+    {
+      "start_time": 102.0,
+      "title": "Agent Skills vs MCP Servers",
+      "end_time": 125.0
+    },
+    {
+      "start_time": 125.0,
+      "title": "Agent Skills vs Subagents",
+      "end_time": 153.0
+    },
+    {
+      "start_time": 153.0,
+      "title": "Putting it all together",
+      "end_time": 168.0
+    },
+    {
+      "start_time": 168.0,
+      "title": "Summary",
+      "end_time": 194
+    }
+  ],
+  "transcript": {
+    "available": true,
+    "language": "en",
+    "auto_generated": true,
+    "formats": [
+      "json3",
+      "srv1",
+      "srv2",
+      "srv3",
+      "ttml",
+      "srt",
+      "vtt"
+    ]
+  },
+  "archived_at": "2025-11-27T06:00:53.917211+00:00"
 }

@@ -3,7 +3,109 @@
   "source_type": "youtube",
   "url": "https://www.youtube.com/watch?v=lvMMZLYoDr4",
   "title": "What is Al \"reward hacking\"—and why do we worry about it?",
-  "published": "2025-11-21T16:59:20+00:00",
-  "author": "Anthropic",
-  "archived_at": "2025-11-27T05:48:56.977706+00:00"
+  "description": "We discuss our new paper, \"Natural emergent misalignment from reward hacking in production RL\". In this paper, we show for the first time that realistic AI training processes can accidentally produce misaligned models. Specifically, when large language models learn to cheat on software programming tasks, they go on to display other, even more misaligned behaviors as an unintended consequence. These include concerning behaviors like alignment faking and sabotage of AI safety research.\n\n00:00 Introduction\n00:42 What is this work about?\n5:21 How did we run our experiment?\n14:48 Detecting models' misalignment\n22:17 Preventing misalignment from reward hacking\n37:15 Alternative strategies\n42:03 Limitations\n44:25 How has this study changed our views?\n50:31 Takeaways for people interested in conducting AI safety research",
+  "channel": "Anthropic",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "channel_url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+  "uploader": "Anthropic",
+  "duration": 3117,
+  "duration_string": "51:57",
+  "view_count": 18859,
+  "like_count": 648,
+  "comment_count": 118,
+  "published": "20251121",
+  "thumbnail": "https://i.ytimg.com/vi/lvMMZLYoDr4/maxresdefault.jpg",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/lvMMZLYoDr4/3.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/lvMMZLYoDr4/3.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/lvMMZLYoDr4/2.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/lvMMZLYoDr4/2.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/lvMMZLYoDr4/1.jpg",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": [
+    {
+      "start_time": 0.0,
+      "title": "Introduction",
+      "end_time": 42.0
+    },
+    {
+      "start_time": 42.0,
+      "title": "What is this work about?",
+      "end_time": 321.0
+    },
+    {
+      "start_time": 321.0,
+      "title": "How did we run our experiment?",
+      "end_time": 888.0
+    },
+    {
+      "start_time": 888.0,
+      "title": "Detecting models' misalignment",
+      "end_time": 1337.0
+    },
+    {
+      "start_time": 1337.0,
+      "title": "Preventing misalignment from reward hacking",
+      "end_time": 2235.0
+    },
+    {
+      "start_time": 2235.0,
+      "title": "Alternative strategies",
+      "end_time": 2523.0
+    },
+    {
+      "start_time": 2523.0,
+      "title": "Limitations",
+      "end_time": 2665.0
+    },
+    {
+      "start_time": 2665.0,
+      "title": "How has this study changed our views?",
+      "end_time": 3031.0
+    },
+    {
+      "start_time": 3031.0,
+      "title": "Takeaways for people interested in conducting AI safety research",
+      "end_time": 3117
+    }
+  ],
+  "transcript": {
+    "available": true,
+    "language": "en",
+    "auto_generated": false,
+    "formats": [
+      "json3",
+      "srv1",
+      "srv2",
+      "srv3",
+      "ttml",
+      "srt",
+      "vtt"
+    ]
+  },
+  "archived_at": "2025-11-27T06:01:06.040108+00:00"
 }

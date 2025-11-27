@@ -3,7 +3,63 @@
   "source_type": "youtube",
   "url": "https://www.youtube.com/watch?v=OwMu0pyYZBc",
   "title": "Claude Code modernizes a legacy COBOL codebase",
-  "published": "2025-11-14T17:54:23+00:00",
-  "author": "Anthropic",
-  "archived_at": "2025-11-27T05:48:58.672452+00:00"
+  "description": "Watch how Claude Code helps modernize a mainframe codebase.\n\nStarting with code from an AWS Mainframe Modernization demo environment, Claude Code analyzes business logic, dependencies, and data flows, then helps refactor it into Java while preserving functionality. Claude Code handles the complex, multi-step work—generating documentation, developing migration plans, writing test suites, and iteratively validating the new code—directly from your terminal.",
+  "channel": "Anthropic",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "channel_url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+  "uploader": "Anthropic",
+  "duration": 255,
+  "duration_string": "4:15",
+  "view_count": 66645,
+  "like_count": 2384,
+  "comment_count": 206,
+  "published": "20251114",
+  "thumbnail": "https://i.ytimg.com/vi/OwMu0pyYZBc/maxresdefault.jpg",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/OwMu0pyYZBc/3.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/OwMu0pyYZBc/3.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/OwMu0pyYZBc/2.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/OwMu0pyYZBc/2.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/OwMu0pyYZBc/1.jpg",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": null,
+  "transcript": {
+    "available": true,
+    "language": "en",
+    "auto_generated": true,
+    "formats": [
+      "json3",
+      "srv1",
+      "srv2",
+      "srv3",
+      "ttml",
+      "srt",
+      "vtt"
+    ]
+  },
+  "archived_at": "2025-11-27T06:01:11.021588+00:00"
 }

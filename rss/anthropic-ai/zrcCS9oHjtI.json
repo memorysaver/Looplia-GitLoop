@@ -3,7 +3,49 @@
   "source_type": "youtube",
   "url": "https://www.youtube.com/watch?v=zrcCS9oHjtI",
   "title": "Claude Code on desktop",
-  "published": "2025-11-24T18:52:06+00:00",
-  "author": "Anthropic",
-  "archived_at": "2025-11-27T05:48:53.739954+00:00"
+  "description": "Today, we’re introducing Claude Code in our desktop apps in research preview. You can now run multiple local and remote Claude Code sessions in parallel: one agent fixing bugs, another researching GitHub, a third updating docs. It uses git worktrees for parallel repo work and offers a clean user interface with the option to open in VS Code or resume in CLI.\n\nLearn more: https://www.anthropic.com/news/claude-opus-4-5",
+  "channel": "Anthropic",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "channel_url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+  "uploader": "Anthropic",
+  "duration": 20,
+  "duration_string": "20",
+  "view_count": 42020,
+  "like_count": 695,
+  "comment_count": 62,
+  "published": "20251124",
+  "thumbnail": "https://i.ytimg.com/vi/zrcCS9oHjtI/maxresdefault.jpg",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/zrcCS9oHjtI/3.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/zrcCS9oHjtI/3.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/zrcCS9oHjtI/2.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/zrcCS9oHjtI/2.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/zrcCS9oHjtI/1.jpg",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": null,
+  "archived_at": "2025-11-27T06:00:56.170948+00:00"
 }

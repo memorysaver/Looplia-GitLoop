@@ -3,7 +3,63 @@
   "source_type": "youtube",
   "url": "https://www.youtube.com/watch?v=56kq0VTkU4k",
   "title": "Introducing Claude Opus 4.5",
-  "published": "2025-11-24T18:51:59+00:00",
-  "author": "Anthropic",
-  "archived_at": "2025-11-27T05:48:55.281950+00:00"
+  "description": "Claude Opus 4.5 sets a new standard for coding, agents, computer use, and enterprise workflows. It knows when to pause and think, which means fewer wasted steps and better results. When we gave it our two-hour engineering assignment, it scored higher than any human ever has.\n\nWe’re excited to see what you build. \n\nLearn more: https://www.anthropic.com/news/claude-opus-4-5",
+  "channel": "Anthropic",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "channel_url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+  "uploader": "Anthropic",
+  "duration": 49,
+  "duration_string": "49",
+  "view_count": 91971,
+  "like_count": 2868,
+  "comment_count": 305,
+  "published": "20251124",
+  "thumbnail": "https://i.ytimg.com/vi/56kq0VTkU4k/maxresdefault.jpg",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/56kq0VTkU4k/3.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/56kq0VTkU4k/3.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/56kq0VTkU4k/2.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/56kq0VTkU4k/2.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/56kq0VTkU4k/1.jpg",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": null,
+  "transcript": {
+    "available": true,
+    "language": "en",
+    "auto_generated": false,
+    "formats": [
+      "json3",
+      "srv1",
+      "srv2",
+      "srv3",
+      "ttml",
+      "srt",
+      "vtt"
+    ]
+  },
+  "archived_at": "2025-11-27T06:01:01.132225+00:00"
 }

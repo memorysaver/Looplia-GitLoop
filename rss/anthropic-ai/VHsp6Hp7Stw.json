@@ -3,7 +3,63 @@
   "source_type": "youtube",
   "url": "https://www.youtube.com/watch?v=VHsp6Hp7Stw",
   "title": "Turning Claude into your thinking partner",
-  "published": "2025-11-20T19:02:42+00:00",
-  "author": "Anthropic",
-  "archived_at": "2025-11-27T05:48:57.815825+00:00"
+  "description": "We’ve shipped a lot of new features in Claude over the past few months—memory, voice, file creation, and more. Together, they add up to something bigger: Claude as a thinking partner. Now, Claude isn’t just answering questions but staying with you through the messy process of thinking and building. Here’s how it works.\n\nMemory: https://youtu.be/PupmfSttxlc\nChrome Extension: https://youtu.be/mCj4kx_P2Ak\nFile creation: https://youtu.be/EV89Ws8Ui9Y\nMobile & Desktop: https://claude.com/download",
+  "channel": "Anthropic",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "channel_url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+  "uploader": "Anthropic",
+  "duration": 86,
+  "duration_string": "1:26",
+  "view_count": 37688,
+  "like_count": 1374,
+  "comment_count": 100,
+  "published": "20251120",
+  "thumbnail": "https://i.ytimg.com/vi_webp/VHsp6Hp7Stw/maxresdefault.webp",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/VHsp6Hp7Stw/3.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/VHsp6Hp7Stw/3.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/VHsp6Hp7Stw/2.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/VHsp6Hp7Stw/2.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/VHsp6Hp7Stw/1.jpg",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": null,
+  "transcript": {
+    "available": true,
+    "language": "en",
+    "auto_generated": false,
+    "formats": [
+      "json3",
+      "srv1",
+      "srv2",
+      "srv3",
+      "ttml",
+      "srt",
+      "vtt"
+    ]
+  },
+  "archived_at": "2025-11-27T06:01:08.418476+00:00"
 }

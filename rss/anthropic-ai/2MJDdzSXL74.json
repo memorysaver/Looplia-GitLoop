@@ -3,7 +3,49 @@
   "source_type": "youtube",
   "url": "https://www.youtube.com/watch?v=2MJDdzSXL74",
   "title": "Claude Opus 4.5 solves a puzzle game",
-  "published": "2025-11-24T18:51:55+00:00",
-  "author": "Anthropic",
-  "archived_at": "2025-11-27T05:48:56.101266+00:00"
+  "description": "Watch Claude complete a puzzle game using new capabilities that enable Claude to take action in the real world—the tool search tool and programmatic tool calling. Together, these updates enable Claude to navigate large tool libraries, chain operations efficiently, and accurately execute complex tasks.\n\nLearn more: https://www.anthropic.com/engineering/advanced-tool-use",
+  "channel": "Anthropic",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "channel_url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+  "uploader": "Anthropic",
+  "duration": 94,
+  "duration_string": "1:34",
+  "view_count": 43805,
+  "like_count": 1857,
+  "comment_count": 133,
+  "published": "20251124",
+  "thumbnail": "https://i.ytimg.com/vi/2MJDdzSXL74/maxresdefault.jpg",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/2MJDdzSXL74/3.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/2MJDdzSXL74/3.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/2MJDdzSXL74/2.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/2MJDdzSXL74/2.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/2MJDdzSXL74/1.jpg",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": null,
+  "archived_at": "2025-11-27T06:01:03.458238+00:00"
 }

@@ -3,7 +3,63 @@
   "source_type": "youtube",
   "url": "https://www.youtube.com/watch?v=Y6wiWlcH5jM",
   "title": "Generating real-time credit intelligence with Claude",
-  "published": "2025-11-14T17:42:58+00:00",
-  "author": "Anthropic",
-  "archived_at": "2025-11-27T05:48:59.544996+00:00"
+  "description": "Watch Claude go from market signal to investment decision in minutes, generating real-time credit intelligence about Walmart's 2030 bonds tightening before a 2pm portfolio review. \n\nIn this demo, Claude pulls live bond curves from LSEG, analyzes three quarters of earnings transcripts from Aiera, and sources four former Walmart executives on Third Bridge—all running in parallel—to deliver a complete credit thesis with verified sources in 30 minutes. The verdict? The market is pricing Walmart as best-in-class and fundamentals support it, with every claim linked directly back to transcripts and expert calls. \n\nLearn more: https://claude.com/solutions/financial-services\n\nDisclaimer: Demo represents preliminary analysis and workflow support only. All financial decisions require review by qualified professionals.",
+  "channel": "Anthropic",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "channel_url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+  "uploader": "Anthropic",
+  "duration": 152,
+  "duration_string": "2:32",
+  "view_count": 17958,
+  "like_count": 490,
+  "comment_count": 20,
+  "published": "20251114",
+  "thumbnail": "https://i.ytimg.com/vi/Y6wiWlcH5jM/maxresdefault.jpg",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/Y6wiWlcH5jM/3.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/Y6wiWlcH5jM/3.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/Y6wiWlcH5jM/2.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/Y6wiWlcH5jM/2.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/Y6wiWlcH5jM/1.jpg",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": null,
+  "transcript": {
+    "available": true,
+    "language": "en",
+    "auto_generated": true,
+    "formats": [
+      "json3",
+      "srv1",
+      "srv2",
+      "srv3",
+      "ttml",
+      "srt",
+      "vtt"
+    ]
+  },
+  "archived_at": "2025-11-27T06:01:13.750977+00:00"
 }

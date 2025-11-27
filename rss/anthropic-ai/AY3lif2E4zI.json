@@ -3,7 +3,63 @@
   "source_type": "youtube",
   "url": "https://www.youtube.com/watch?v=AY3lif2E4zI",
   "title": "Accelerating private equity deal flows with Claude",
-  "published": "2025-11-14T17:42:33+00:00",
-  "author": "Anthropic",
-  "archived_at": "2025-11-27T05:49:00.450380+00:00"
+  "description": "Watch Claude handle a complete investment banking and private equity deal workflow—from creating a client-ready teaser by pulling financials from Egnyte, to screening the opportunity against investment criteria in SharePoint and building an LBO model.\n\nIn this demo, Claude identifies hidden risks during diligence, stress tests the model with downside scenarios, and runs sensitivity analysis to validate returns across exit multiples. In minutes, Claude delivers an investment committee deck with flagged pre-LOI conditions—turning days of work into a comprehensive analysis that's faster and more thorough.\n\nLearn more: https://claude.com/solutions/financial-services\n\nDisclaimer: Demo represents preliminary analysis and workflow support only. All financial decisions require review by qualified professionals.",
+  "channel": "Anthropic",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "channel_url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+  "uploader": "Anthropic",
+  "duration": 206,
+  "duration_string": "3:26",
+  "view_count": 26839,
+  "like_count": 821,
+  "comment_count": 39,
+  "published": "20251114",
+  "thumbnail": "https://i.ytimg.com/vi/AY3lif2E4zI/maxresdefault.jpg",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/AY3lif2E4zI/3.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/AY3lif2E4zI/3.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/AY3lif2E4zI/2.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/AY3lif2E4zI/2.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/AY3lif2E4zI/1.jpg",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": null,
+  "transcript": {
+    "available": true,
+    "language": "en",
+    "auto_generated": true,
+    "formats": [
+      "json3",
+      "srv1",
+      "srv2",
+      "srv3",
+      "ttml",
+      "srt",
+      "vtt"
+    ]
+  },
+  "archived_at": "2025-11-27T06:01:16.171473+00:00"
 }
