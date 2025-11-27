@@ -2,11 +2,12 @@
 """
 Podcast Audio Downloader and Transcriber
 Downloads podcast audio and transcribes using WhisperKit.
+Uses a persistent cache directory to avoid re-downloading audio.
 """
 
+import hashlib
 import os
 import subprocess
-import tempfile
 from pathlib import Path
 from typing import Optional
 
@@ -16,10 +17,41 @@ from utils import get_logger
 
 logger = get_logger(__name__)
 
+# Persistent cache directory for downloaded audio
+# This survives across workflow runs on self-hosted runner
+AUDIO_CACHE_DIR = Path.home() / ".cache" / "looplia-gitloop" / "audio"
+
+
+def get_cache_path(audio_url: str, episode_id: str) -> Path:
+    """
+    Get cache path for an audio file.
+
+    Args:
+        audio_url: URL to the audio file
+        episode_id: Episode ID
+
+    Returns:
+        Path where audio should be cached
+    """
+    # Use URL hash to handle different URLs for same episode
+    url_hash = hashlib.md5(audio_url.encode()).hexdigest()[:8]
+
+    # Determine extension
+    ext = ".mp3"
+    if ".m4a" in audio_url.lower():
+        ext = ".m4a"
+    elif ".wav" in audio_url.lower():
+        ext = ".wav"
+    elif ".aac" in audio_url.lower():
+        ext = ".aac"
+
+    return AUDIO_CACHE_DIR / f"{episode_id}_{url_hash}{ext}"
+
 
 def download_and_transcribe(audio_url: str, episode_id: str) -> Optional[str]:
     """
     Download podcast audio and transcribe with WhisperKit.
+    Uses cached audio if available.
 
     Args:
         audio_url: URL to the audio file
@@ -32,27 +64,41 @@ def download_and_transcribe(audio_url: str, episode_id: str) -> Optional[str]:
         logger.warning(f"No audio URL provided for episode: {episode_id}")
         return None
 
-    with tempfile.TemporaryDirectory() as temp_dir:
-        temp_path = Path(temp_dir)
+    # Ensure cache directory exists
+    AUDIO_CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
-        # Download audio file
-        audio_path = download_audio(audio_url, temp_path, episode_id)
+    # Check cache
+    cache_path = get_cache_path(audio_url, episode_id)
+
+    if cache_path.exists():
+        logger.info(f"Using cached audio for episode: {episode_id}")
+        audio_path = cache_path
+    else:
+        # Download audio file to cache
+        audio_path = download_audio(audio_url, cache_path, episode_id)
         if not audio_path:
             return None
 
-        # Transcribe with WhisperKit
-        transcript = transcribe_with_whisperkit(audio_path, episode_id)
-        return transcript
+    # Transcribe with WhisperKit
+    transcript = transcribe_with_whisperkit(audio_path, episode_id)
+
+    # Optionally clean up cache after successful transcription
+    # Uncomment if you want to delete audio after transcribing:
+    # if transcript and cache_path.exists():
+    #     cache_path.unlink()
+    #     logger.info(f"Cleaned up cached audio for: {episode_id}")
+
+    return transcript
 
 
-def download_audio(url: str, temp_dir: Path, episode_id: str) -> Optional[Path]:
+def download_audio(url: str, dest_path: Path, episode_id: str) -> Optional[Path]:
     """
-    Download audio file to temp directory.
+    Download audio file to destination path.
 
     Args:
         url: Audio URL
-        temp_dir: Temporary directory path
-        episode_id: Episode ID for filename
+        dest_path: Destination file path
+        episode_id: Episode ID for logging
 
     Returns:
         Path to downloaded file or None
@@ -60,17 +106,6 @@ def download_audio(url: str, temp_dir: Path, episode_id: str) -> Optional[Path]:
     logger.info(f"Downloading audio for episode: {episode_id}")
 
     try:
-        # Determine file extension from URL or content-type
-        ext = ".mp3"  # Default
-        if ".m4a" in url.lower():
-            ext = ".m4a"
-        elif ".wav" in url.lower():
-            ext = ".wav"
-        elif ".aac" in url.lower():
-            ext = ".aac"
-
-        audio_path = temp_dir / f"{episode_id}{ext}"
-
         # Download with streaming
         response = requests.get(url, stream=True, timeout=300)
         response.raise_for_status()
@@ -82,14 +117,14 @@ def download_audio(url: str, temp_dir: Path, episode_id: str) -> Optional[Path]:
 
         # Write to file
         total_size = 0
-        with open(audio_path, "wb") as f:
+        with open(dest_path, "wb") as f:
             for chunk in response.iter_content(chunk_size=8192):
                 if chunk:
                     f.write(chunk)
                     total_size += len(chunk)
 
-        logger.info(f"Downloaded {total_size / 1024 / 1024:.1f} MB")
-        return audio_path
+        logger.info(f"Downloaded {total_size / 1024 / 1024:.1f} MB to cache")
+        return dest_path
 
     except requests.exceptions.RequestException as e:
         logger.error(f"Failed to download audio for {episode_id}: {e}")
@@ -188,3 +223,19 @@ def parse_whisperkit_output(output: str) -> Optional[str]:
 
     transcript = "\n".join(lines)
     return transcript.strip() if transcript else None
+
+
+def clear_cache():
+    """Clear the audio cache directory."""
+    if AUDIO_CACHE_DIR.exists():
+        import shutil
+
+        shutil.rmtree(AUDIO_CACHE_DIR)
+        logger.info("Audio cache cleared")
+
+
+def get_cache_size() -> int:
+    """Get total size of cached audio files in bytes."""
+    if not AUDIO_CACHE_DIR.exists():
+        return 0
+    return sum(f.stat().st_size for f in AUDIO_CACHE_DIR.glob("*") if f.is_file())
