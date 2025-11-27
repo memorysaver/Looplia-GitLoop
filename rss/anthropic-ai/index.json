@@ -1,0 +1,93 @@
+{
+  "source_key": "anthropic-ai",
+  "source_name": "Anthropic AI",
+  "source_type": "youtube_channel",
+  "source_url": "https://www.youtube.com/@anthropic-ai",
+  "created_at": "2025-11-27T05:49:00.450704+00:00",
+  "archived_ids": [
+    "fOxC44g8vig",
+    "zrcCS9oHjtI",
+    "LpGpwhORWr0",
+    "56kq0VTkU4k",
+    "2MJDdzSXL74",
+    "lvMMZLYoDr4",
+    "VHsp6Hp7Stw",
+    "OwMu0pyYZBc",
+    "Y6wiWlcH5jM",
+    "AY3lif2E4zI"
+  ],
+  "entries": [
+    {
+      "id": "fOxC44g8vig",
+      "title": "Claude Agent Skills Explained",
+      "published": "2025-11-26T22:09:15+00:00",
+      "archived_at": "2025-11-27T05:48:53.026604+00:00",
+      "file": "fOxC44g8vig.json"
+    },
+    {
+      "id": "zrcCS9oHjtI",
+      "title": "Claude Code on desktop",
+      "published": "2025-11-24T18:52:06+00:00",
+      "archived_at": "2025-11-27T05:48:53.739954+00:00",
+      "file": "zrcCS9oHjtI.json"
+    },
+    {
+      "id": "LpGpwhORWr0",
+      "title": "Claude works with you on slides, spreadsheets, and contract redlines",
+      "published": "2025-11-24T18:52:03+00:00",
+      "archived_at": "2025-11-27T05:48:54.521324+00:00",
+      "file": "LpGpwhORWr0.json"
+    },
+    {
+      "id": "56kq0VTkU4k",
+      "title": "Introducing Claude Opus 4.5",
+      "published": "2025-11-24T18:51:59+00:00",
+      "archived_at": "2025-11-27T05:48:55.281950+00:00",
+      "file": "56kq0VTkU4k.json"
+    },
+    {
+      "id": "2MJDdzSXL74",
+      "title": "Claude Opus 4.5 solves a puzzle game",
+      "published": "2025-11-24T18:51:55+00:00",
+      "archived_at": "2025-11-27T05:48:56.101266+00:00",
+      "file": "2MJDdzSXL74.json"
+    },
+    {
+      "id": "lvMMZLYoDr4",
+      "title": "What is Al \"reward hacking\"—and why do we worry about it?",
+      "published": "2025-11-21T16:59:20+00:00",
+      "archived_at": "2025-11-27T05:48:56.977706+00:00",
+      "file": "lvMMZLYoDr4.json"
+    },
+    {
+      "id": "VHsp6Hp7Stw",
+      "title": "Turning Claude into your thinking partner",
+      "published": "2025-11-20T19:02:42+00:00",
+      "archived_at": "2025-11-27T05:48:57.815825+00:00",
+      "file": "VHsp6Hp7Stw.json"
+    },
+    {
+      "id": "OwMu0pyYZBc",
+      "title": "Claude Code modernizes a legacy COBOL codebase",
+      "published": "2025-11-14T17:54:23+00:00",
+      "archived_at": "2025-11-27T05:48:58.672452+00:00",
+      "file": "OwMu0pyYZBc.json"
+    },
+    {
+      "id": "Y6wiWlcH5jM",
+      "title": "Generating real-time credit intelligence with Claude",
+      "published": "2025-11-14T17:42:58+00:00",
+      "archived_at": "2025-11-27T05:48:59.544996+00:00",
+      "file": "Y6wiWlcH5jM.json"
+    },
+    {
+      "id": "AY3lif2E4zI",
+      "title": "Accelerating private equity deal flows with Claude",
+      "published": "2025-11-14T17:42:33+00:00",
+      "archived_at": "2025-11-27T05:49:00.450380+00:00",
+      "file": "AY3lif2E4zI.json"
+    }
+  ],
+  "last_updated": "2025-11-27T05:49:00.450747+00:00",
+  "total_entries": 10
+}
