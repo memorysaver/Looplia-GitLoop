@@ -42,4 +42,5 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add writing-materials/
           git diff --staged --quiet || git commit -m "chore: download writing materials [automated]"
+          git pull --rebase
           git push
