@@ -1,15 +1,10 @@
-name: Writing Materials Downloader
+name: Download YouTube Materials
 
 on:
   schedule:
-    # Run at :30, after the archiver (which runs at :00)
     - cron: '30 * * * *'
   workflow_dispatch:
     inputs:
-      source_type:
-        description: 'Source type to process (youtube, podcast, news, blogs)'
-        required: false
-        default: ''
       source_key:
         description: 'Specific source key to process'
         required: false
@@ -28,9 +23,9 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Download Writing Materials
+      - name: Download YouTube Captions
         env:
-          SOURCE_TYPE: ${{ github.event.inputs.source_type }}
+          SOURCE_TYPE: youtube
           SOURCE_KEY: ${{ github.event.inputs.source_key }}
           YT_COOKIES_FROM_BROWSER: chrome
         run: |
@@ -40,7 +35,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add writing-materials/
-          git diff --staged --quiet || git commit -m "chore: download writing materials [automated]"
+          git add writing-materials/youtube/
+          git diff --staged --quiet || git commit -m "chore: download YouTube materials [automated]"
           git pull --rebase
           git push

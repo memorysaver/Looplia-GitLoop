@@ -1,0 +1,53 @@
+name: Download Article Materials
+
+on:
+  schedule:
+    - cron: '40 * * * *'
+  workflow_dispatch:
+    inputs:
+      source_type:
+        description: 'Source type (news or blogs)'
+        required: false
+        default: ''
+      source_key:
+        description: 'Specific source key to process'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  download:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Download News Articles
+        if: ${{ github.event.inputs.source_type == '' || github.event.inputs.source_type == 'news' }}
+        env:
+          SOURCE_TYPE: news
+          SOURCE_KEY: ${{ github.event.inputs.source_key }}
+        run: |
+          cd scripts && python3 material_downloader.py
+
+      - name: Download Blog Articles
+        if: ${{ github.event.inputs.source_type == '' || github.event.inputs.source_type == 'blogs' }}
+        env:
+          SOURCE_TYPE: blogs
+          SOURCE_KEY: ${{ github.event.inputs.source_key }}
+        run: |
+          cd scripts && python3 material_downloader.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add writing-materials/news/ writing-materials/blogs/
+          git diff --staged --quiet || git commit -m "chore: download article materials [automated]"
+          git pull --rebase
+          git push

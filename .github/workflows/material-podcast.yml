@@ -1,0 +1,41 @@
+name: Download Podcast Materials
+
+on:
+  schedule:
+    - cron: '35 * * * *'
+  workflow_dispatch:
+    inputs:
+      source_key:
+        description: 'Specific source key to process'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  download:
+    runs-on: self-hosted
+    timeout-minutes: 120  # 2 hours for long podcast transcriptions
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Download Podcast Transcripts
+        env:
+          SOURCE_TYPE: podcast
+          SOURCE_KEY: ${{ github.event.inputs.source_key }}
+        run: |
+          cd scripts && python3 material_downloader.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add writing-materials/podcast/
+          git diff --staged --quiet || git commit -m "chore: download podcast materials [automated]"
+          git pull --rebase
+          git push
