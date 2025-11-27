@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "sources": [
+    {
+      "key": "anthropic-ai",
+      "name": "Anthropic AI",
+      "type": "youtube_channel",
+      "url": "https://www.youtube.com/@anthropic-ai",
+      "enabled": true,
+      "options": {
+        "extract_transcript": true,
+        "transcript_languages": ["en"],
+        "max_entries_per_run": 10
+      }
+    }
+  ]
+}
