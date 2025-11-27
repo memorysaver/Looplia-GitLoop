@@ -147,6 +147,8 @@ def process_source(source: dict, force_reprocess: bool = False) -> int:
         try:
             # Enrich entry with additional data (transcripts, etc.)
             enriched = handler.enrich_entry(entry)
+            if enriched is None:  # Skip filtered entries (e.g., Shorts)
+                continue
             enriched["archived_at"] = datetime.now(timezone.utc).isoformat()
 
             # Save entry to file

@@ -159,6 +159,12 @@ class YouTubeHandler:
                 info = ydl.extract_info(video_url, download=False)
                 sanitized = ydl.sanitize_info(info)
 
+                # Skip Shorts (videos ≤60 seconds)
+                duration = sanitized.get("duration")
+                if duration is not None and duration <= 60:
+                    logger.info(f"Skipping Short (duration: {duration}s): {entry['id']}")
+                    return None
+
                 # Extract relevant metadata
                 enriched.update(
                     {
