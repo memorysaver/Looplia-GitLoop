@@ -14,21 +14,13 @@ on:
         description: 'Force reprocess existing entries'
         required: false
         default: 'false'
-      runner:
-        description: 'Runner to use (self-hosted or ubuntu-latest)'
-        required: false
-        default: 'self-hosted'
-        type: choice
-        options:
-          - self-hosted
-          - ubuntu-latest
 
 permissions:
   contents: write
 
 jobs:
   archive:
-    runs-on: ${{ github.event.inputs.runner || 'self-hosted' }}
+    runs-on: self-hosted
 
     steps:
       - name: Checkout repository
@@ -36,31 +28,13 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-          cache: 'pip'
-          cache-dependency-path: 'scripts/requirements.txt'
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r scripts/requirements.txt
-
-      - name: Install yt-dlp
-        run: |
-          pip install yt-dlp
-          # Ensure latest version
-          yt-dlp -U || true
-
       - name: Run RSS Archiver
         env:
           SOURCE_KEY: ${{ github.event.inputs.source_key }}
           FORCE_REPROCESS: ${{ github.event.inputs.force_reprocess }}
-          YT_COOKIES_FROM_BROWSER: chrome  # Use Chrome cookies on self-hosted
+          YT_COOKIES_FROM_BROWSER: chrome
         run: |
-          cd scripts && python archiver.py
+          cd scripts && python3 archiver.py
 
       - name: Commit and push changes
         run: |
