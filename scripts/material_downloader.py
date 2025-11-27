@@ -213,15 +213,19 @@ class MaterialDownloader:
         url = entry.get("url") or entry.get("link", "")
         published = entry.get("published", "")
 
+        # Escape title for YAML
+        escaped_title = title.replace('"', '\\"')
+        downloaded_at = datetime.now(timezone.utc).isoformat()
+
         # Build markdown with frontmatter
         markdown = f"""---
 id: {entry_id}
 source_type: {source_type}
 source_key: {source_key}
-title: "{title.replace('"', '\\"')}"
+title: "{escaped_title}"
 url: {url}
 published: {published}
-downloaded_at: {datetime.now(timezone.utc).isoformat()}
+downloaded_at: {downloaded_at}
 ---
 
 # {title}
