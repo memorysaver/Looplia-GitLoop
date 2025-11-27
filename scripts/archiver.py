@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Main RSS Archiver Script
-Orchestrates fetching and archiving RSS entries from configured sources.
+Main Subscription Archiver Script
+Orchestrates fetching and archiving entries from configured sources.
 """
 
 import os
@@ -10,6 +10,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from feed_handler import FeedHandler
+from podcast_handler import PodcastHandler
 from utils import get_logger, load_config, load_json, save_json
 from youtube_handler import YouTubeHandler
 
@@ -18,23 +19,43 @@ logger = get_logger(__name__)
 # Base paths
 BASE_DIR = Path(__file__).parent.parent
 CONFIG_PATH = BASE_DIR / "config" / "sources.json"
-RSS_DIR = BASE_DIR / "rss"
+SUBSCRIPTIONS_DIR = BASE_DIR / "subscriptions"
 
 
 def get_handler(source_type: str):
     """Return appropriate handler based on source type."""
     handlers = {
-        "youtube_channel": YouTubeHandler,
+        "youtube": YouTubeHandler,
+        "youtube_channel": YouTubeHandler,  # Legacy support
         "youtube_playlist": YouTubeHandler,
-        "podcast": FeedHandler,
-        "blog": FeedHandler,
+        "podcast": PodcastHandler,
+        "blogs": FeedHandler,
+        "news": FeedHandler,
+        "blog": FeedHandler,  # Legacy support
     }
     return handlers.get(source_type)
 
 
-def get_archived_ids(source_key: str) -> set:
+def get_output_dir(source_type: str, source_key: str) -> Path:
+    """Get output directory for a source, organized by type."""
+    # Map source types to folder names
+    type_folders = {
+        "youtube": "youtube",
+        "youtube_channel": "youtube",
+        "youtube_playlist": "youtube",
+        "podcast": "podcast",
+        "blogs": "blogs",
+        "blog": "blogs",
+        "news": "news",
+    }
+    folder = type_folders.get(source_type, source_type)
+    return SUBSCRIPTIONS_DIR / folder / source_key
+
+
+def get_archived_ids(source_type: str, source_key: str) -> set:
     """Load set of already archived entry IDs for a source."""
-    index_path = RSS_DIR / source_key / "index.json"
+    output_dir = get_output_dir(source_type, source_key)
+    index_path = output_dir / "index.json"
     if index_path.exists():
         index = load_json(index_path)
         if index:
@@ -42,9 +63,10 @@ def get_archived_ids(source_key: str) -> set:
     return set()
 
 
-def update_index(source_key: str, new_entries: list, source_config: dict):
+def update_index(source_type: str, source_key: str, new_entries: list, source_config: dict):
     """Update the index file for a source with new entries."""
-    index_path = RSS_DIR / source_key / "index.json"
+    output_dir = get_output_dir(source_type, source_key)
+    index_path = output_dir / "index.json"
 
     if index_path.exists():
         index = load_json(index_path)
@@ -99,12 +121,12 @@ def process_source(source: dict, force_reprocess: bool = False) -> int:
 
     handler = handler_class(source)
 
-    # Create output directory
-    output_dir = RSS_DIR / source_key
+    # Create output directory (organized by type)
+    output_dir = get_output_dir(source_type, source_key)
     output_dir.mkdir(parents=True, exist_ok=True)
 
     # Get already archived IDs
-    archived_ids = set() if force_reprocess else get_archived_ids(source_key)
+    archived_ids = set() if force_reprocess else get_archived_ids(source_type, source_key)
 
     # Fetch new entries
     try:
@@ -140,7 +162,7 @@ def process_source(source: dict, force_reprocess: bool = False) -> int:
 
     # Update index
     if new_entries:
-        update_index(source_key, new_entries, source)
+        update_index(source_type, source_key, new_entries, source)
 
     return len(new_entries)
 
