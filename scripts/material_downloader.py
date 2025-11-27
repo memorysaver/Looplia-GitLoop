@@ -2,8 +2,10 @@
 """
 Writing Materials Downloader
 Processes archived subscriptions and downloads detailed content as markdown files.
+Uses persistent cache to track processed items across runs.
 """
 
+import json
 import os
 import sys
 from datetime import datetime, timezone
@@ -21,6 +23,10 @@ BASE_DIR = Path(__file__).parent.parent
 SUBSCRIPTIONS_DIR = BASE_DIR / "subscriptions"
 MATERIALS_DIR = BASE_DIR / "writing-materials"
 
+# Persistent cache for tracking processed items (survives failed runs)
+CACHE_DIR = Path.home() / ".cache" / "looplia-gitloop"
+PROCESSED_CACHE_FILE = CACHE_DIR / "processed_materials.json"
+
 
 class MaterialDownloader:
     """Downloads and processes writing materials from archived subscriptions."""
@@ -28,6 +34,40 @@ class MaterialDownloader:
     def __init__(self):
         self.subscriptions_dir = SUBSCRIPTIONS_DIR
         self.materials_dir = MATERIALS_DIR
+        self.processed_cache = self._load_processed_cache()
+
+    def _load_processed_cache(self) -> dict:
+        """Load the persistent cache of processed item IDs."""
+        CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        if PROCESSED_CACHE_FILE.exists():
+            try:
+                with open(PROCESSED_CACHE_FILE, "r") as f:
+                    return json.load(f)
+            except Exception as e:
+                logger.warning(f"Failed to load processed cache: {e}")
+        return {}
+
+    def _save_processed_cache(self):
+        """Save the processed cache to disk."""
+        try:
+            with open(PROCESSED_CACHE_FILE, "w") as f:
+                json.dump(self.processed_cache, f, indent=2)
+        except Exception as e:
+            logger.error(f"Failed to save processed cache: {e}")
+
+    def _mark_as_processed(self, source_type: str, source_key: str, entry_id: str):
+        """Mark an item as processed in the cache."""
+        cache_key = f"{source_type}/{source_key}"
+        if cache_key not in self.processed_cache:
+            self.processed_cache[cache_key] = []
+        if entry_id not in self.processed_cache[cache_key]:
+            self.processed_cache[cache_key].append(entry_id)
+            self._save_processed_cache()  # Save immediately after each item
+
+    def _is_processed(self, source_type: str, source_key: str, entry_id: str) -> bool:
+        """Check if an item has already been processed."""
+        cache_key = f"{source_type}/{source_key}"
+        return entry_id in self.processed_cache.get(cache_key, [])
 
     def process_all(self, source_type: str = None, source_key: str = None):
         """
@@ -115,6 +155,8 @@ class MaterialDownloader:
             if content:
                 # Save as markdown
                 self.save_markdown(output_dir, entry, content, source_type, source_key)
+                # Mark as processed in persistent cache
+                self._mark_as_processed(source_type, source_key, entry_id)
                 processed += 1
                 logger.info(f"Processed: {entry.get('title', entry_id)}")
             else:
@@ -123,11 +165,19 @@ class MaterialDownloader:
         return processed
 
     def get_processed_ids(self, source_type: str, source_key: str) -> set:
-        """Get IDs of already processed materials."""
+        """Get IDs of already processed materials (from files + cache)."""
+        processed = set()
+
+        # Check existing .md files in repo
         materials_path = self.materials_dir / source_type / source_key
-        if not materials_path.exists():
-            return set()
-        return {f.stem for f in materials_path.glob("*.md")}
+        if materials_path.exists():
+            processed.update(f.stem for f in materials_path.glob("*.md"))
+
+        # Also check persistent cache (for items processed in failed runs)
+        cache_key = f"{source_type}/{source_key}"
+        processed.update(self.processed_cache.get(cache_key, []))
+
+        return processed
 
     def extract_content(self, source_type: str, entry: dict) -> str | None:
         """
