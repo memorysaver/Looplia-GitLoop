@@ -10,7 +10,7 @@ import tempfile
 from pathlib import Path
 from typing import Optional
 
-from utils import get_logger
+from core.utils import get_logger
 
 logger = get_logger(__name__)
 
