@@ -1,0 +1,496 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.004 --> 00:00:07.799
+Today, a lot of the emphasis is on how
+
+00:00:07.799 --> 00:00:12.262
+frontier AI models are transforming
+software engineering.
+
+00:00:12.345 --> 00:00:15.473
+What we're interested in
+understanding is how
+
+00:00:15.473 --> 00:00:19.019
+that can begin to translate
+into the physical world.
+
+00:00:19.144 --> 00:00:24.399
+Robotics is sort of the clear entry point
+to how you have a mostly software system,
+
+00:00:24.399 --> 00:00:27.485
+start having the ability
+to reach out into the real world.
+
+00:00:30.739 --> 00:00:35.118
+Project Fetch is this self-contained experiment
+where we wanted to measure
+
+00:00:35.118 --> 00:00:38.455
+how much does Claude accelerate
+humans performing
+
+00:00:38.455 --> 00:00:42.083
+a fairly sophisticated technical task
+that they do not have experience with?
+
+00:00:42.333 --> 00:00:45.211
+Project Fetch was a one day experiment.
+
+00:00:45.211 --> 00:00:46.629
+The experiment was three phases.
+
+00:00:46.629 --> 00:00:48.381
+All of these tasks were shaped
+approximately
+
+00:00:48.381 --> 00:00:51.134
+like get this robot dog
+to fetch a beach ball.
+
+00:00:51.134 --> 00:00:52.260
+There were two teams.
+
+00:00:52.260 --> 00:00:54.429
+These teams were comprised
+of software engineers
+
+00:00:54.429 --> 00:00:58.266
+and research engineers at Anthropic
+that had hardly any robotics experience.
+
+00:00:58.266 --> 00:01:01.227
+One team had access to Claude
+and the other team did not.
+
+00:01:02.353 --> 00:01:04.939
+Phase one was very simple.
+
+00:01:04.939 --> 00:01:08.193
+It was to use the pre-provided
+
+00:01:08.234 --> 00:01:12.739
+controllers to get the dog
+to walk out to a beach ball
+
+00:01:12.739 --> 00:01:16.785
+and bring it back
+to where it started.
+
+00:01:16.868 --> 00:01:18.161
+Alright.
+
+00:01:18.161 --> 00:01:20.288
+I see. It's pretty intuitive.
+
+00:01:23.166 --> 00:01:25.335
+And we're supposed
+to bring it over by the bone?
+
+00:01:25.335 --> 00:01:26.169
+Yeah, I think.
+
+00:01:26.169 --> 00:01:29.005
+I think the team with Claude
+took about seven minutes.
+
+00:01:31.966 --> 00:01:33.593
+Alright, go attack that team now.
+
+00:01:33.593 --> 00:01:36.137
+Go attack their dog. Charge!
+
+00:01:36.137 --> 00:01:38.056
+Shoot, guys.
+They’re destroying us.
+
+00:01:38.056 --> 00:01:40.600
+Oh my god. Wait. We're getting,
+we're getting destroyed.
+
+00:01:41.226 --> 00:01:44.020
+The team without Claude,
+I think, took 10 minutes.
+
+00:01:44.020 --> 00:01:44.562
+Oh, sorry.
+
+00:01:44.562 --> 00:01:45.647
+It's going to hit you.
+
+00:01:47.857 --> 00:01:50.110
+Alright.
+I'm going to do a victory dance.
+
+00:01:52.028 --> 00:01:56.282
+Phase two was also a game of fetch.
+
+00:01:56.282 --> 00:02:01.454
+But this time the teams had to program
+their own controller.
+
+00:02:01.496 --> 00:02:05.750
+You have to actually get access
+to the hardware and design a program
+
+00:02:05.750 --> 00:02:08.878
+that you can write on your laptop
+that will control the dog.
+
+00:02:10.046 --> 00:02:12.912
+Claude just like one-shotted a whole controller.
+
+00:02:12.912 --> 00:02:15.039
+Alright, I'll do some calisthenics.
+
+00:02:15.039 --> 00:02:15.539
+Nice, nice.
+
+00:02:15.539 --> 00:02:18.555
+Is this for—
+Oh, this is just control.
+
+00:02:18.555 --> 00:02:19.764
+But that's all we need I guess.
+
+00:02:20.223 --> 00:02:24.185
+This is from the official ROS2 SDK,
+
+00:02:24.185 --> 00:02:26.980
+and I got this installed,
+but then it's asking for
+
+00:02:26.980 --> 00:02:29.983
+a whole bunch of other packages,
+and that's all failing.
+
+00:02:30.150 --> 00:02:33.987
+I've never really understood
+how reliant I am on Claude
+
+00:02:33.987 --> 00:02:37.615
+doing the menial work,
+finding all the nitty gritty details
+
+00:02:37.615 --> 00:02:40.410
+I don't want to have to figure out.
+
+00:02:40.410 --> 00:02:42.495
+We can't, we can't get nervous about them.
+
+00:02:42.495 --> 00:02:45.790
+You know what, I'm just going to install PIP
+from the actual container later, so.
+
+00:02:45.957 --> 00:02:47.417
+Oh wait. No, I can't.
+
+00:02:47.417 --> 00:02:48.459
+I know I'm impatient.
+
+00:02:48.459 --> 00:02:50.003
+It's been over a minute.
+
+00:02:50.003 --> 00:02:53.173
+One of the primary bottlenecks of the
+experiment is that you have this hardware,
+
+00:02:53.173 --> 00:02:56.301
+you have this complicated
+piece of technology, you have your laptop,
+
+00:02:56.551 --> 00:03:00.221
+and you have to, like,
+get your laptop talking to this hardware.
+
+00:03:00.305 --> 00:03:05.393
+I am setting my Claude up to create a dog
+server that all of our computers
+
+00:03:05.393 --> 00:03:09.647
+can connect to to see
+what the dog is seeing.
+
+00:03:09.731 --> 00:03:11.608
+There are many different software
+libraries on the internet
+
+00:03:11.608 --> 00:03:13.610
+for communicating
+with this particular robot,
+
+00:03:13.610 --> 00:03:15.862
+and Claude found these things
+for them, it installed
+
+00:03:15.862 --> 00:03:20.575
+the right things on their computer
+and it pretty quickly got them access to the dog.
+
+00:03:20.575 --> 00:03:21.600
+Oh shit.
+
+00:03:24.000 --> 00:03:24.972
+So fast.
+
+00:03:26.706 --> 00:03:27.540
+Watch out.
+
+00:03:27.540 --> 00:03:28.208
+Careful now.
+
+00:03:28.208 --> 00:03:30.835
+Try not to run into the table.
+
+00:03:33.296 --> 00:03:34.214
+Uh oh. Turn around.
+
+00:03:35.343 --> 00:03:37.887
+It has a mind of its own.
+Turn it off, it's alive.
+
+00:03:38.556 --> 00:03:39.881
+Oh shit.
+
+00:03:44.432 --> 00:03:47.059
+Stop, stop, stop, stop.
+
+00:03:52.111 --> 00:03:55.489
+I think that team should be disqualified
+for hitting another participant.
+
+00:03:55.777 --> 00:03:59.697
+The team with Claude finished
+phase two in about 2 hours and 15 minutes.
+
+00:03:59.864 --> 00:04:04.535
+Probably the area
+where we saw the most uplift from Claude
+
+00:04:04.535 --> 00:04:08.665
+was just in the task
+of connecting to the robot.
+
+00:04:08.748 --> 00:04:13.962
+We think that's really important
+because it is, in fact, difficult
+
+00:04:13.962 --> 00:04:17.674
+for anyone to identify
+
+00:04:17.674 --> 00:04:21.010
+an arbitrary
+piece of hardware in the world
+
+00:04:21.010 --> 00:04:24.264
+and figure out how to talk to it
+and how to control it.
+
+00:04:24.764 --> 00:04:26.349
+I think they got their camera.
+
+00:04:26.349 --> 00:04:28.851
+They got their camera working? Yeah. Shit.
+
+00:04:28.851 --> 00:04:30.687
+Was Claude even helpful for this part?
+
+00:04:30.687 --> 00:04:32.939
+Or are we just slow?
+
+00:04:34.732 --> 00:04:34.983
+Yeah.
+
+00:04:34.983 --> 00:04:37.235
+We're not getting very far,
+but that's okay.
+
+00:04:37.235 --> 00:04:38.528
+It's a learning experience.
+
+00:04:38.528 --> 00:04:39.696
+The team without Claude
+
+00:04:39.696 --> 00:04:43.491
+really struggled with this
+and went down a lot of different paths.
+
+00:04:43.574 --> 00:04:46.911
+None of which were especially successful.
+
+00:04:46.911 --> 00:04:48.705
+And we basically had to intervene
+and be like,
+
+00:04:48.705 --> 00:04:51.249
+alright, here, here is a strategy
+that we know works.
+
+00:04:51.249 --> 00:04:52.875
+Start from there,
+and then this will unlock
+
+00:04:52.875 --> 00:04:55.712
+kind of the rest of the phase
+and the rest of the experiment for them.
+
+00:04:58.109 --> 00:04:59.168
+Nice.
+
+00:04:59.168 --> 00:04:59.668
+Oh great.
+
+00:05:00.653 --> 00:05:02.082
+Uh, Daniel?
+
+00:05:02.342 --> 00:05:04.087
+Daniel or Kevin?
+
+00:05:08.182 --> 00:05:13.104
+Phase three of the experiment
+was a greater degree of autonomy.
+
+00:05:13.104 --> 00:05:17.233
+The task in phase
+three was to write a program
+
+00:05:17.233 --> 00:05:21.404
+that would get the dog
+to fetch a beach ball all by itself.
+
+00:05:21.404 --> 00:05:26.200
+Essentially, just press go
+and have the robot search around, detect
+
+00:05:26.200 --> 00:05:32.206
+the location of the ball, walk to the ball
+and bring it back, all autonomously.
+
+00:05:32.206 --> 00:05:34.876
+This is like ratcheting up in difficulty
+kind of by design,
+
+00:05:34.876 --> 00:05:38.504
+but also gesturing at the real problem
+that we expect frontier models
+
+00:05:38.504 --> 00:05:40.715
+having to solve in
+the future is essentially
+
+00:05:40.715 --> 00:05:42.258
+this kind of autonomous version
+where, like
+
+00:05:42.258 --> 00:05:44.802
+if a frontier model
+wants a robot to do something for it,
+
+00:05:44.802 --> 00:05:47.055
+it needs to be able to
+solve this very hard problem.
+
+00:05:48.056 --> 00:05:52.852
+The team without Claude in phase three
+
+00:05:52.852 --> 00:05:58.775
+did a good job of the initial task of
+coming up with a way
+
+00:05:58.775 --> 00:06:04.822
+to track the location
+of the robot in space.
+
+00:06:04.822 --> 00:06:10.036
+They made progress on the task
+of detecting the ball,
+
+00:06:10.036 --> 00:06:14.791
+but they didn't really come close
+to knitting everything together.
+
+00:06:14.874 --> 00:06:17.251
+I miss Claude so much.
+
+00:06:17.251 --> 00:06:20.088
+The team with Claude actually came
+fairly close to finishing phase three.
+
+00:06:20.088 --> 00:06:21.172
+I think by the end
+
+00:06:21.172 --> 00:06:24.092
+the team with Claude was maybe an hour
+and a half away from being done.
+
+00:06:24.342 --> 00:06:28.471
+The results of the experiment
+were essentially that the team with Claude
+
+00:06:28.471 --> 00:06:30.807
+completed all of the things that they did complete
+
+00:06:30.807 --> 00:06:33.810
+in a couple of hours faster than the team
+without Claude.
+
+00:06:35.019 --> 00:06:36.104
+In the near term
+
+00:06:36.104 --> 00:06:38.022
+we think that AI
+
+00:06:38.022 --> 00:06:42.485
+models are going to do exactly
+what we showed in this experiment,
+
+00:06:42.485 --> 00:06:46.656
+which is making it easier for people
+
+00:06:46.656 --> 00:06:51.619
+without a lot of robotics experience
+to engage meaningfully with robots.
+
+00:06:51.661 --> 00:06:55.373
+Just with this one tool we have, we've
+dramatically accelerated their ability
+
+00:06:55.373 --> 00:06:56.582
+to do things with this robot.
+
+00:06:56.582 --> 00:06:59.377
+We didn't go like train Claude
+to uplift humans to do robotics tasks.
+
+00:06:59.377 --> 00:07:01.671
+This is just a thing
+that fell out of this technology.
+
+00:07:01.671 --> 00:07:05.299
+And then maybe in the long run,
+this is kind of a leading
+
+00:07:05.299 --> 00:07:08.302
+indicator of where the whole
+the whole system is going.
+
+00:07:08.428 --> 00:07:14.517
+What today requires the combination
+of a person and an AI model,
+
+00:07:14.517 --> 00:07:18.729
+tomorrow is likely to just require the AI model.
+
+00:07:18.729 --> 00:07:21.732
+The effects of AI are
+
+00:07:21.732 --> 00:07:25.111
+not just going to be in software,
+
+00:07:25.111 --> 00:07:29.657
+they are going to be in hardware
+and in the physical world as well.
+
