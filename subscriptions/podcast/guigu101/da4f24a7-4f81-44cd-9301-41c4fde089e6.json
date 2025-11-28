@@ -1,0 +1,28 @@
+{
+  "id": "da4f24a7-4f81-44cd-9301-41c4fde089e6",
+  "source_type": "podcast",
+  "title": "E140｜让盲人重现光明？聊聊Neuralink和视网膜脑机接口",
+  "link": "https://sv101.fireside.fm/145",
+  "published": "2024-02-14T00:15:00+00:00",
+  "author": "硅谷101",
+  "summary": "<p>美国时间1月29日，马斯克在Twitter上宣布Neuralink进行了第一位人体患者的植入手术，目前恢复状况良好。事实上，脑机接口并不算是一个新技术，本期嘉宾的导师Krishna Shenoy也曾帮助一位69岁高位截瘫的患者进行过脑机接口的手术，马斯克的Neuralink有哪些技术进步？</p>\n\n<p>本期嘉宾Pumiao自己也研究视网膜脑机接口的系统设计，目前的视网膜脑机接口研究到哪一步了，让盲人重现光明距离真正应用还有多远？</p>\n\n<p>人类对大脑的了解还非常少，但几代科研工作者的努力让我们正在慢慢揭开诸多大脑相关的谜团。本期节目也是我自己学习脑机接口技术的入门，之后我们会上线更多跟脑机接口投资以及创业方向的解读。</p>\n\n<p><strong>【主播】</strong><br />\n泓君Jane，硅谷101创始人，播客主理人<br />\n<strong>【嘉宾】</strong><br />\nPumiao Yan，斯坦福电子专业博士在读，研究方向是脑机接口系统设计，合作导师曾为Krishna Shenoy</p>\n\n<p><strong>【你将听到】</strong><br />\n02:14 Neuralink与犹他阵列技术的进化：能够跟更多神经细胞交互、封装安全性提升<br />\n06:15 脑机接口的三种形式：侵入式、半侵入式与非侵入式<br />\n07:38 Neuralink的设备升级：更小更精确，适合批量操作的手术机器人<br />\n10:49 人体实验里程碑：看设备稳定性和安全性<br />\n11:21 介入式的Synchron：网状电极比Neuralink更少<br />\n12:20 不同电极的技术，离神经细胞的距离差别大<br />\n14:15 现在大部分脑机接口都是通过控制运动中枢实现的<br />\n16:05 读取意念很遥远，不是一个大脑功能区</p>\n\n<p><strong>【视网膜脑机接口】</strong><br />\n16:52 人工视觉：视网膜离体48小时内还可以存活，对视网膜了解更精确<br />\n18:49 视网膜研究：不是单曲，是指挥交响乐团<br />\n20:05 马斯克Neuralink的三个目标：打字、恢复运动能力、重现光明<br />\n21:20 Neuralink视觉组全体离职：医疗公司与创业模式巨大不同<br />\n24:17 封装技术最关键： 3-4家视网膜创业公司因为封装问题倒闭<br />\n25:59 电能是脑机接口长久使用的瓶颈<br />\n27:10 Neuralink虐待猴子？关于脑机接口的安全风险</p>\n\n<p><strong>【斯坦福脑机接口】</strong><br />\n31:25 Krishna Shenoy早年参与脑机接口时，研究方向很难归类<br />\n33:25 斯坦福研究脑机接口：视网膜的研究、语言中枢的研究、电极材料、芯片设计、人工视觉<br />\n40:07 “我们要是真的知道神经学的原理，这本书就不会这么厚了”<br />\n42:53 从发觉大脑系统到治病，需要一个个疾病去攻克<br />\n46:00 关键技术突破：如何设计系统能够采集上千万个数据<br />\n49:32 脑机接口是否适合创业——生物医疗器械与硅谷传统创业不同</p>\n\n<p><strong>【后期】</strong><br />\nAmei<br />\n<strong>【BGM】</strong><br />\nFast Forward, Pause - Rebecca Mardal<br />\nCold and Blue - Roy Edwin Williams</p>\n\n<p><strong>【在这里找到我们】</strong><br />\n公众号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜Youtube｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p>",
+  "content": "<p>美国时间1月29日，马斯克在Twitter上宣布Neuralink进行了第一位人体患者的植入手术，目前恢复状况良好。事实上，脑机接口并不算是一个新技术，本期嘉宾的导师Krishna Shenoy也曾帮助一位69岁高位截瘫的患者进行过脑机接口的手术，马斯克的Neuralink有哪些技术进步？</p>\n\n<p>本期嘉宾Pumiao自己也研究视网膜脑机接口的系统设计，目前的视网膜脑机接口研究到哪一步了，让盲人重现光明距离真正应用还有多远？</p>\n\n<p>人类对大脑的了解还非常少，但几代科研工作者的努力让我们正在慢慢揭开诸多大脑相关的谜团。本期节目也是我自己学习脑机接口技术的入门，之后我们会上线更多跟脑机接口投资以及创业方向的解读。</p>\n\n<p><strong>【主播】</strong><br />\n泓君Jane，硅谷101创始人，播客主理人<br />\n<strong>【嘉宾】</strong><br />\nPumiao Yan，斯坦福电子专业博士在读，研究方向是脑机接口系统设计，合作导师曾为Krishna Shenoy</p>\n\n<p><strong>【你将听到】</strong><br />\n02:14 Neuralink与犹他阵列技术的进化：能够跟更多神经细胞交互、封装安全性提升<br />\n06:15 脑机接口的三种形式：侵入式、半侵入式与非侵入式<br />\n07:38 Neuralink的设备升级：更小更精确，适合批量操作的手术机器人<br />\n10:49 人体实验里程碑：看设备稳定性和安全性<br />\n11:21 介入式的Synchron：网状电极比Neuralink更少<br />\n12:20 不同电极的技术，离神经细胞的距离差别大<br />\n14:15 现在大部分脑机接口都是通过控制运动中枢实现的<br />\n16:05 读取意念很遥远，不是一个大脑功能区</p>\n\n<p><strong>【视网膜脑机接口】</strong><br />\n16:52 人工视觉：视网膜离体48小时内还可以存活，对视网膜了解更精确<br />\n18:49 视网膜研究：不是单曲，是指挥交响乐团<br />\n20:05 马斯克Neuralink的三个目标：打字、恢复运动能力、重现光明<br />\n21:20 Neuralink视觉组全体离职：医疗公司与创业模式巨大不同<br />\n24:17 封装技术最关键： 3-4家视网膜创业公司因为封装问题倒闭<br />\n25:59 电能是脑机接口长久使用的瓶颈<br />\n27:10 Neuralink虐待猴子？关于脑机接口的安全风险</p>\n\n<p><strong>【斯坦福脑机接口】</strong><br />\n31:25 Krishna Shenoy早年参与脑机接口时，研究方向很难归类<br />\n33:25 斯坦福研究脑机接口：视网膜的研究、语言中枢的研究、电极材料、芯片设计、人工视觉<br />\n40:07 “我们要是真的知道神经学的原理，这本书就不会这么厚了”<br />\n42:53 从发觉大脑系统到治病，需要一个个疾病去攻克<br />\n46:00 关键技术突破：如何设计系统能够采集上千万个数据<br />\n49:32 脑机接口是否适合创业——生物医疗器械与硅谷传统创业不同</p>\n\n<p><strong>【后期】</strong><br />\nAmei<br />\n<strong>【BGM】</strong><br />\nFast Forward, Pause - Rebecca Mardal<br />\nCold and Blue - Roy Edwin Williams</p>\n\n<p><strong>【在这里找到我们】</strong><br />\n公众号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜Youtube｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p>",
+  "enriched_via": "rss",
+  "audio": {
+    "url": "https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/da4f24a7-4f81-44cd-9301-41c4fde089e6.mp3",
+    "type": "audio/mpeg",
+    "length": "78624227"
+  },
+  "duration": "54:35",
+  "season_number": "4",
+  "image": "https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6",
+  "season": "4",
+  "tags": [
+    "Pumiao Yan",
+    "Krishna Shenoy",
+    "Neuralink",
+    "Synchron",
+    "脑机接口"
+  ],
+  "archived_at": "2025-11-28T15:01:33.676210+00:00"
+}
