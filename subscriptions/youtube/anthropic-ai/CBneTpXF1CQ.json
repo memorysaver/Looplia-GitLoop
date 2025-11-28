@@ -1,0 +1,106 @@
+{
+  "id": "CBneTpXF1CQ",
+  "source_type": "youtube",
+  "url": "https://www.youtube.com/watch?v=CBneTpXF1CQ",
+  "title": "Claude Code updates: When to use Haiku 4.5, Claude Code on web, and more.",
+  "description": "We're covering everything new with Claude for developers, including the launch of Claude Code for the Web, Claude Haiku 4.5, and more.\n\nJoin the Claude Developer Discord - https://anthropic.com/discord\nTry Claude Code on the Web - https://claude.ai/code\n\n00:02 Claude Code on the Web\n00:42 Claude Code on the Web demo\n01:26 Claude Haiku 4.5\n02:10 When to use Haiku 4.5\n02:51 Claude Code on the Web follow-up\n03:05 Claude Code on the Web teleport\n04:44 Summary",
+  "channel": "Anthropic",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "channel_url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+  "uploader": "Anthropic",
+  "duration": 314,
+  "duration_string": "5:14",
+  "view_count": 30614,
+  "like_count": 924,
+  "comment_count": 103,
+  "published": "20251030",
+  "thumbnail": "https://i.ytimg.com/vi_webp/CBneTpXF1CQ/maxresdefault.webp",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/CBneTpXF1CQ/3.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/CBneTpXF1CQ/3.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/CBneTpXF1CQ/2.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/CBneTpXF1CQ/2.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/CBneTpXF1CQ/1.jpg",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": [
+    {
+      "start_time": 0,
+      "end_time": 2.0,
+      "title": "<Untitled Chapter 1>"
+    },
+    {
+      "start_time": 2.0,
+      "title": "Claude Code on the Web",
+      "end_time": 42.0
+    },
+    {
+      "start_time": 42.0,
+      "title": "Claude Code on the Web demo",
+      "end_time": 86.0
+    },
+    {
+      "start_time": 86.0,
+      "title": "Claude Haiku 4.5",
+      "end_time": 130.0
+    },
+    {
+      "start_time": 130.0,
+      "title": "When to use Haiku 4.5",
+      "end_time": 171.0
+    },
+    {
+      "start_time": 171.0,
+      "title": "Claude Code on the Web follow-up",
+      "end_time": 185.0
+    },
+    {
+      "start_time": 185.0,
+      "title": "Claude Code on the Web teleport",
+      "end_time": 284.0
+    },
+    {
+      "start_time": 284.0,
+      "title": "Summary",
+      "end_time": 314
+    }
+  ],
+  "transcript": {
+    "available": true,
+    "language": "en",
+    "auto_generated": true,
+    "formats": [
+      "json3",
+      "srv1",
+      "srv2",
+      "srv3",
+      "ttml",
+      "srt",
+      "vtt"
+    ]
+  },
+  "archived_at": "2025-11-28T15:43:27.937978+00:00"
+}

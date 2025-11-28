@@ -1,0 +1,65 @@
+{
+  "id": "s-avRazvmLg",
+  "source_type": "youtube",
+  "url": "https://www.youtube.com/watch?v=s-avRazvmLg",
+  "title": "Claude Code on the web",
+  "description": "Today, we're introducing Claude Code on the web, a new way to delegate coding tasks directly from your browser. Now in research preview, you can assign multiple coding tasks to Claude that run on Anthropic-managed cloud infrastructure, perfect for tackling bug backlogs, routine fixes, or parallel development work.\n\nLearn more: www.anthropic.com/news/claude-code-on-the-web",
+  "channel": "Anthropic",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "channel_url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+  "uploader": "Anthropic",
+  "duration": 61,
+  "duration_string": "1:01",
+  "view_count": 1438826,
+  "like_count": 1488,
+  "comment_count": 145,
+  "published": "20251020",
+  "thumbnail": "https://i.ytimg.com/vi/s-avRazvmLg/maxresdefault.jpg",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/s-avRazvmLg/3.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/s-avRazvmLg/3.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/s-avRazvmLg/2.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/s-avRazvmLg/2.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/s-avRazvmLg/1.jpg",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": null,
+  "transcript": {
+    "available": true,
+    "language": "en",
+    "auto_generated": true,
+    "formats": [
+      "json3",
+      "srv1",
+      "srv2",
+      "srv3",
+      "ttml",
+      "srt",
+      "vtt"
+    ]
+  },
+  "archived_at": "2025-11-28T15:43:36.483071+00:00"
+}

@@ -1,0 +1,101 @@
+{
+  "id": "a8PmR-fNQ_0",
+  "source_type": "youtube",
+  "url": "https://www.youtube.com/watch?v=a8PmR-fNQ_0",
+  "title": "How Claude is transforming financial services",
+  "description": "Anthropic's Alexander Bricken (Applied AI, Financial Services) and Nick Lin (Product Lead, Financial Services) break down Claude for Financial Services—our end-to-end agentic solution built specifically for finance teams.\n\nThey explain how Claude's excellence in coding and tool use translates to handling finance-specific tasks, like real-time market analysis and building Excel spreadsheets. Nick walks through real examples from customers like NBIM and BCI who use Claude to research into data, run analysis, and generate investor-ready deliverables without switching between tools.\n\nLearn more: https://claude.com/solutions/financial-services\n\n00:00 - Introductions \n00:50 - How AI agents are reshaping finance \n4:00 - From code to financial analysis: why Claude excels at both \n6:30 - What makes Claude particularly powerful for financial services \n9:30 - What is Claude for Financial Services? \n13:00 - How Claude learns and improves over time \n14:30 - What's coming next: sub-verticals, deeper partnerships, and more integrations",
+  "channel": "Anthropic",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "channel_url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+  "uploader": "Anthropic",
+  "duration": 1051,
+  "duration_string": "17:31",
+  "view_count": 26703,
+  "like_count": 550,
+  "comment_count": 54,
+  "published": "20251027",
+  "thumbnail": "https://i.ytimg.com/vi/a8PmR-fNQ_0/maxresdefault.jpg",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/a8PmR-fNQ_0/3.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/a8PmR-fNQ_0/3.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/a8PmR-fNQ_0/2.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/a8PmR-fNQ_0/2.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/a8PmR-fNQ_0/1.jpg",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": [
+    {
+      "start_time": 0.0,
+      "title": "Introductions",
+      "end_time": 50.0
+    },
+    {
+      "start_time": 50.0,
+      "title": "How AI agents are reshaping finance",
+      "end_time": 240.0
+    },
+    {
+      "start_time": 240.0,
+      "title": "From code to financial analysis: why Claude excels at both",
+      "end_time": 390.0
+    },
+    {
+      "start_time": 390.0,
+      "title": "What makes Claude particularly powerful for financial services",
+      "end_time": 570.0
+    },
+    {
+      "start_time": 570.0,
+      "title": "What is Claude for Financial Services?",
+      "end_time": 780.0
+    },
+    {
+      "start_time": 780.0,
+      "title": "How Claude learns and improves over time",
+      "end_time": 870.0
+    },
+    {
+      "start_time": 870.0,
+      "title": "What's coming next: sub-verticals, deeper partnerships, and more integrations",
+      "end_time": 1051
+    }
+  ],
+  "transcript": {
+    "available": true,
+    "language": "en",
+    "auto_generated": false,
+    "formats": [
+      "json3",
+      "srv1",
+      "srv2",
+      "srv3",
+      "ttml",
+      "srt",
+      "vtt"
+    ]
+  },
+  "archived_at": "2025-11-28T15:43:31.392315+00:00"
+}

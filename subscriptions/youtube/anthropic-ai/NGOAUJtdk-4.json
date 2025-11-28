@@ -1,0 +1,96 @@
+{
+  "id": "NGOAUJtdk-4",
+  "source_type": "youtube",
+  "url": "https://www.youtube.com/watch?v=NGOAUJtdk-4",
+  "title": "Who let the robot dogs out?",
+  "description": "We asked two teams of Anthropic researchers to program a robot dog. Neither team had any robotics expertise—but we let only one team use Claude.\n\nIn the past, we’ve run simulated studies where Claude trained a robot dog. These helped us assess how Claude might contribute to AI research and development. Project Fetch was us trying something similar in practice.\n\nThis project suggests that we’re not far from a world where frontier AI models can interact with previously-unknown pieces of hardware, even with non-experts at the helm.\n\nFor more, read on: https://www.anthropic.com/research/project-fetch-robot-dog \n\n0:00 Introduction: Why robotics?\n0:30 The experiment\n1:02 Phase 1: Fetch, manually\n1:51 Phase 2: Fetch, programmatically\n5:08 Phase 3: Fetch, autonomously\n6:24 Results",
+  "channel": "Anthropic",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "channel_url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+  "uploader": "Anthropic",
+  "duration": 460,
+  "duration_string": "7:40",
+  "view_count": 45630,
+  "like_count": 1727,
+  "comment_count": 100,
+  "published": "20251112",
+  "thumbnail": "https://i.ytimg.com/vi_webp/NGOAUJtdk-4/maxresdefault.webp",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/NGOAUJtdk-4/3.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/NGOAUJtdk-4/3.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/NGOAUJtdk-4/2.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/NGOAUJtdk-4/2.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/NGOAUJtdk-4/1.jpg",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": [
+    {
+      "start_time": 0.0,
+      "title": "Introduction: Why robotics?",
+      "end_time": 30.0
+    },
+    {
+      "start_time": 30.0,
+      "title": "The experiment",
+      "end_time": 62.0
+    },
+    {
+      "start_time": 62.0,
+      "title": "Phase 1: Fetch, manually",
+      "end_time": 111.0
+    },
+    {
+      "start_time": 111.0,
+      "title": "Phase 2: Fetch, programmatically",
+      "end_time": 308.0
+    },
+    {
+      "start_time": 308.0,
+      "title": "Phase 3: Fetch, autonomously",
+      "end_time": 384.0
+    },
+    {
+      "start_time": 384.0,
+      "title": "Results",
+      "end_time": 460
+    }
+  ],
+  "transcript": {
+    "available": true,
+    "language": "en",
+    "auto_generated": false,
+    "formats": [
+      "json3",
+      "srv1",
+      "srv2",
+      "srv3",
+      "ttml",
+      "srt",
+      "vtt"
+    ]
+  },
+  "archived_at": "2025-11-28T15:43:24.614128+00:00"
+}

@@ -15,7 +15,11 @@
     "OwMu0pyYZBc",
     "Y6wiWlcH5jM",
     "AY3lif2E4zI",
-    "UCrDwWp7EBBv4NwvScIpBDOA"
+    "UCrDwWp7EBBv4NwvScIpBDOA",
+    "NGOAUJtdk-4",
+    "CBneTpXF1CQ",
+    "a8PmR-fNQ_0",
+    "s-avRazvmLg"
   ],
   "entries": [
     {
@@ -94,8 +98,36 @@
       "published": null,
       "archived_at": "2025-11-27T06:27:12.832594+00:00",
       "file": "UCrDwWp7EBBv4NwvScIpBDOA.json"
+    },
+    {
+      "id": "NGOAUJtdk-4",
+      "title": "Who let the robot dogs out?",
+      "published": "20251112",
+      "archived_at": "2025-11-28T15:43:24.614128+00:00",
+      "file": "NGOAUJtdk-4.json"
+    },
+    {
+      "id": "CBneTpXF1CQ",
+      "title": "Claude Code updates: When to use Haiku 4.5, Claude Code on web, and more.",
+      "published": "20251030",
+      "archived_at": "2025-11-28T15:43:27.937978+00:00",
+      "file": "CBneTpXF1CQ.json"
+    },
+    {
+      "id": "a8PmR-fNQ_0",
+      "title": "How Claude is transforming financial services",
+      "published": "20251027",
+      "archived_at": "2025-11-28T15:43:31.392315+00:00",
+      "file": "a8PmR-fNQ_0.json"
+    },
+    {
+      "id": "s-avRazvmLg",
+      "title": "Claude Code on the web",
+      "published": "20251020",
+      "archived_at": "2025-11-28T15:43:36.483071+00:00",
+      "file": "s-avRazvmLg.json"
     }
   ],
-  "last_updated": "2025-11-27T06:27:15.041166+00:00",
-  "total_entries": 11
+  "last_updated": "2025-11-28T15:43:36.484239+00:00",
+  "total_entries": 15
 }
