@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Podcast Audio Downloader and Transcriber
-Downloads podcast audio and transcribes using WhisperKit.
+Downloads podcast audio and transcribes using WhisperKit or Groq Cloud.
 Uses a persistent cache directory to avoid re-downloading audio.
 """
 
@@ -10,7 +10,7 @@ import json
 import os
 import subprocess
 from pathlib import Path
-from typing import Optional
+from typing import Literal, Optional
 
 import requests
 
@@ -22,6 +22,9 @@ logger = get_logger(__name__)
 # These survive across workflow runs on self-hosted runner
 AUDIO_CACHE_DIR = Path.home() / ".cache" / "looplia-gitloop" / "audio"
 TRANSCRIPT_CACHE_DIR = Path.home() / ".cache" / "looplia-gitloop" / "transcripts"
+
+# Transcription backend: "groq" (cloud) or "whisperkit" (local)
+TRANSCRIPTION_BACKEND = os.environ.get("TRANSCRIPTION_BACKEND", "groq")
 
 
 def get_cache_path(audio_url: str, episode_id: str) -> Path:
@@ -67,8 +70,9 @@ def get_transcript_cache_path(audio_url: str, episode_id: str) -> Path:
 
 def download_and_transcribe(audio_url: str, episode_id: str) -> Optional[str]:
     """
-    Download podcast audio and transcribe with WhisperKit.
+    Download podcast audio and transcribe with WhisperKit or Groq.
     Uses cached transcript or audio if available.
+    Backend is selected via TRANSCRIPTION_BACKEND env var ("whisperkit" or "groq").
 
     Args:
         audio_url: URL to the audio file
@@ -81,48 +85,59 @@ def download_and_transcribe(audio_url: str, episode_id: str) -> Optional[str]:
         logger.warning(f"No audio URL provided for episode: {episode_id}")
         return None
 
+    backend = TRANSCRIPTION_BACKEND.lower()
+    logger.info(f"Using transcription backend: {backend}")
+
     # Ensure cache directories exist
     TRANSCRIPT_CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Check transcript cache FIRST - skip download entirely if transcript exists
+    # Check transcript cache FIRST - skip transcription entirely if cached
     transcript_cache_path = get_transcript_cache_path(audio_url, episode_id)
     if transcript_cache_path.exists():
         logger.info(f"Using cached transcript for episode: {episode_id}")
         try:
             cached_data = json.loads(transcript_cache_path.read_text())
             raw_output = cached_data.get("raw_output", "")
-            return parse_whisperkit_output(raw_output)
+            cached_backend = cached_data.get("backend", "whisperkit")
+            # Use appropriate parser based on cached backend
+            if cached_backend == "groq":
+                return parse_groq_output(raw_output)
+            else:
+                return parse_whisperkit_output(raw_output)
         except (json.JSONDecodeError, KeyError) as e:
             logger.warning(f"Invalid transcript cache for {episode_id}, re-transcribing: {e}")
 
-    # Only create audio cache dir if we need to download
-    AUDIO_CACHE_DIR.mkdir(parents=True, exist_ok=True)
-
-    # Check audio cache
-    audio_cache_path = get_cache_path(audio_url, episode_id)
-
-    if audio_cache_path.exists():
-        logger.info(f"Using cached audio for episode: {episode_id}")
-        audio_path = audio_cache_path
+    # Transcribe based on backend
+    if backend == "groq":
+        # Groq uses URL directly, no need to download
+        raw_output = transcribe_with_groq(audio_url, episode_id)
+        parser = parse_groq_output
     else:
-        # Download audio file to cache
-        audio_path = download_audio(audio_url, audio_cache_path, episode_id)
-        if not audio_path:
-            return None
+        # WhisperKit needs local file
+        AUDIO_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        audio_cache_path = get_cache_path(audio_url, episode_id)
 
-    # Transcribe with WhisperKit (returns raw output)
-    raw_output = transcribe_with_whisperkit_raw(audio_path, episode_id)
+        if audio_cache_path.exists():
+            logger.info(f"Using cached audio for episode: {episode_id}")
+            audio_path = audio_cache_path
+        else:
+            audio_path = download_audio(audio_url, audio_cache_path, episode_id)
+            if not audio_path:
+                return None
+
+        raw_output = transcribe_with_whisperkit_raw(audio_path, episode_id)
+        parser = parse_whisperkit_output
 
     if not raw_output:
         return None
 
-    # Save raw output to cache for future runs
-    cache_data = {"raw_output": raw_output}
+    # Save raw output to cache for future runs (include backend info)
+    cache_data = {"raw_output": raw_output, "backend": backend}
     transcript_cache_path.write_text(json.dumps(cache_data, ensure_ascii=False, indent=2))
     logger.info(f"Cached transcript for episode: {episode_id}")
 
     # Parse and return clean text
-    return parse_whisperkit_output(raw_output)
+    return parser(raw_output)
 
 
 def download_audio(url: str, dest_path: Path, episode_id: str) -> Optional[Path]:
@@ -218,6 +233,82 @@ def transcribe_with_whisperkit_raw(audio_path: Path, episode_id: str) -> Optiona
         return None
     except Exception as e:
         logger.error(f"Error transcribing {episode_id}: {e}")
+        return None
+
+
+def transcribe_with_groq(audio_url: str, episode_id: str) -> Optional[str]:
+    """
+    Transcribe audio using Groq Cloud Whisper API.
+    Uses the audio URL directly (no download needed for files >25MB).
+
+    Args:
+        audio_url: URL to the audio file
+        episode_id: Episode ID (for logging)
+
+    Returns:
+        Raw JSON output with timestamps or None
+    """
+    logger.info(f"Transcribing episode with Groq: {episode_id}")
+
+    try:
+        from groq import Groq
+    except ImportError:
+        logger.error("groq package not installed. Run: pip install groq")
+        return None
+
+    api_key = os.environ.get("GROQ_API_KEY")
+    if not api_key:
+        logger.error("GROQ_API_KEY environment variable not set")
+        return None
+
+    try:
+        client = Groq(api_key=api_key)
+
+        # Use URL directly for large files (Groq downloads it)
+        transcription = client.audio.transcriptions.create(
+            url=audio_url,
+            model="whisper-large-v3-turbo",
+            response_format="verbose_json",
+            timestamp_granularities=["segment"],
+        )
+
+        # Convert response to JSON string for caching
+        if hasattr(transcription, "model_dump"):
+            raw_output = json.dumps(transcription.model_dump(), ensure_ascii=False, indent=2)
+        else:
+            # Fallback for older versions
+            raw_output = json.dumps({"text": transcription.text}, ensure_ascii=False, indent=2)
+
+        if raw_output:
+            logger.info(f"Groq transcription complete for {episode_id}")
+        else:
+            logger.warning(f"Empty Groq transcript for {episode_id}")
+            return None
+
+        return raw_output
+
+    except Exception as e:
+        logger.error(f"Groq transcription failed for {episode_id}: {e}")
+        return None
+
+
+def parse_groq_output(output: str) -> Optional[str]:
+    """
+    Parse Groq API JSON output to extract transcript text.
+
+    Args:
+        output: Raw JSON output from Groq API
+
+    Returns:
+        Clean transcript text
+    """
+    if not output:
+        return None
+
+    try:
+        data = json.loads(output)
+        return data.get("text", "").strip() or None
+    except json.JSONDecodeError:
         return None
 
 
