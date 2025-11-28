@@ -1,8 +1,6 @@
 name: Download YouTube Materials
 
 on:
-  schedule:
-    - cron: '30 * * * *'
   workflow_dispatch:
     inputs:
       source_key:

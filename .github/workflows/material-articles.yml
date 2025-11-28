@@ -1,8 +1,6 @@
 name: Download Article Materials
 
 on:
-  schedule:
-    - cron: '40 * * * *'
   workflow_dispatch:
     inputs:
       source_type:

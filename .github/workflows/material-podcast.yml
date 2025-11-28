@@ -1,8 +1,6 @@
 name: Download Podcast Materials
 
 on:
-  schedule:
-    - cron: '35 * * * *'
   workflow_dispatch:
     inputs:
       source_key:
