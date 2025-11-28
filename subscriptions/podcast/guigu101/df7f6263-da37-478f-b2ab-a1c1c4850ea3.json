@@ -1,0 +1,26 @@
+{
+  "id": "df7f6263-da37-478f-b2ab-a1c1c4850ea3",
+  "source_type": "podcast",
+  "title": "E163｜与大疆Pocket首任产品经理聊聊：如何从无到有定义一款硬件产品？",
+  "link": "https://sv101.fireside.fm/169",
+  "published": "2024-08-16T00:00:00+00:00",
+  "author": "硅谷101",
+  "summary": "<p>如果有了手机，为什么还需要一台专门拍视频的便携相机？本期节目我们邀请到了大疆Pocket相机的首位产品经理Matt跟我们聊一聊如何去做一款受欢迎的硬件产品，他经历了大疆pocket团队从一个人发展成130人的发展历程。同时探讨在人工智能时代，什么样的智能硬件产品形态才能最好地承载AI技术。</p>\n\n<p><strong>【主播】</strong><br />\n泓君Jane，硅谷101创始人，播客主理人<br />\n<strong>【嘉宾】</strong><br />\nMatt, 大疆前产品经理<br />\nJeremy Bao, 硅谷101研究员，摄影工作室主理人</p>\n\n<p><strong>【你将听到】</strong><br />\n01:59 可能搞砸视频的三个点：对焦、防抖和收音<br />\n08:48 定于需求：先拍到、再拍好<br />\n10:20 为什么要在手机之外做一款专门的拍照设备<br />\n14:59 从他拍到Vlog神器，意外的风口<br />\n20:39 挑战供应链管理：一个横跨软硬件的机器人项目<br />\n23:30 关于画质的三次演进心得<br />\n24:34 如何跟手机大厂卷光学：在资源有限的情况下分步骤解决关键问题<br />\n26:31 研发人员的乌托邦：不做平庸的产品<br />\n34:50 从无到有做一款产品是什么体验：在机械云台里解决五十多条线路的整合就花了一年时间<br />\n39:03 产品实现度：原型机和量产版体积是一样大的<br />\n43:53 “会做减法”是打造创新产品的关键<br />\n47:53 未来算法可以取代机械云台<br />\n49:21 相比于AI Pin和Rabbit 1，Meta Rayban可能是承载AI更好的硬件形态<br />\n52:29 智能硬件产品要离手机更远一些才不会被轻易替代</p>\n\n<p><strong>【补充信息】</strong><br />\nOsmo：大疆“灵眸”系列的产品，包括了运动相机、手机云台、以及口袋云台相机。<br />\nInspire：大疆出品的专业级无人机产品。<br />\n如影：DJI Ronin，为专业级或影视级摄影师定制开发的一款三轴手持云台系统。</p>\n\n<p><strong>【监制】</strong><br />\n杜秀<br />\n<strong>【后期】</strong><br />\nAMEI<br />\n<strong>【BGM】</strong><br />\nThe Royal Kitchen- SCOREWIZARDS <br />\nVictorian Era Classical Strings -Rafael Krux/Orchestralis</p>\n\n<p><strong>【在这里找到我们】</strong><br />\n公众号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜Youtube｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p><p>Special Guests: Matt and 鲍天宇.</p>",
+  "content": "<p>如果有了手机，为什么还需要一台专门拍视频的便携相机？本期节目我们邀请到了大疆Pocket相机的首位产品经理Matt跟我们聊一聊如何去做一款受欢迎的硬件产品，他经历了大疆pocket团队从一个人发展成130人的发展历程。同时探讨在人工智能时代，什么样的智能硬件产品形态才能最好地承载AI技术。</p>\n\n<p><strong>【主播】</strong><br />\n泓君Jane，硅谷101创始人，播客主理人<br />\n<strong>【嘉宾】</strong><br />\nMatt, 大疆前产品经理<br />\nJeremy Bao, 硅谷101研究员，摄影工作室主理人</p>\n\n<p><strong>【你将听到】</strong><br />\n01:59 可能搞砸视频的三个点：对焦、防抖和收音<br />\n08:48 定于需求：先拍到、再拍好<br />\n10:20 为什么要在手机之外做一款专门的拍照设备<br />\n14:59 从他拍到Vlog神器，意外的风口<br />\n20:39 挑战供应链管理：一个横跨软硬件的机器人项目<br />\n23:30 关于画质的三次演进心得<br />\n24:34 如何跟手机大厂卷光学：在资源有限的情况下分步骤解决关键问题<br />\n26:31 研发人员的乌托邦：不做平庸的产品<br />\n34:50 从无到有做一款产品是什么体验：在机械云台里解决五十多条线路的整合就花了一年时间<br />\n39:03 产品实现度：原型机和量产版体积是一样大的<br />\n43:53 “会做减法”是打造创新产品的关键<br />\n47:53 未来算法可以取代机械云台<br />\n49:21 相比于AI Pin和Rabbit 1，Meta Rayban可能是承载AI更好的硬件形态<br />\n52:29 智能硬件产品要离手机更远一些才不会被轻易替代</p>\n\n<p><strong>【补充信息】</strong><br />\nOsmo：大疆“灵眸”系列的产品，包括了运动相机、手机云台、以及口袋云台相机。<br />\nInspire：大疆出品的专业级无人机产品。<br />\n如影：DJI Ronin，为专业级或影视级摄影师定制开发的一款三轴手持云台系统。</p>\n\n<p><strong>【监制】</strong><br />\n杜秀<br />\n<strong>【后期】</strong><br />\nAMEI<br />\n<strong>【BGM】</strong><br />\nThe Royal Kitchen- SCOREWIZARDS <br />\nVictorian Era Classical Strings -Rafael Krux/Orchestralis</p>\n\n<p><strong>【在这里找到我们】</strong><br />\n公众号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜Youtube｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p><p>Special Guests: Matt and 鲍天宇.</p>",
+  "enriched_via": "rss",
+  "audio": {
+    "url": "https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/df7f6263-da37-478f-b2ab-a1c1c4850ea3.mp3",
+    "type": "audio/mpeg",
+    "length": "82557152"
+  },
+  "duration": "57:19",
+  "season_number": "4",
+  "image": "https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6",
+  "season": "4",
+  "tags": [
+    "大疆",
+    "Pocket3",
+    "相机，智能硬件，Matt，云台，防抖，产品经理，"
+  ],
+  "archived_at": "2025-11-28T08:01:36.412603+00:00"
+}
