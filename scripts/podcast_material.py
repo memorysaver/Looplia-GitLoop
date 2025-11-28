@@ -68,7 +68,9 @@ def get_transcript_cache_path(audio_url: str, episode_id: str) -> Path:
     return TRANSCRIPT_CACHE_DIR / f"{episode_id}_{url_hash}.json"
 
 
-def download_and_transcribe(audio_url: str, episode_id: str) -> Optional[str]:
+def download_and_transcribe(
+    audio_url: str, episode_id: str
+) -> tuple[Optional[str], Optional[dict]]:
     """
     Download podcast audio and transcribe with WhisperKit or Groq.
     Uses cached transcript or audio if available.
@@ -79,11 +81,12 @@ def download_and_transcribe(audio_url: str, episode_id: str) -> Optional[str]:
         episode_id: Episode ID (for logging)
 
     Returns:
-        Transcript text or None if failed
+        Tuple of (transcript_text, raw_data_dict) or (None, None) if failed
+        raw_data_dict contains the raw whisper output with timestamps
     """
     if not audio_url:
         logger.warning(f"No audio URL provided for episode: {episode_id}")
-        return None
+        return None, None
 
     backend = TRANSCRIPTION_BACKEND.lower()
     logger.info(f"Using transcription backend: {backend}")
@@ -101,9 +104,13 @@ def download_and_transcribe(audio_url: str, episode_id: str) -> Optional[str]:
             cached_backend = cached_data.get("backend", "whisperkit")
             # Use appropriate parser based on cached backend
             if cached_backend == "groq":
-                return parse_groq_output(raw_output)
+                text = parse_groq_output(raw_output)
+                # Parse raw_output back to dict for returning
+                raw_dict = json.loads(raw_output) if raw_output else None
             else:
-                return parse_whisperkit_output(raw_output)
+                text = parse_whisperkit_output(raw_output)
+                raw_dict = {"text": raw_output, "backend": "whisperkit"}
+            return text, raw_dict
         except (json.JSONDecodeError, KeyError) as e:
             logger.warning(f"Invalid transcript cache for {episode_id}, re-transcribing: {e}")
 
@@ -123,21 +130,27 @@ def download_and_transcribe(audio_url: str, episode_id: str) -> Optional[str]:
         else:
             audio_path = download_audio(audio_url, audio_cache_path, episode_id)
             if not audio_path:
-                return None
+                return None, None
 
         raw_output = transcribe_with_whisperkit_raw(audio_path, episode_id)
         parser = parse_whisperkit_output
 
     if not raw_output:
-        return None
+        return None, None
 
     # Save raw output to cache for future runs (include backend info)
     cache_data = {"raw_output": raw_output, "backend": backend}
     transcript_cache_path.write_text(json.dumps(cache_data, ensure_ascii=False, indent=2))
     logger.info(f"Cached transcript for episode: {episode_id}")
 
-    # Parse and return clean text
-    return parser(raw_output)
+    # Parse and return clean text + raw data
+    text = parser(raw_output)
+    if backend == "groq":
+        raw_dict = json.loads(raw_output)
+    else:
+        raw_dict = {"text": raw_output, "backend": "whisperkit"}
+
+    return text, raw_dict
 
 
 def download_audio(url: str, dest_path: Path, episode_id: str) -> Optional[Path]:

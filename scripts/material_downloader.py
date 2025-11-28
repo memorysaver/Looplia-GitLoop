@@ -150,11 +150,14 @@ class MaterialDownloader:
                 continue
 
             # Download/extract content based on type
-            content = self.extract_content(source_type, entry)
+            content, raw_data = self.extract_content(source_type, entry)
 
             if content:
                 # Save as markdown
                 self.save_markdown(output_dir, entry, content, source_type, source_key)
+                # Save raw whisper JSON for podcasts
+                if raw_data and source_type == "podcast":
+                    self.save_raw_whisper(output_dir, entry, raw_data)
                 # Mark as processed in persistent cache
                 self._mark_as_processed(source_type, source_key, entry_id)
                 processed += 1
@@ -179,7 +182,9 @@ class MaterialDownloader:
 
         return processed
 
-    def extract_content(self, source_type: str, entry: dict) -> str | None:
+    def extract_content(
+        self, source_type: str, entry: dict
+    ) -> tuple[str | None, dict | None]:
         """
         Extract content based on source type.
 
@@ -188,17 +193,17 @@ class MaterialDownloader:
             entry: Entry data from subscription
 
         Returns:
-            Extracted content or None
+            Tuple of (content, raw_data) where raw_data is whisper output for podcasts
         """
         if source_type == "youtube":
-            return self.extract_youtube(entry)
+            return self.extract_youtube(entry), None
         elif source_type == "podcast":
             return self.extract_podcast(entry)
         elif source_type in ("blogs", "news"):
-            return self.extract_article(entry)
+            return self.extract_article(entry), None
         else:
             logger.warning(f"Unknown source type: {source_type}")
-            return None
+            return None, None
 
     def extract_youtube(self, entry: dict) -> str | None:
         """Extract YouTube captions."""
@@ -211,8 +216,12 @@ class MaterialDownloader:
 
         return download_captions(video_id, languages=languages)
 
-    def extract_podcast(self, entry: dict) -> str | None:
-        """Extract podcast transcript via audio download + WhisperKit."""
+    def extract_podcast(self, entry: dict) -> tuple[str | None, dict | None]:
+        """Extract podcast transcript via audio download + WhisperKit/Groq.
+
+        Returns:
+            Tuple of (transcript_text, raw_whisper_data) or (None, None) if failed
+        """
         episode_id = entry.get("id")
 
         # Get audio URL from entry
@@ -226,7 +235,7 @@ class MaterialDownloader:
 
         if not audio_url:
             logger.warning(f"No audio URL found for podcast episode: {episode_id}")
-            return None
+            return None, None
 
         return download_and_transcribe(audio_url, episode_id)
 
@@ -287,6 +296,21 @@ downloaded_at: {downloaded_at}
         output_path = output_dir / f"{entry_id}.md"
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(markdown)
+
+    def save_raw_whisper(self, output_dir: Path, entry: dict, raw_data: dict):
+        """
+        Save raw whisper output as JSON file for podcasts.
+
+        Args:
+            output_dir: Directory to save to
+            entry: Entry metadata
+            raw_data: Raw whisper output dict with timestamps
+        """
+        entry_id = entry.get("id")
+        output_path = output_dir / f"{entry_id}.whisper.json"
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(raw_data, f, ensure_ascii=False, indent=2)
+        logger.info(f"Saved raw whisper JSON: {output_path.name}")
 
 
 def main():
