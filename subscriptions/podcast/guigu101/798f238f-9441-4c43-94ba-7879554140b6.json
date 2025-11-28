@@ -1,0 +1,27 @@
+{
+  "id": "798f238f-9441-4c43-94ba-7879554140b6",
+  "source_type": "podcast",
+  "title": "S3E93｜ChatGPT替代谷歌搜索？不，是降维打击｜AIGC特辑",
+  "link": "https://sv101.fireside.fm/97",
+  "published": "2022-12-16T00:45:00+00:00",
+  "author": "硅谷101",
+  "summary": "<p>最近关注AIGC领域的小伙伴，应该都注意到了OpenAI放出的新聊天机器人ChatGPT，它推出一周的时间，用户数就已经过百万了。这期我们就来聊聊ChatGPT。</p>\n\n<p>此外，《硅谷101》正在推出AIGC特辑，这是我们这个系列的第四期，对AIGC感兴趣的小伙伴欢迎持续关注。</p>\n\n<hr />\n\n<p>【主播】<br />\n泓君，资深媒体人<br />\n【嘉宾】<br />\n余家辉，AI研究员<br />\n陶芳波，心识宇宙MindVerse创始人</p>\n\n<p><strong>【你将听到】<br />\n【ChatGPT、GPT-3与Siri】</strong><br />\n01:52 ChatGPT的第一印象：做了十年AI仍觉得惊艳<br />\n05:16 回答中庸，刻意为之<br />\n06:34 相比于GPT-3的提高：反馈函数与人工标注<br />\n08:53 人工标注：真人写答案，喂给GPT或者判断答案<br />\n11:49 Chat-GPT与Siri语音助手的区别</p>\n\n<p><strong>【取代程序员？】</strong><br />\n15:08 ChatGPT与AlphaCode会不会取代程序员<br />\n17:49 公司正在把ChatGPT引入日常开发<br />\n19:54 代码版权问题： Stack Overflow禁掉ChatGPT<br />\n23:43 OpenAI新产品：可以反馈实时数据的Web GPT</p>\n\n<p><strong>【AI大模型的崛起】</strong><br />\n25:10 AI大模型浪潮为何崛起<br />\n27:33 类似于大脑的技术架构<br />\n29:52 &quot;大力出奇迹&quot;不完全适用，OpenAI的四大优势<br />\n35:15 不断尝试定义自己的问题，在认识上探索大模型的使用边界<br />\n36:46 大公司的Research Lab：Follow不难，而需要定义问题<br />\n39:32 长远看，ChatGPT会是谷歌的竞争对手吗<br />\n42:47 ChatBot能做的比现在远多的多，蕴含很多平台级的机会<br />\n45:19 下一代互联网的基础设施<br />\n47:50 关于GPT4的想象力</p>\n\n<p><strong>【全脑模型】</strong><br />\n51:20 以大模型能力为底座，Yann LeCun设计的全脑框架模型</p>\n\n<p><strong>【开源与商业模式】</strong><br />\n58:40 争议开源：OpenAI不Open<br />\n64:00 Stability开源对团队的机会与挑战<br />\n66:00  ChatGPT稀释Jasper.ai用户，但应用层仍有价值<br />\n71:40 大模型如何赚钱</p>\n\n<hr />\n\n<p><strong>【相关播客】</strong><br />\nS3E88 AIGC特辑｜赛跑开始：中国能长出自己的OpenAI吗？<br />\nS3E87 AIGC特辑｜一句话生成图片初体验，AI挑战艺术家谁会赢？<br />\nS3E91AIGC特辑｜与艺术家聊聊，AI绘画投入商用的两大障碍</p>\n\n<hr />\n\n<p>【后期】<br />\n大元<br />\n【BGM】<br />\nCheese and Crackers - Arthur Benson</p>\n\n<hr />\n\n<p>【硅谷101新节目】<br />\n《硅谷101》视频<br />\n跟播客比较起来，我们的视频内容更倾向于用精炼的语言，15分钟讲清楚一个复杂的科技事件。欢迎大家在Youtube上搜索《硅谷101》，中国听众可以在B站、微信视频号、微博上来订阅我们。<br />\n《Web3 101》<br />\n另外，《硅谷101》播客也正在分叉出一档探索Web3世界的节目《Web3 101》，这档节目会讲述Web3世界发生的大事件。中国听众可以在苹果播客和小宇宙上收听，美国听众可以在苹果播客、Spotify上收听。</p>\n\n<p>【在这里找到我们】<br />\n公众账号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜Google Podcast｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p><p>Special Guests: 余家辉 and 陶芳波.</p>",
+  "content": "<p>最近关注AIGC领域的小伙伴，应该都注意到了OpenAI放出的新聊天机器人ChatGPT，它推出一周的时间，用户数就已经过百万了。这期我们就来聊聊ChatGPT。</p>\n\n<p>此外，《硅谷101》正在推出AIGC特辑，这是我们这个系列的第四期，对AIGC感兴趣的小伙伴欢迎持续关注。</p>\n\n<hr />\n\n<p>【主播】<br />\n泓君，资深媒体人<br />\n【嘉宾】<br />\n余家辉，AI研究员<br />\n陶芳波，心识宇宙MindVerse创始人</p>\n\n<p><strong>【你将听到】<br />\n【ChatGPT、GPT-3与Siri】</strong><br />\n01:52 ChatGPT的第一印象：做了十年AI仍觉得惊艳<br />\n05:16 回答中庸，刻意为之<br />\n06:34 相比于GPT-3的提高：反馈函数与人工标注<br />\n08:53 人工标注：真人写答案，喂给GPT或者判断答案<br />\n11:49 Chat-GPT与Siri语音助手的区别</p>\n\n<p><strong>【取代程序员？】</strong><br />\n15:08 ChatGPT与AlphaCode会不会取代程序员<br />\n17:49 公司正在把ChatGPT引入日常开发<br />\n19:54 代码版权问题： Stack Overflow禁掉ChatGPT<br />\n23:43 OpenAI新产品：可以反馈实时数据的Web GPT</p>\n\n<p><strong>【AI大模型的崛起】</strong><br />\n25:10 AI大模型浪潮为何崛起<br />\n27:33 类似于大脑的技术架构<br />\n29:52 &quot;大力出奇迹&quot;不完全适用，OpenAI的四大优势<br />\n35:15 不断尝试定义自己的问题，在认识上探索大模型的使用边界<br />\n36:46 大公司的Research Lab：Follow不难，而需要定义问题<br />\n39:32 长远看，ChatGPT会是谷歌的竞争对手吗<br />\n42:47 ChatBot能做的比现在远多的多，蕴含很多平台级的机会<br />\n45:19 下一代互联网的基础设施<br />\n47:50 关于GPT4的想象力</p>\n\n<p><strong>【全脑模型】</strong><br />\n51:20 以大模型能力为底座，Yann LeCun设计的全脑框架模型</p>\n\n<p><strong>【开源与商业模式】</strong><br />\n58:40 争议开源：OpenAI不Open<br />\n64:00 Stability开源对团队的机会与挑战<br />\n66:00  ChatGPT稀释Jasper.ai用户，但应用层仍有价值<br />\n71:40 大模型如何赚钱</p>\n\n<hr />\n\n<p><strong>【相关播客】</strong><br />\nS3E88 AIGC特辑｜赛跑开始：中国能长出自己的OpenAI吗？<br />\nS3E87 AIGC特辑｜一句话生成图片初体验，AI挑战艺术家谁会赢？<br />\nS3E91AIGC特辑｜与艺术家聊聊，AI绘画投入商用的两大障碍</p>\n\n<hr />\n\n<p>【后期】<br />\n大元<br />\n【BGM】<br />\nCheese and Crackers - Arthur Benson</p>\n\n<hr />\n\n<p>【硅谷101新节目】<br />\n《硅谷101》视频<br />\n跟播客比较起来，我们的视频内容更倾向于用精炼的语言，15分钟讲清楚一个复杂的科技事件。欢迎大家在Youtube上搜索《硅谷101》，中国听众可以在B站、微信视频号、微博上来订阅我们。<br />\n《Web3 101》<br />\n另外，《硅谷101》播客也正在分叉出一档探索Web3世界的节目《Web3 101》，这档节目会讲述Web3世界发生的大事件。中国听众可以在苹果播客和小宇宙上收听，美国听众可以在苹果播客、Spotify上收听。</p>\n\n<p>【在这里找到我们】<br />\n公众账号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜Google Podcast｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p><p>Special Guests: 余家辉 and 陶芳波.</p>",
+  "enriched_via": "rss",
+  "audio": {
+    "url": "https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/798f238f-9441-4c43-94ba-7879554140b6.mp3",
+    "type": "audio/mpeg",
+    "length": "92345702"
+  },
+  "duration": "1:16:56",
+  "season_number": "3",
+  "image": "https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6",
+  "season": "3",
+  "tags": [
+    "余家辉",
+    "陶芳波",
+    "ChatGPT",
+    "OpenAI"
+  ],
+  "archived_at": "2025-11-28T19:22:20.581391+00:00"
+}
