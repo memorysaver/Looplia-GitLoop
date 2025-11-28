@@ -1,0 +1,26 @@
+{
+  "id": "b6893c09-f557-4e94-9adb-0a7083aa4e3c",
+  "source_type": "podcast",
+  "title": "E117｜对话贾扬清：大模型的开源之战与应用时代｜AIGC特辑",
+  "link": "https://sv101.fireside.fm/121",
+  "published": "2023-08-01T00:00:00+00:00",
+  "author": "硅谷101",
+  "summary": "<p>7月19日，Meta发布了免费可商用版的开源大模型Llama2。这次的Llama2除了性能得到了极大的提升外，Meta还开源了它的预训练数据，使得企业能够以更低廉的价格和简便的方式开发自己的大模型。图灵奖获得者 Yann LeCun在推特上表示Meta 此举可能将改变大模型行业的竞争格局。</p>\n\n<p>本期播客我们邀请到了Lepton.ai 的创始人贾扬清，一同来聊聊Llama2开源后对行业的影响、GPT-4的泄密，以及他为什么更看好应用的创业方向。</p>\n\n<hr />\n\n<p><strong>【主播】</strong><br />\n泓君，资深媒体人<br />\n<strong>【嘉宾】</strong><br />\n贾扬清，Lepton.ai 创始人</p>\n\n<p><em>贾扬清本科和研究生阶段就读于清华大学自动化专业，后赴加州大学伯克利分校攻读计算机科学博士。他在博士期间创立并开源了如今业内耳熟能详的深度学习框架Caffe，被微软、雅虎、英伟达、Adobe 等公司采用。2013年毕业后，他加入谷歌，是谷歌大脑 TensorFlow 的作者之一。2016年2月加盟Facebook，并开发出Caffe2Go、Caffe2、PyTorch等深度学习框架。2019 年 3 月正式加入阿里巴巴，担任阿里巴巴集团副总裁、阿里云智能计算平台事业部总裁。</em></p>\n\n<hr />\n\n<p><strong>【你将听到】<br />\nLlama2开源与开源精神</strong><br />\n01:58 Llama开源的影响：可以商用<br />\n03:47 闭源模型的两个挑战：应用场景不够和成本收益比<br />\n06:15 理解开源：互联网是基于开源去做的<br />\n08:30 《开源软件经济学》——Stack Overflow创始人经济学角度解释开源<br />\n12:32 长线看好：Meta become the cool kid again<br />\n15:11 再谈安全：开源公司并不能阻止邪恶版大模型<br />\n16:46 三个人做出举世瞩目的成绩，创新往往诞生于小的团队<br />\n19:17 “我的经历一直逆潮流而行”<br />\n20:29 AI应用领域的方向在哪里？<br />\n22:42 争议Jasper，理解用户的价值</p>\n\n<p><strong>GPT-4泄密与成本分析</strong><br />\n24:23 安全只是借口？OpenAI不开放的原因是可复制性与商业的选择<br />\n25:14 闭源模型没有护城河，只有6-12个月的领先优势<br />\n26:15 何谓AI顶级人才：对科研与用户的双敏锐度 <br />\n29:01 GPT-4泄密后观感：不再走单一模型路线，而是逐渐转为专业化模型<br />\n31:10 推理成本是训练成本的5-10倍<br />\n34:35 Lepton.ai创业方向：提升系统效率与帮助客户做AI<br />\n38:01 GPT-4、Llama2可能全都是过渡态？现有的大模型是否全部走错了方向<br />\n42:27 出圈新应用：妙鸭相机</p>\n\n<p><strong>关于创业</strong><br />\n45:36 走出舒适圈，创业的每天都不一样<br />\n47:28 准确性依然是难点，与Langchain的技术合作案例<br />\n52:37 找合伙人：热情比经验重要<br />\n56:10 硅谷最让人的兴奋的地方：一群聪明人在现有道路之外开辟的新路径</p>\n\n<hr />\n\n<p><strong>【后期】</strong><br />\nAMEI</p>\n\n<p><strong>【BGM】</strong><br />\nSimple Pleasantries - Arthur Benson<br />\nA Breeze - spring gang</p>\n\n<p><strong>【Shownotes】</strong><br />\n肖阳、泓君</p>\n\n<hr />\n\n<p><strong>【在这里找到我们】</strong><br />\n公众账号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜Google Podcast｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p><p>Special Guest: 贾扬清.</p>",
+  "content": "<p>7月19日，Meta发布了免费可商用版的开源大模型Llama2。这次的Llama2除了性能得到了极大的提升外，Meta还开源了它的预训练数据，使得企业能够以更低廉的价格和简便的方式开发自己的大模型。图灵奖获得者 Yann LeCun在推特上表示Meta 此举可能将改变大模型行业的竞争格局。</p>\n\n<p>本期播客我们邀请到了Lepton.ai 的创始人贾扬清，一同来聊聊Llama2开源后对行业的影响、GPT-4的泄密，以及他为什么更看好应用的创业方向。</p>\n\n<hr />\n\n<p><strong>【主播】</strong><br />\n泓君，资深媒体人<br />\n<strong>【嘉宾】</strong><br />\n贾扬清，Lepton.ai 创始人</p>\n\n<p><em>贾扬清本科和研究生阶段就读于清华大学自动化专业，后赴加州大学伯克利分校攻读计算机科学博士。他在博士期间创立并开源了如今业内耳熟能详的深度学习框架Caffe，被微软、雅虎、英伟达、Adobe 等公司采用。2013年毕业后，他加入谷歌，是谷歌大脑 TensorFlow 的作者之一。2016年2月加盟Facebook，并开发出Caffe2Go、Caffe2、PyTorch等深度学习框架。2019 年 3 月正式加入阿里巴巴，担任阿里巴巴集团副总裁、阿里云智能计算平台事业部总裁。</em></p>\n\n<hr />\n\n<p><strong>【你将听到】<br />\nLlama2开源与开源精神</strong><br />\n01:58 Llama开源的影响：可以商用<br />\n03:47 闭源模型的两个挑战：应用场景不够和成本收益比<br />\n06:15 理解开源：互联网是基于开源去做的<br />\n08:30 《开源软件经济学》——Stack Overflow创始人经济学角度解释开源<br />\n12:32 长线看好：Meta become the cool kid again<br />\n15:11 再谈安全：开源公司并不能阻止邪恶版大模型<br />\n16:46 三个人做出举世瞩目的成绩，创新往往诞生于小的团队<br />\n19:17 “我的经历一直逆潮流而行”<br />\n20:29 AI应用领域的方向在哪里？<br />\n22:42 争议Jasper，理解用户的价值</p>\n\n<p><strong>GPT-4泄密与成本分析</strong><br />\n24:23 安全只是借口？OpenAI不开放的原因是可复制性与商业的选择<br />\n25:14 闭源模型没有护城河，只有6-12个月的领先优势<br />\n26:15 何谓AI顶级人才：对科研与用户的双敏锐度 <br />\n29:01 GPT-4泄密后观感：不再走单一模型路线，而是逐渐转为专业化模型<br />\n31:10 推理成本是训练成本的5-10倍<br />\n34:35 Lepton.ai创业方向：提升系统效率与帮助客户做AI<br />\n38:01 GPT-4、Llama2可能全都是过渡态？现有的大模型是否全部走错了方向<br />\n42:27 出圈新应用：妙鸭相机</p>\n\n<p><strong>关于创业</strong><br />\n45:36 走出舒适圈，创业的每天都不一样<br />\n47:28 准确性依然是难点，与Langchain的技术合作案例<br />\n52:37 找合伙人：热情比经验重要<br />\n56:10 硅谷最让人的兴奋的地方：一群聪明人在现有道路之外开辟的新路径</p>\n\n<hr />\n\n<p><strong>【后期】</strong><br />\nAMEI</p>\n\n<p><strong>【BGM】</strong><br />\nSimple Pleasantries - Arthur Benson<br />\nA Breeze - spring gang</p>\n\n<p><strong>【Shownotes】</strong><br />\n肖阳、泓君</p>\n\n<hr />\n\n<p><strong>【在这里找到我们】</strong><br />\n公众账号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜Google Podcast｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p><p>Special Guest: 贾扬清.</p>",
+  "enriched_via": "rss",
+  "audio": {
+    "url": "https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/b6893c09-f557-4e94-9adb-0a7083aa4e3c.mp3",
+    "type": "audio/mpeg",
+    "length": "96809441"
+  },
+  "duration": "57:37",
+  "season_number": "4",
+  "image": "https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6",
+  "season": "4",
+  "tags": [
+    "贾扬清",
+    "Llama2",
+    "GPT-4泄密"
+  ],
+  "archived_at": "2025-11-28T17:22:41.626798+00:00"
+}
