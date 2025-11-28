@@ -119,18 +119,31 @@ def download_and_transcribe(
     parser = None
 
     if backend == "groq":
-        # Check file size - Groq has 100MB limit
+        # Check file size
         file_size = get_file_size(audio_url)
-        if file_size and file_size > 104857600:  # 100MB in bytes
-            logger.warning(
-                f"Audio file too large for Groq ({file_size / 1024 / 1024:.1f}MB > 100MB), "
-                f"falling back to WhisperKit for episode: {episode_id}"
-            )
-            # Fall back to WhisperKit
-            backend = "whisperkit"
-        else:
-            # Groq uses URL directly, no need to download
+
+        if not file_size or file_size < 104857600:  # < 100MB or unknown
+            # Use direct URL method (Groq downloads file)
             raw_output = transcribe_with_groq(audio_url, episode_id)
+            parser = parse_groq_output
+
+        else:  # >= 100MB - use chunking approach
+            logger.info(f"Large file detected ({file_size / 1024 / 1024:.1f}MB), using chunking")
+
+            # Download audio to cache
+            AUDIO_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+            audio_cache_path = get_cache_path(audio_url, episode_id)
+
+            if audio_cache_path.exists():
+                logger.info(f"Using cached audio for chunking: {episode_id}")
+                audio_path = audio_cache_path
+            else:
+                audio_path = download_audio(audio_url, audio_cache_path, episode_id)
+                if not audio_path:
+                    return None, None
+
+            # Chunk and transcribe
+            raw_output = transcribe_with_groq_chunked(audio_path, episode_id)
             parser = parse_groq_output
 
     # Use WhisperKit if requested or if Groq fallback was triggered
@@ -421,6 +434,232 @@ def parse_whisperkit_output(output: str) -> Optional[str]:
 
     transcript = "\n".join(lines)
     return transcript.strip() if transcript else None
+
+
+def chunk_audio(
+    audio_path: Path,
+    chunk_duration_ms: int = 600000,  # 10 minutes
+    overlap_ms: int = 10000,  # 10 seconds
+) -> list[Path]:
+    """
+    Split audio file into overlapping chunks using PyDub.
+
+    Args:
+        audio_path: Path to audio file
+        chunk_duration_ms: Chunk size in milliseconds (default: 10 min)
+        overlap_ms: Overlap size in milliseconds (default: 10 sec)
+
+    Returns:
+        List of paths to chunk files
+    """
+    from pydub import AudioSegment
+
+    logger.info(f"Chunking audio file: {audio_path.name} ({audio_path.stat().st_size / 1024 / 1024:.1f}MB)")
+
+    # Load audio (PyDub automatically uses FFmpeg)
+    audio = AudioSegment.from_file(str(audio_path))
+
+    chunks = []
+    start = 0
+    chunk_num = 0
+
+    while start < len(audio):
+        end = min(start + chunk_duration_ms, len(audio))
+        chunk = audio[start:end]
+
+        # Save chunk to temp file
+        chunk_path = audio_path.parent / f"{audio_path.stem}_chunk_{chunk_num}.mp3"
+        chunk.export(str(chunk_path), format="mp3")
+        chunks.append(chunk_path)
+
+        logger.info(f"Created chunk {chunk_num + 1}: {chunk_path.name}")
+
+        chunk_num += 1
+        start += chunk_duration_ms - overlap_ms  # Move forward with overlap
+
+    logger.info(f"Chunked into {len(chunks)} pieces")
+    return chunks
+
+
+def find_overlap(text1: str, text2: str, min_overlap: int = 20) -> int:
+    """
+    Find overlap between end of text1 and start of text2.
+
+    Uses sliding window with word-level matching.
+
+    Args:
+        text1: First text (merged so far)
+        text2: Second text (current chunk)
+        min_overlap: Minimum overlap length in characters
+
+    Returns:
+        Length of overlap in characters from start of text2
+    """
+    if not text1 or not text2:
+        return 0
+
+    # Extract last portion of text1 (search window)
+    window_size = 500  # Check last 500 chars
+    search_text = text1[-window_size:] if len(text1) > window_size else text1
+
+    # Split into words for matching
+    words1 = search_text.split()
+    words2 = text2.split()
+
+    if not words1 or not words2:
+        return 0
+
+    best_overlap = 0
+
+    # Try different overlap lengths
+    for overlap_words in range(min(len(words1), len(words2)), 0, -1):
+        # Check if last N words of text1 match first N words of text2
+        if words1[-overlap_words:] == words2[:overlap_words]:
+            # Calculate character length
+            best_overlap = len(" ".join(words2[:overlap_words]))
+            break
+
+    return best_overlap if best_overlap >= min_overlap else 0
+
+
+def merge_transcripts(transcript_chunks: list[dict]) -> str:
+    """
+    Merge overlapping transcript chunks using longest common sequence.
+
+    Based on Groq community article approach:
+    - Uses sliding window to find overlap between consecutive chunks
+    - Matches words/characters with weighted scoring
+    - Handles partial matches at chunk boundaries
+
+    Args:
+        transcript_chunks: List of transcript dicts with 'text' field
+
+    Returns:
+        Merged transcript text
+    """
+    if not transcript_chunks:
+        return ""
+
+    if len(transcript_chunks) == 1:
+        text = transcript_chunks[0].get("text", "")
+        logger.info("Single chunk, no merging needed")
+        return text
+
+    merged_text = transcript_chunks[0].get("text", "")
+    logger.info(f"Starting merge with first chunk: {len(merged_text)} chars")
+
+    for i in range(1, len(transcript_chunks)):
+        current_text = transcript_chunks[i].get("text", "")
+
+        # Find overlap using longest common sequence
+        overlap_len = find_overlap(merged_text, current_text)
+
+        if overlap_len > 0:
+            # Remove overlap from current chunk and append
+            merged_text += current_text[overlap_len:]
+            logger.info(f"Chunk {i}: Found overlap ({overlap_len} chars), merged to {len(merged_text)} total chars")
+        else:
+            # No overlap found, append with space
+            merged_text += " " + current_text
+            logger.info(f"Chunk {i}: No overlap detected, appended with space")
+
+    logger.info(f"Merge complete: {len(merged_text)} chars total")
+    return merged_text
+
+
+def transcribe_with_groq_chunked(
+    audio_path: Path,
+    episode_id: str,
+) -> Optional[str]:
+    """
+    Transcribe large audio file by chunking and merging.
+
+    Args:
+        audio_path: Path to downloaded audio file
+        episode_id: Episode ID for logging
+
+    Returns:
+        Merged transcript as JSON string or None
+    """
+    logger.info(f"Chunking and transcribing large file: {episode_id}")
+
+    try:
+        from groq import Groq
+    except ImportError:
+        logger.error("groq package not installed")
+        return None
+
+    api_key = os.environ.get("GROQ_API_KEY")
+    if not api_key:
+        logger.error("GROQ_API_KEY not set")
+        return None
+
+    # Create chunks (10-min with 10-sec overlap)
+    try:
+        chunk_paths = chunk_audio(audio_path)
+    except Exception as e:
+        logger.error(f"Failed to chunk audio for {episode_id}: {e}")
+        return None
+
+    if not chunk_paths:
+        logger.error(f"No chunks created for {episode_id}")
+        return None
+
+    logger.info(f"Created {len(chunk_paths)} chunks for {episode_id}")
+
+    # Transcribe each chunk
+    client = Groq(api_key=api_key)
+    transcripts = []
+
+    for i, chunk_path in enumerate(chunk_paths):
+        logger.info(f"Transcribing chunk {i + 1}/{len(chunk_paths)} for {episode_id}")
+
+        try:
+            with open(chunk_path, "rb") as audio_file:
+                transcription = client.audio.transcriptions.create(
+                    file=audio_file,
+                    model="whisper-large-v3-turbo",
+                    response_format="verbose_json",
+                    timestamp_granularities=["segment"],
+                )
+
+            if hasattr(transcription, "model_dump"):
+                transcripts.append(transcription.model_dump())
+            else:
+                transcripts.append({"text": transcription.text})
+
+            logger.info(f"Chunk {i + 1} transcribed: {len(transcripts[-1].get('text', ''))} chars")
+
+        except Exception as e:
+            logger.error(f"Failed to transcribe chunk {i} for {episode_id}: {e}")
+            # Clean up chunks and fail
+            for p in chunk_paths:
+                try:
+                    p.unlink(missing_ok=True)
+                except Exception as cleanup_error:
+                    logger.warning(f"Failed to clean up chunk {p}: {cleanup_error}")
+            return None
+        finally:
+            # Clean up chunk file
+            try:
+                chunk_path.unlink(missing_ok=True)
+            except Exception as cleanup_error:
+                logger.warning(f"Failed to clean up chunk {chunk_path}: {cleanup_error}")
+
+    # Merge transcripts
+    merged_text = merge_transcripts(transcripts)
+
+    # Create combined output matching Groq format
+    combined_output = {
+        "text": merged_text,
+        "chunks": len(chunk_paths),
+        "duration": sum(t.get("duration", 0) for t in transcripts),
+        "segments": [],  # Could combine segments if needed
+    }
+
+    logger.info(f"Merged {len(chunk_paths)} chunks for {episode_id}")
+
+    return json.dumps(combined_output, ensure_ascii=False, indent=2)
 
 
 def clear_audio_cache():

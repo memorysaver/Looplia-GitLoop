@@ -22,7 +22,12 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Install dependencies
+      - name: Install system dependencies
+        run: |
+          # Install FFmpeg for audio chunking
+          brew install ffmpeg
+
+      - name: Install Python dependencies
         run: pip3 install -r scripts/requirements.txt
 
       - name: Download Podcast Transcripts
