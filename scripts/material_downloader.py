@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from article_material import extract_article
-from podcast_material import download_and_transcribe
+from podcast_material import download_and_transcribe, get_transcript_cache_path, parse_groq_output, parse_whisperkit_output
 from utils import get_logger, load_json
 from youtube_material import download_captions
 
@@ -102,7 +102,10 @@ class MaterialDownloader:
 
     def process_source(self, source_type: str, source_key: str) -> int:
         """
-        Process a single source.
+        Process a single source with cache-first logic for podcasts.
+
+        For podcasts: Check transcript cache FIRST (source of truth), then git files (derived output)
+        For other types: Use standard processing
 
         Args:
             source_type: Type of source
@@ -123,9 +126,6 @@ class MaterialDownloader:
         if not index:
             return 0
 
-        # Get already processed IDs
-        processed_ids = self.get_processed_ids(source_type, source_key)
-
         # Create output directory
         output_dir = self.materials_dir / source_type / source_key
         output_dir.mkdir(parents=True, exist_ok=True)
@@ -134,8 +134,7 @@ class MaterialDownloader:
 
         for entry_info in index.get("entries", []):
             entry_id = entry_info.get("id")
-
-            if not entry_id or entry_id in processed_ids:
+            if not entry_id:
                 continue
 
             # Load full entry data
@@ -149,7 +148,78 @@ class MaterialDownloader:
             if not entry:
                 continue
 
-            # Download/extract content based on type
+            # ════════════════════════════════════════════════════════════
+            # CACHE-FIRST LOGIC FOR PODCASTS
+            # ════════════════════════════════════════════════════════════
+            if source_type == "podcast":
+                # Get audio URL (needed for cache path calculation)
+                audio_url = None
+                if entry.get("audio_url"):
+                    audio_url = entry["audio_url"]
+                elif entry.get("audio") and isinstance(entry["audio"], dict):
+                    audio_url = entry["audio"].get("url")
+
+                if not audio_url:
+                    logger.warning(f"No audio URL for episode: {entry_id}")
+                    continue
+
+                # ═══════════════════════════════════════════════════════════
+                # STEP 1: Check Transcript Cache (SOURCE OF TRUTH)
+                # ═══════════════════════════════════════════════════════════
+                transcript_cache_path = get_transcript_cache_path(audio_url, entry_id)
+
+                if transcript_cache_path.exists():
+                    logger.info(f"Using cached transcript for: {entry_id}")
+                    try:
+                        # Load cached transcript data
+                        cached_data = json.loads(transcript_cache_path.read_text())
+                        raw_output = cached_data.get("raw_output", "")
+                        backend = cached_data.get("backend", "groq")
+
+                        # Parse transcript based on backend
+                        if backend == "groq":
+                            content = parse_groq_output(raw_output)
+                            raw_dict = json.loads(raw_output) if raw_output else None
+                        else:
+                            content = parse_whisperkit_output(raw_output)
+                            raw_dict = {"text": raw_output, "backend": "whisperkit"}
+
+                        # Regenerate files if missing (ALWAYS from cache)
+                        md_path = output_dir / f"{entry_id}.md"
+                        whisper_path = output_dir / f"{entry_id}.whisper.json"
+
+                        if not md_path.exists() and content:
+                            self.save_markdown(output_dir, entry, content, source_type, source_key)
+                            logger.info(f"Regenerated .md from cache: {entry_id}")
+
+                        if not whisper_path.exists() and raw_dict:
+                            self.save_raw_whisper(output_dir, entry, raw_dict)
+                            logger.info(f"Regenerated .whisper.json from cache: {entry_id}")
+
+                        # Mark as processed
+                        self._mark_as_processed(source_type, source_key, entry_id)
+                        processed += 1
+                        continue  # ← SKIP TRANSCRIPTION (already have it!)
+
+                    except Exception as e:
+                        logger.warning(f"Invalid cache for {entry_id}, will re-transcribe: {e}")
+                        # Fall through to next check
+
+                # ═══════════════════════════════════════════════════════════
+                # STEP 2: Check Git Files (DERIVED OUTPUT)
+                # ═══════════════════════════════════════════════════════════
+                md_path = output_dir / f"{entry_id}.md"
+                if md_path.exists():
+                    logger.info(f"Markdown exists, skipping: {entry_id}")
+                    self._mark_as_processed(source_type, source_key, entry_id)
+                    continue  # Assume already processed
+
+                # ═══════════════════════════════════════════════════════════
+                # STEP 3: Need Transcription (EXPENSIVE)
+                # ═══════════════════════════════════════════════════════════
+                logger.info(f"Transcribing (no cache found): {entry_id}")
+
+            # For non-podcasts or STEP 3 transcription: use standard extraction
             content, raw_data = self.extract_content(source_type, entry)
 
             if content:

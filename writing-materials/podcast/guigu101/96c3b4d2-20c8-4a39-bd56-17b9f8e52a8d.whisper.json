@@ -1,0 +1,12 @@
+{
+  "text": "This is a cached transcript for testing the cache-first logic. It should be regenerated as markdown when the downloader runs.",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.0,
+      "end": 10.5,
+      "text": "This is a cached transcript for testing the cache-first logic."
+    }
+  ]
+}
