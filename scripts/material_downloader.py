@@ -15,6 +15,7 @@ from article_material import extract_article
 from podcast_material import download_and_transcribe, get_transcript_cache_path, parse_groq_output
 from core.utils import get_logger, load_json
 from youtube_material import download_captions
+from typing import Optional
 
 logger = get_logger(__name__)
 
@@ -27,6 +28,22 @@ CONFIG_DIR = BASE_DIR / "config"
 # Persistent cache for tracking processed items (survives failed runs)
 CACHE_DIR = Path.home() / ".cache" / "looplia-gitloop"
 PROCESSED_CACHE_FILE = CACHE_DIR / "processed_materials.json"
+
+
+def parse_whisperkit_output(output: str) -> Optional[str]:
+    """Parse WhisperKit output to extract transcript text.
+
+    WhisperKit returns plain text transcripts without JSON wrapper.
+
+    Args:
+        output: Raw WhisperKit output string
+
+    Returns:
+        Cleaned transcript text or None if output is empty
+    """
+    if not output:
+        return None
+    return output.strip()
 
 
 class MaterialDownloader:
