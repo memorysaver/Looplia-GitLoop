@@ -115,11 +115,26 @@ def download_and_transcribe(
             logger.warning(f"Invalid transcript cache for {episode_id}, re-transcribing: {e}")
 
     # Transcribe based on backend
+    raw_output = None
+    parser = None
+
     if backend == "groq":
-        # Groq uses URL directly, no need to download
-        raw_output = transcribe_with_groq(audio_url, episode_id)
-        parser = parse_groq_output
-    else:
+        # Check file size - Groq has 100MB limit
+        file_size = get_file_size(audio_url)
+        if file_size and file_size > 104857600:  # 100MB in bytes
+            logger.warning(
+                f"Audio file too large for Groq ({file_size / 1024 / 1024:.1f}MB > 100MB), "
+                f"falling back to WhisperKit for episode: {episode_id}"
+            )
+            # Fall back to WhisperKit
+            backend = "whisperkit"
+        else:
+            # Groq uses URL directly, no need to download
+            raw_output = transcribe_with_groq(audio_url, episode_id)
+            parser = parse_groq_output
+
+    # Use WhisperKit if requested or if Groq fallback was triggered
+    if backend == "whisperkit":
         # WhisperKit needs local file
         AUDIO_CACHE_DIR.mkdir(parents=True, exist_ok=True)
         audio_cache_path = get_cache_path(audio_url, episode_id)
@@ -247,6 +262,26 @@ def transcribe_with_whisperkit_raw(audio_path: Path, episode_id: str) -> Optiona
     except Exception as e:
         logger.error(f"Error transcribing {episode_id}: {e}")
         return None
+
+
+def get_file_size(url: str) -> Optional[int]:
+    """
+    Get file size from URL via HEAD request.
+
+    Args:
+        url: URL to check
+
+    Returns:
+        File size in bytes or None if unable to determine
+    """
+    try:
+        response = requests.head(url, allow_redirects=True, timeout=30)
+        size = response.headers.get("content-length")
+        if size:
+            return int(size)
+    except Exception as e:
+        logger.warning(f"Failed to get file size for {url}: {e}")
+    return None
 
 
 def resolve_redirect_url(url: str) -> str:
