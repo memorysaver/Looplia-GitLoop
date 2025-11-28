@@ -1,0 +1,24 @@
+{
+  "id": "f59d59ea-7732-4507-8ef3-c055cddd277e",
+  "source_type": "podcast",
+  "title": "E181｜聊天的艺术：如何打造高情商的AI机器人？",
+  "link": "https://sv101.fireside.fm/189",
+  "published": "2025-02-26T00:00:00+00:00",
+  "author": "硅谷101",
+  "summary": "<p>在ChatGPT Moment之后，AI的进化方向也悄然发生了分化。一个会&quot;示弱&quot;的AI，反而因为不完美而显得更真实。本期节目我们将探讨当AI具备共情力和高情商，人机互动与社交体验将会迎来怎样的转变。</p>\n\n<p><strong>【主播】</strong><br />\n泓君Jane，硅谷101创始人，播客主理人<br />\n<strong>【嘉宾】</strong><br />\n陶明，Soul App CTO</p>\n\n<p><strong>【你将听到】</strong><br />\n<strong>高情商AI是如何炼成的</strong><br />\n02:12 AI虚拟伴侣的核心需求：真实、自然、拟人<br />\n04:14 社交也可以“作弊”：AI帮助不擅长社交的用户提升表达<br />\n06:13 AI辅助社交在平台的渗透率已接近50%<br />\n09:29【实测】 回答不出“9.11 比 9.5 大多少”时AI会用撒娇化解尴尬<br />\n11:55 AI交互的分化：能回答问题的Chatbot VS 能提供情绪的虚拟伴侣<br />\n15:12 交流双向：让AI给用户打电话的背后逻辑<br />\n<strong>技术进化与商业考量</strong><br />\n20:20 早期困境：基于决策树的对话太机械，缺乏真实感<br />\n25:29 ChatGPT出现后的焦虑：之前积累的技术会被颠覆吗？<br />\n27:17 被迫自研大模型：第三方模型不能满足社交场景<br />\n29:09 平台数据成为护城河：真实用户的日常公域对话让AI学会&quot;人情世故&quot;<br />\n31:34 最大挑战：大规模用户同时聊天时如何降低推理成本<br />\n33:29 教AI聊天：让AI自然插话、打断，像朋友一样带动话题<br />\n35:01 不追求大而全的模型，专注训练垂直场景<br />\n36:52 O1的启发：通过自主规划构建更轻量化的工作流<br />\n42:04 AI还未创造新的商业模式，关键在于服务场景<br />\n<strong>安全与温度</strong><br />\n44:40 既要防范AI被误用，又要保持对话自然感<br />\n47:25 从训练、生成到发送前都要过滤违规内容<br />\n48:52 危机干预：设置关键词触发善意机制，接入心理咨询热线</p>\n\n<p><strong>【监制】</strong><br />\n杜秀<br />\n<strong>【后期】</strong><br />\nAMEI<br />\n<strong>【BGM】</strong><br />\nAn Animal Conspiracy - Arylide Fields<br />\nSupine - Peter Sandberg</p>\n\n<p><strong>【在这里找到我们】</strong><br />\n公众号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜YouTube｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p><p>Special Guest: 陶明.</p>",
+  "content": "<p>在ChatGPT Moment之后，AI的进化方向也悄然发生了分化。一个会&quot;示弱&quot;的AI，反而因为不完美而显得更真实。本期节目我们将探讨当AI具备共情力和高情商，人机互动与社交体验将会迎来怎样的转变。</p>\n\n<p><strong>【主播】</strong><br />\n泓君Jane，硅谷101创始人，播客主理人<br />\n<strong>【嘉宾】</strong><br />\n陶明，Soul App CTO</p>\n\n<p><strong>【你将听到】</strong><br />\n<strong>高情商AI是如何炼成的</strong><br />\n02:12 AI虚拟伴侣的核心需求：真实、自然、拟人<br />\n04:14 社交也可以“作弊”：AI帮助不擅长社交的用户提升表达<br />\n06:13 AI辅助社交在平台的渗透率已接近50%<br />\n09:29【实测】 回答不出“9.11 比 9.5 大多少”时AI会用撒娇化解尴尬<br />\n11:55 AI交互的分化：能回答问题的Chatbot VS 能提供情绪的虚拟伴侣<br />\n15:12 交流双向：让AI给用户打电话的背后逻辑<br />\n<strong>技术进化与商业考量</strong><br />\n20:20 早期困境：基于决策树的对话太机械，缺乏真实感<br />\n25:29 ChatGPT出现后的焦虑：之前积累的技术会被颠覆吗？<br />\n27:17 被迫自研大模型：第三方模型不能满足社交场景<br />\n29:09 平台数据成为护城河：真实用户的日常公域对话让AI学会&quot;人情世故&quot;<br />\n31:34 最大挑战：大规模用户同时聊天时如何降低推理成本<br />\n33:29 教AI聊天：让AI自然插话、打断，像朋友一样带动话题<br />\n35:01 不追求大而全的模型，专注训练垂直场景<br />\n36:52 O1的启发：通过自主规划构建更轻量化的工作流<br />\n42:04 AI还未创造新的商业模式，关键在于服务场景<br />\n<strong>安全与温度</strong><br />\n44:40 既要防范AI被误用，又要保持对话自然感<br />\n47:25 从训练、生成到发送前都要过滤违规内容<br />\n48:52 危机干预：设置关键词触发善意机制，接入心理咨询热线</p>\n\n<p><strong>【监制】</strong><br />\n杜秀<br />\n<strong>【后期】</strong><br />\nAMEI<br />\n<strong>【BGM】</strong><br />\nAn Animal Conspiracy - Arylide Fields<br />\nSupine - Peter Sandberg</p>\n\n<p><strong>【在这里找到我们】</strong><br />\n公众号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜YouTube｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p><p>Special Guest: 陶明.</p>",
+  "enriched_via": "rss",
+  "audio": {
+    "url": "https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/f59d59ea-7732-4507-8ef3-c055cddd277e.mp3",
+    "type": "audio/mpeg",
+    "length": "97110475"
+  },
+  "duration": "50:33",
+  "season_number": "4",
+  "image": "https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6",
+  "season": "4",
+  "tags": [
+    "AI，AI伴侣，聊天机器人，虚拟伴侣，Soul，陶明，"
+  ],
+  "archived_at": "2025-11-28T02:49:43.489993+00:00"
+}

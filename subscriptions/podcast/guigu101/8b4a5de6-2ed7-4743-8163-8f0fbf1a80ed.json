@@ -1,0 +1,28 @@
+{
+  "id": "8b4a5de6-2ed7-4743-8163-8f0fbf1a80ed",
+  "source_type": "podcast",
+  "title": "E185｜无共识的量子竞赛：群雄逐鹿与争议中的微软",
+  "link": "https://sv101.fireside.fm/194",
+  "published": "2025-03-25T23:00:00+00:00",
+  "author": "硅谷101",
+  "summary": "<p>“如果宇宙是一台量子计算机，我们正在试图破解它的管理员密码。” </p>\n\n<p>在刚刚过去的GTC大会上，英伟达创始人黄仁勋邀请了14家顶级量子计算企业。市场却发现这14家量子计算公司相互之间几乎完全不兼容，这个现象是量子计算届最大的问题，也是为何量子日之后量子计算的股票持续走低的原因。</p>\n\n<p>之前的播客中我们已经着重聊过了超导量子计算的路径，本期播客我们将更加系统地对量子计算行业做一个梳理，盘点量子计算行业的五种主流的技术路径与代表公司，以及量子计算与AI之间如何互相影响，看看我们离拿到打开宇宙的钥匙还有多远。</p>\n\n<p><strong>【主播】</strong><br />\n泓君Jane，硅谷101创始人，播客主理人<br />\n<strong>【嘉宾】</strong><br />\n尤亦庄，加州大学圣地亚哥分校物理系副教授<br />\n侯万达，加州大学圣地亚哥分校物理学博士生</p>\n\n<p><strong>【你将听到】</strong><br />\n<strong>微软亚马逊芯片解读</strong><br />\n04:48 微软量子计算方案及争议：类似于咖啡涡旋的拓扑结构<br />\n10:23 假信号、撤稿？微软争议点：只在理论中存在，实验数据解读成疑<br />\n14:08 亚马逊：用猫态来增加量子比特的稳定性</p>\n\n<p><strong>五种主流路径及优缺点</strong><br />\n17:21 中性原子量子比特： Atom Computing、Pasqal、QuEra<br />\n19:56 评价量子比特线路优越性：多快好省<br />\n21:29 离子阱量子比特： IonQ、Quantinuum<br />\n26:00 光子量子计算： Xanadu、PsiQuantum<br />\n31:06 拓扑量子计算（马约拉纳）：微软<br />\n33:05 超导量子比特：IBM、谷歌、亚马逊（部分）、Rigetti<br />\n39:12 自旋量子比特、硅基量子比特：Intel、IQM<br />\n40:17 量子计算vs经典计算：随机数生成是所有生成模型的基础</p>\n\n<p><strong>AI与量子计算</strong><br />\n45:28 AI对量子计算的作用：量子编译、量子纠错、数字孪生模拟器、自然语言量子编程<br />\n51:51 人脑内的“量子纠缠”：量子神经网络记忆功能远超经典计算机</p>\n\n<p><strong>应用</strong><br />\n59:10 量子化学与新药研究<br />\n60:54 QuEra展示出优化金融的组合投资<br />\n61:45 虫洞与宇宙的秘密：用量子纠缠实现瞬间转移<br />\n66:12 改变时空结构：引力的实质是大规模的量子纠缠<br />\n67:50 宇宙本身就是一台量子计算机<br />\n69:06 从百科全书到物理学之路<br />\n72:06 量子计算的发展不是渐进式的，是突飞猛进的</p>\n\n<p><strong>【相关播客】</strong><br />\n<a href=\"https://sv101.fireside.fm/187\" rel=\"nofollow\">E180｜量子计算的Transformer时刻与科技巨头的路径之争</a></p>\n\n<p><strong>【硅谷101招聘】</strong><br />\n《硅谷101》在持续招人，欢迎更多的内容人才加入我们，我们招聘播客运营、主播；视频主持人、后期、特效，以及实习生人才发展计划，诸多职位开放中，招满即止。<br />\n详细招聘信息请点击<a href=\"https://the-valley101.feishu.cn/docx/XQr6dHWIboQB0YxSHgUcjwehnId?from=from_copylink\" rel=\"nofollow\">这里 </a><br />\n职位申请请进<a href=\"https://the-valley101.feishu.cn/share/base/form/shrcnbXYmTG1j4kQYW52CF91IGd\" rel=\"nofollow\">这里</a><br />\n如果部分渠道超链接无法打开，请直接将你的简历与代表作品发送至<a href=\"mailto:hr@sv101.net\" rel=\"nofollow\">hr@sv101.net</a>。</p>\n\n<p><strong>【后期】</strong><br />\nAMEI<br />\n<strong>【BGM】</strong><br />\nSwerve Space - Lama House<br />\nEstimations - Christoffer Moe Ditlevsen<br />\nAnticipating a New Day - Stationary Sign<br />\nClockmaker's Daydream - 369</p>\n\n<p><strong>【在这里找到我们】</strong><br />\n公众号：硅谷101<br />\n收听渠道：Apple Podcast｜Spotify｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐<br />\n其他平台：YouTube｜Bilibili（搜索——硅谷101播客）<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p><p>Special Guests: 侯万达 and 尤亦庄.</p>",
+  "content": "<p>“如果宇宙是一台量子计算机，我们正在试图破解它的管理员密码。” </p>\n\n<p>在刚刚过去的GTC大会上，英伟达创始人黄仁勋邀请了14家顶级量子计算企业。市场却发现这14家量子计算公司相互之间几乎完全不兼容，这个现象是量子计算届最大的问题，也是为何量子日之后量子计算的股票持续走低的原因。</p>\n\n<p>之前的播客中我们已经着重聊过了超导量子计算的路径，本期播客我们将更加系统地对量子计算行业做一个梳理，盘点量子计算行业的五种主流的技术路径与代表公司，以及量子计算与AI之间如何互相影响，看看我们离拿到打开宇宙的钥匙还有多远。</p>\n\n<p><strong>【主播】</strong><br />\n泓君Jane，硅谷101创始人，播客主理人<br />\n<strong>【嘉宾】</strong><br />\n尤亦庄，加州大学圣地亚哥分校物理系副教授<br />\n侯万达，加州大学圣地亚哥分校物理学博士生</p>\n\n<p><strong>【你将听到】</strong><br />\n<strong>微软亚马逊芯片解读</strong><br />\n04:48 微软量子计算方案及争议：类似于咖啡涡旋的拓扑结构<br />\n10:23 假信号、撤稿？微软争议点：只在理论中存在，实验数据解读成疑<br />\n14:08 亚马逊：用猫态来增加量子比特的稳定性</p>\n\n<p><strong>五种主流路径及优缺点</strong><br />\n17:21 中性原子量子比特： Atom Computing、Pasqal、QuEra<br />\n19:56 评价量子比特线路优越性：多快好省<br />\n21:29 离子阱量子比特： IonQ、Quantinuum<br />\n26:00 光子量子计算： Xanadu、PsiQuantum<br />\n31:06 拓扑量子计算（马约拉纳）：微软<br />\n33:05 超导量子比特：IBM、谷歌、亚马逊（部分）、Rigetti<br />\n39:12 自旋量子比特、硅基量子比特：Intel、IQM<br />\n40:17 量子计算vs经典计算：随机数生成是所有生成模型的基础</p>\n\n<p><strong>AI与量子计算</strong><br />\n45:28 AI对量子计算的作用：量子编译、量子纠错、数字孪生模拟器、自然语言量子编程<br />\n51:51 人脑内的“量子纠缠”：量子神经网络记忆功能远超经典计算机</p>\n\n<p><strong>应用</strong><br />\n59:10 量子化学与新药研究<br />\n60:54 QuEra展示出优化金融的组合投资<br />\n61:45 虫洞与宇宙的秘密：用量子纠缠实现瞬间转移<br />\n66:12 改变时空结构：引力的实质是大规模的量子纠缠<br />\n67:50 宇宙本身就是一台量子计算机<br />\n69:06 从百科全书到物理学之路<br />\n72:06 量子计算的发展不是渐进式的，是突飞猛进的</p>\n\n<p><strong>【相关播客】</strong><br />\n<a href=\"https://sv101.fireside.fm/187\" rel=\"nofollow\">E180｜量子计算的Transformer时刻与科技巨头的路径之争</a></p>\n\n<p><strong>【硅谷101招聘】</strong><br />\n《硅谷101》在持续招人，欢迎更多的内容人才加入我们，我们招聘播客运营、主播；视频主持人、后期、特效，以及实习生人才发展计划，诸多职位开放中，招满即止。<br />\n详细招聘信息请点击<a href=\"https://the-valley101.feishu.cn/docx/XQr6dHWIboQB0YxSHgUcjwehnId?from=from_copylink\" rel=\"nofollow\">这里 </a><br />\n职位申请请进<a href=\"https://the-valley101.feishu.cn/share/base/form/shrcnbXYmTG1j4kQYW52CF91IGd\" rel=\"nofollow\">这里</a><br />\n如果部分渠道超链接无法打开，请直接将你的简历与代表作品发送至<a href=\"mailto:hr@sv101.net\" rel=\"nofollow\">hr@sv101.net</a>。</p>\n\n<p><strong>【后期】</strong><br />\nAMEI<br />\n<strong>【BGM】</strong><br />\nSwerve Space - Lama House<br />\nEstimations - Christoffer Moe Ditlevsen<br />\nAnticipating a New Day - Stationary Sign<br />\nClockmaker's Daydream - 369</p>\n\n<p><strong>【在这里找到我们】</strong><br />\n公众号：硅谷101<br />\n收听渠道：Apple Podcast｜Spotify｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐<br />\n其他平台：YouTube｜Bilibili（搜索——硅谷101播客）<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p><p>Special Guests: 侯万达 and 尤亦庄.</p>",
+  "enriched_via": "rss",
+  "audio": {
+    "url": "https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/8b4a5de6-2ed7-4743-8163-8f0fbf1a80ed.mp3",
+    "type": "audio/mpeg",
+    "length": "110986499"
+  },
+  "duration": "1:17:04",
+  "season_number": "4",
+  "image": "https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6",
+  "season": "4",
+  "tags": [
+    "量子计算",
+    "黄仁勋",
+    "量子计算机",
+    "英伟达",
+    "GTC"
+  ],
+  "archived_at": "2025-11-28T02:49:38.419998+00:00"
+}
