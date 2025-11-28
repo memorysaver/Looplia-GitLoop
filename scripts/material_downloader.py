@@ -22,6 +22,7 @@ logger = get_logger(__name__)
 BASE_DIR = Path(__file__).parent.parent
 SUBSCRIPTIONS_DIR = BASE_DIR / "subscriptions"
 MATERIALS_DIR = BASE_DIR / "writing-materials"
+CONFIG_DIR = BASE_DIR / "config"
 
 # Persistent cache for tracking processed items (survives failed runs)
 CACHE_DIR = Path.home() / ".cache" / "looplia-gitloop"
@@ -34,6 +35,7 @@ class MaterialDownloader:
     def __init__(self):
         self.subscriptions_dir = SUBSCRIPTIONS_DIR
         self.materials_dir = MATERIALS_DIR
+        self.config_dir = CONFIG_DIR
         self.processed_cache = self._load_processed_cache()
 
     def _load_processed_cache(self) -> dict:
@@ -68,6 +70,27 @@ class MaterialDownloader:
         """Check if an item has already been processed."""
         cache_key = f"{source_type}/{source_key}"
         return entry_id in self.processed_cache.get(cache_key, [])
+
+    def _get_max_entries_per_run(self, source_type: str, source_key: str) -> int:
+        """Get max_entries_per_run setting from source configuration.
+
+        Returns default of unlimited (returns a large number) if not configured.
+        """
+        config_path = self.config_dir / source_type / "sources.json"
+        if not config_path.exists():
+            return 999999  # No limit if config not found
+
+        config = load_json(config_path)
+        if not config:
+            return 999999
+
+        # Find the source config for this source_key
+        for source in config.get("sources", []):
+            if source.get("key") == source_key:
+                # Get max_entries_per_run from options, default to no limit
+                return source.get("options", {}).get("max_entries_per_run", 999999)
+
+        return 999999
 
     def process_all(self, source_type: str = None, source_key: str = None):
         """
@@ -130,9 +153,15 @@ class MaterialDownloader:
         output_dir = self.materials_dir / source_type / source_key
         output_dir.mkdir(parents=True, exist_ok=True)
 
+        # Get max_entries_per_run threshold from source config
+        max_entries = self._get_max_entries_per_run(source_type, source_key)
+        entries_to_process = index.get("entries", [])[:max_entries]
+        if len(entries_to_process) < len(index.get("entries", [])):
+            logger.info(f"Limiting {source_type}/{source_key} to {max_entries} entries (found {len(index.get('entries', []))})")
+
         processed = 0
 
-        for entry_info in index.get("entries", []):
+        for entry_info in entries_to_process:
             entry_id = entry_info.get("id")
             if not entry_id:
                 continue
