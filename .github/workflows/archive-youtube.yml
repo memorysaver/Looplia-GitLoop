@@ -20,7 +20,6 @@ permissions:
 
 jobs:
   archive-youtube:
-    if: false  # Disabled during migration - enable after validation
     runs-on: self-hosted
 
     steps:
