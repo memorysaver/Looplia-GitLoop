@@ -5,7 +5,7 @@ source_key: anthropic-ai
 title: "Claude Agent Skills Explained"
 url: https://www.youtube.com/watch?v=fOxC44g8vig
 published: 20251126
-downloaded_at: 2025-11-28T16:52:00.226052+00:00
+downloaded_at: 2025-11-28T17:03:11.200957+00:00
 ---
 
 # Claude Agent Skills Explained

@@ -5,7 +5,7 @@ source_key: anthropic-ai
 title: "What is Al \"reward hacking\"—and why do we worry about it?"
 url: https://www.youtube.com/watch?v=lvMMZLYoDr4
 published: 20251121
-downloaded_at: 2025-11-28T16:52:19.938417+00:00
+downloaded_at: 2025-11-28T17:03:31.176911+00:00
 ---
 
 # What is Al "reward hacking"—and why do we worry about it?

@@ -5,7 +5,7 @@ source_key: anthropic-ai
 title: "Generating real-time credit intelligence with Claude"
 url: https://www.youtube.com/watch?v=Y6wiWlcH5jM
 published: 20251114
-downloaded_at: 2025-11-28T16:52:37.606743+00:00
+downloaded_at: 2025-11-28T17:03:48.834706+00:00
 ---
 
 # Generating real-time credit intelligence with Claude

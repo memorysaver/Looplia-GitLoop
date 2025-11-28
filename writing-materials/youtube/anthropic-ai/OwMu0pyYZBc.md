@@ -5,7 +5,7 @@ source_key: anthropic-ai
 title: "Claude Code modernizes a legacy COBOL codebase"
 url: https://www.youtube.com/watch?v=OwMu0pyYZBc
 published: 20251114
-downloaded_at: 2025-11-28T16:52:31.265741+00:00
+downloaded_at: 2025-11-28T17:03:42.897999+00:00
 ---
 
 # Claude Code modernizes a legacy COBOL codebase

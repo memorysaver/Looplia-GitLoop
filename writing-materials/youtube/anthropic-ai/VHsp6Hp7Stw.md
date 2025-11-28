@@ -5,7 +5,7 @@ source_key: anthropic-ai
 title: "Turning Claude into your thinking partner"
 url: https://www.youtube.com/watch?v=VHsp6Hp7Stw
 published: 20251120
-downloaded_at: 2025-11-28T16:52:25.201026+00:00
+downloaded_at: 2025-11-28T17:03:36.486172+00:00
 ---
 
 # Turning Claude into your thinking partner

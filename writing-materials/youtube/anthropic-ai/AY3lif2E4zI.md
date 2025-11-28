@@ -5,7 +5,7 @@ source_key: anthropic-ai
 title: "Accelerating private equity deal flows with Claude"
 url: https://www.youtube.com/watch?v=AY3lif2E4zI
 published: 20251114
-downloaded_at: 2025-11-28T16:52:43.981217+00:00
+downloaded_at: 2025-11-28T17:03:54.785298+00:00
 ---
 
 # Accelerating private equity deal flows with Claude

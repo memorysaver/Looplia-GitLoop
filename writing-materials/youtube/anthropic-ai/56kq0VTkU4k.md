@@ -5,7 +5,7 @@ source_key: anthropic-ai
 title: "Introducing Claude Opus 4.5"
 url: https://www.youtube.com/watch?v=56kq0VTkU4k
 published: 20251124
-downloaded_at: 2025-11-28T16:52:11.072573+00:00
+downloaded_at: 2025-11-28T17:03:22.312183+00:00
 ---
 
 # Introducing Claude Opus 4.5
