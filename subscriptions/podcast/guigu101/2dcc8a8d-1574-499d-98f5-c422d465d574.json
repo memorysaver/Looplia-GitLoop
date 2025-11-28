@@ -1,0 +1,27 @@
+{
+  "id": "2dcc8a8d-1574-499d-98f5-c422d465d574",
+  "source_type": "podcast",
+  "title": "E104 | 新玩法新格局，ChatGPT如何改变游戏行业？| AIGC特辑",
+  "link": "https://sv101.fireside.fm/108",
+  "published": "2023-03-21T13:30:00+00:00",
+  "author": "硅谷101",
+  "summary": "<p>游戏的本质是好玩，当生成式AI这种新技术到来时，它正在从各个方向去改变游戏的玩法。这可能是一次角色扮演的对话，也可能是两把不同的道具，还有可能是让虚拟引擎5的脚本可以自动化渲染。</p>\n\n<p>用新科技做出来的游戏，不管在玩法还是交互上，都与以往的游戏不同，类似于《西部世界》这样的游戏也不再只是科幻。就像当年皮克斯率先用新技术做出《玩具总动员》一样，新技术的到来，也意味着游戏行业的重新洗牌。</p>\n\n<p>过去，基于角色扮演，已经诞生了估值10亿美元的独角兽Character.ai和微软投资的Inworld。在角色扮演领域，ChatGPT会如何跟游戏行业相结合呢？ChatGPT又会如何改变游戏行业？</p>\n\n<p>另外，感谢Quantum-engine.ai对本期节目demo环节的技术支持，如果大家对音频中的演示环节感兴趣，也可以去Quantum-engine的网站体验一下，互动效果会更直观，他们的网址是：<a href=\"https://www.quantum-engine.ai/\" rel=\"nofollow\">https://www.quantum-engine.ai/</a></p>\n\n<hr />\n\n<p><strong>【主播】</strong><br />\n泓君，《硅谷101》主播<br />\n<strong>【嘉宾】</strong><br />\n吕骋（Jesse Lyu）,  Quantum-engine.ai创始人，连续创业者</p>\n\n<hr />\n\n<p><strong>【你将听到】</strong><br />\n01:56 玩家体验+生产环节，ChatGPT对游戏行业的两大改变<br />\n07:12 当经典IP引入开放式对话，重新探索NPC的价值<br />\n09:23 实现开放式游戏视觉引擎联动的三个步骤：生成对话、行为、与蓝图的自动化<br />\n14:59 《赛博朋克2077 》：来生酒吧的任何人产生自然对话<br />\n16:15 Demo时间：当马斯克想把特斯拉卖给比尔·盖茨<br />\n29:04 角色扮演独角兽Character.ai和Inworld.ai的核心优势<br />\n33:01 AIGC应用层的壁垒是前端用户体验<br />\n34:37 延时与速度是用户体验的核心<br />\n37:47 工程化的科技需要藏起来，耐得住枯燥的优化<br />\n42:34 好莱坞积淀深厚，AIGC无法处理好故事与好皮肤<br />\n47:18 画面提升对游戏销量影响不大，但玩法创新影响很大<br />\n49:06 AIGC提升的沉浸感与交互方式<br />\n50:36 来自于皮克斯《玩具总动员》的启发：占领技术高地长达四年<br />\n53:11 利用新科技做出来的游戏，一定是不一样的游戏</p>\n\n<hr />\n\n<p><strong>【后期】</strong><br />\nAMEI、加菲<br />\n<strong>【BGM】</strong><br />\nCyberpunk - Marten </p>\n\n<hr />\n\n<p><strong>【在这里找到我们】</strong><br />\n公众账号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜Google Podcast｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p><p>Special Guest: 吕骋.</p>",
+  "content": "<p>游戏的本质是好玩，当生成式AI这种新技术到来时，它正在从各个方向去改变游戏的玩法。这可能是一次角色扮演的对话，也可能是两把不同的道具，还有可能是让虚拟引擎5的脚本可以自动化渲染。</p>\n\n<p>用新科技做出来的游戏，不管在玩法还是交互上，都与以往的游戏不同，类似于《西部世界》这样的游戏也不再只是科幻。就像当年皮克斯率先用新技术做出《玩具总动员》一样，新技术的到来，也意味着游戏行业的重新洗牌。</p>\n\n<p>过去，基于角色扮演，已经诞生了估值10亿美元的独角兽Character.ai和微软投资的Inworld。在角色扮演领域，ChatGPT会如何跟游戏行业相结合呢？ChatGPT又会如何改变游戏行业？</p>\n\n<p>另外，感谢Quantum-engine.ai对本期节目demo环节的技术支持，如果大家对音频中的演示环节感兴趣，也可以去Quantum-engine的网站体验一下，互动效果会更直观，他们的网址是：<a href=\"https://www.quantum-engine.ai/\" rel=\"nofollow\">https://www.quantum-engine.ai/</a></p>\n\n<hr />\n\n<p><strong>【主播】</strong><br />\n泓君，《硅谷101》主播<br />\n<strong>【嘉宾】</strong><br />\n吕骋（Jesse Lyu）,  Quantum-engine.ai创始人，连续创业者</p>\n\n<hr />\n\n<p><strong>【你将听到】</strong><br />\n01:56 玩家体验+生产环节，ChatGPT对游戏行业的两大改变<br />\n07:12 当经典IP引入开放式对话，重新探索NPC的价值<br />\n09:23 实现开放式游戏视觉引擎联动的三个步骤：生成对话、行为、与蓝图的自动化<br />\n14:59 《赛博朋克2077 》：来生酒吧的任何人产生自然对话<br />\n16:15 Demo时间：当马斯克想把特斯拉卖给比尔·盖茨<br />\n29:04 角色扮演独角兽Character.ai和Inworld.ai的核心优势<br />\n33:01 AIGC应用层的壁垒是前端用户体验<br />\n34:37 延时与速度是用户体验的核心<br />\n37:47 工程化的科技需要藏起来，耐得住枯燥的优化<br />\n42:34 好莱坞积淀深厚，AIGC无法处理好故事与好皮肤<br />\n47:18 画面提升对游戏销量影响不大，但玩法创新影响很大<br />\n49:06 AIGC提升的沉浸感与交互方式<br />\n50:36 来自于皮克斯《玩具总动员》的启发：占领技术高地长达四年<br />\n53:11 利用新科技做出来的游戏，一定是不一样的游戏</p>\n\n<hr />\n\n<p><strong>【后期】</strong><br />\nAMEI、加菲<br />\n<strong>【BGM】</strong><br />\nCyberpunk - Marten </p>\n\n<hr />\n\n<p><strong>【在这里找到我们】</strong><br />\n公众账号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜Google Podcast｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p><p>Special Guest: 吕骋.</p>",
+  "enriched_via": "rss",
+  "audio": {
+    "url": "https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/2dcc8a8d-1574-499d-98f5-c422d465d574.mp3",
+    "type": "audio/mpeg",
+    "length": "80009759"
+  },
+  "duration": "55:33",
+  "season_number": "4",
+  "image": "https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6",
+  "season": "4",
+  "tags": [
+    "Jesse Lyn",
+    "Quantum-engine.ai",
+    "ChatGPT",
+    "游戏"
+  ],
+  "archived_at": "2025-11-28T18:24:18.634379+00:00"
+}

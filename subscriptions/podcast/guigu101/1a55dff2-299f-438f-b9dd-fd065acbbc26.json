@@ -1,0 +1,26 @@
+{
+  "id": "1a55dff2-299f-438f-b9dd-fd065acbbc26",
+  "source_type": "podcast",
+  "title": "E108｜从20分迅速追到50分，国产大模型难在哪儿｜AIGC特辑",
+  "link": "https://sv101.fireside.fm/112",
+  "published": "2023-05-09T00:30:00+00:00",
+  "author": "硅谷101",
+  "summary": "<p>4月是大模型频频迭代的一个月，也是中国大模型的集中发布期。这些模型更新迭代之后到底进化在哪儿，可能深度使用者最有发言权。本期嘉宾和他的团队也在过往的使用体验中，结合一些学术论文研究出了一套给大模型打分的标准——如果不是一个专业的技术人员，普通人也可以通过一些好玩的测试题目，区分国产大模型与GPT4到底有哪些不同。</p>\n\n<p>随着越来越多的大公司与创业公司加入到国产大模型的竞争中，本期节目我们也聊了聊，除了芯片困境，国产大模型到底怎么样，以及难在哪儿？</p>\n\n<hr />\n\n<p><strong>【主播】</strong><br />\n泓君，资深媒体人<br />\n<strong>【嘉宾】</strong><br />\n戴雨森，真格基金管理合伙人</p>\n\n<hr />\n\n<p><strong>【你将听到】</strong><br />\n<strong>使用体验</strong><br />\n【03:18】大模型的使用体验：与七八年前的对话机器人很不一样<br />\n【04:51】ChatGPT 20问游戏：理解规则+二分法查找<br />\n【05:51】Midjourney：从V3到V5进化惊人，打开新的使用方式<br />\n【08:48】手工更贵，机器做的更好：原创会越来越有价值<br />\n【10:05】如何使用ChatGPT：更适合脑洞与头脑风暴<br />\n<strong>评分系统</strong><br />\n【12:21】300个问题，如何设计出一套大模型的评分系统<br />\n【15:22】GPT4评分80分，国产模型迅速从20分追到50分<br />\n【16:43】麻辣螺丝钉与爆炒篮球，GPT的进化速度<br />\n【20:05】两个月飞速进展：从聊天机器人到GPT4到AutoGPT<br />\n【21:46】大模型也有类似于自动驾驶的五级分类<br />\n【24:10】基于大模型的创业，早创业还是晚创业谁更有优势？<br />\n<strong>国产大模型</strong><br />\n【29:12】国产大模型格局未定，但要先造船<br />\n【32:13】大模型的终局是什么：赢家通吃？类公有云格局or百家争鸣？<br />\n【34:50】不止是A100芯片，数据、算法、架构，都需要解决<br />\n【36:59】中文互联网的数据不是问题？<br />\n【38:33】AutoGPT初印象：既震撼又忧虑<br />\n【40:43】微软可以一天训练一个GPT3，但只有它的超算才能训练GPT-4<br />\n【44:01】GPT的价值观：目前还是加州白人男性价值观<br />\n【46:38】潜在安全风险：操作选举，电话杀猪盘，垃圾信息<br />\n【49:04】OpenAI的股权结构：收益权与控制权分开<br />\n【53:00】做出OpenAI需要探索能力，第二个做更需要执行能力<br />\n【54:54】这轮AI浪潮有泡沫也有啤酒，人类最大的一轮技术革命<br />\n【57:04】未来不可预测，我所说的都是错的<br />\n【59:04】技术成熟有利于成熟创业者，新技术反而利好年轻人</p>\n\n<hr />\n\n<p><strong>【招聘】</strong><br />\n我们团队目前正在招聘全职的播客节目监制、视频后期、商务拓展以及运营，欢迎感兴趣的小伙伴把你们的简历和代表作品发送到我们的邮箱：<a href=\"mailto:Podcast@sv101.net\" rel=\"nofollow\">Podcast@sv101.net</a>。具体要求我们之后会发布在【硅谷101】的微信公众账号上，欢迎关注。</p>\n\n<hr />\n\n<p><strong>【相关资料】</strong><br />\n真格基金的评分系统：大模型测试集Z-Bench<br />\n<a href=\"https://mp.weixin.qq.com/s/D9xQYIw8K2OjVLBwzNtagQ\" rel=\"nofollow\">https://mp.weixin.qq.com/s/D9xQYIw8K2OjVLBwzNtagQ</a></p>\n\n<hr />\n\n<p>【BGM】<br />\nCheese and Crackers<br />\n【后期】<br />\nAMEI</p>\n\n<hr />\n\n<p>【在这里找到我们】<br />\n公众账号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜Google Podcast｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p><p>Special Guest: 戴雨森.</p>",
+  "content": "<p>4月是大模型频频迭代的一个月，也是中国大模型的集中发布期。这些模型更新迭代之后到底进化在哪儿，可能深度使用者最有发言权。本期嘉宾和他的团队也在过往的使用体验中，结合一些学术论文研究出了一套给大模型打分的标准——如果不是一个专业的技术人员，普通人也可以通过一些好玩的测试题目，区分国产大模型与GPT4到底有哪些不同。</p>\n\n<p>随着越来越多的大公司与创业公司加入到国产大模型的竞争中，本期节目我们也聊了聊，除了芯片困境，国产大模型到底怎么样，以及难在哪儿？</p>\n\n<hr />\n\n<p><strong>【主播】</strong><br />\n泓君，资深媒体人<br />\n<strong>【嘉宾】</strong><br />\n戴雨森，真格基金管理合伙人</p>\n\n<hr />\n\n<p><strong>【你将听到】</strong><br />\n<strong>使用体验</strong><br />\n【03:18】大模型的使用体验：与七八年前的对话机器人很不一样<br />\n【04:51】ChatGPT 20问游戏：理解规则+二分法查找<br />\n【05:51】Midjourney：从V3到V5进化惊人，打开新的使用方式<br />\n【08:48】手工更贵，机器做的更好：原创会越来越有价值<br />\n【10:05】如何使用ChatGPT：更适合脑洞与头脑风暴<br />\n<strong>评分系统</strong><br />\n【12:21】300个问题，如何设计出一套大模型的评分系统<br />\n【15:22】GPT4评分80分，国产模型迅速从20分追到50分<br />\n【16:43】麻辣螺丝钉与爆炒篮球，GPT的进化速度<br />\n【20:05】两个月飞速进展：从聊天机器人到GPT4到AutoGPT<br />\n【21:46】大模型也有类似于自动驾驶的五级分类<br />\n【24:10】基于大模型的创业，早创业还是晚创业谁更有优势？<br />\n<strong>国产大模型</strong><br />\n【29:12】国产大模型格局未定，但要先造船<br />\n【32:13】大模型的终局是什么：赢家通吃？类公有云格局or百家争鸣？<br />\n【34:50】不止是A100芯片，数据、算法、架构，都需要解决<br />\n【36:59】中文互联网的数据不是问题？<br />\n【38:33】AutoGPT初印象：既震撼又忧虑<br />\n【40:43】微软可以一天训练一个GPT3，但只有它的超算才能训练GPT-4<br />\n【44:01】GPT的价值观：目前还是加州白人男性价值观<br />\n【46:38】潜在安全风险：操作选举，电话杀猪盘，垃圾信息<br />\n【49:04】OpenAI的股权结构：收益权与控制权分开<br />\n【53:00】做出OpenAI需要探索能力，第二个做更需要执行能力<br />\n【54:54】这轮AI浪潮有泡沫也有啤酒，人类最大的一轮技术革命<br />\n【57:04】未来不可预测，我所说的都是错的<br />\n【59:04】技术成熟有利于成熟创业者，新技术反而利好年轻人</p>\n\n<hr />\n\n<p><strong>【招聘】</strong><br />\n我们团队目前正在招聘全职的播客节目监制、视频后期、商务拓展以及运营，欢迎感兴趣的小伙伴把你们的简历和代表作品发送到我们的邮箱：<a href=\"mailto:Podcast@sv101.net\" rel=\"nofollow\">Podcast@sv101.net</a>。具体要求我们之后会发布在【硅谷101】的微信公众账号上，欢迎关注。</p>\n\n<hr />\n\n<p><strong>【相关资料】</strong><br />\n真格基金的评分系统：大模型测试集Z-Bench<br />\n<a href=\"https://mp.weixin.qq.com/s/D9xQYIw8K2OjVLBwzNtagQ\" rel=\"nofollow\">https://mp.weixin.qq.com/s/D9xQYIw8K2OjVLBwzNtagQ</a></p>\n\n<hr />\n\n<p>【BGM】<br />\nCheese and Crackers<br />\n【后期】<br />\nAMEI</p>\n\n<hr />\n\n<p>【在这里找到我们】<br />\n公众账号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜Google Podcast｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p><p>Special Guest: 戴雨森.</p>",
+  "enriched_via": "rss",
+  "audio": {
+    "url": "https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/1a55dff2-299f-438f-b9dd-fd065acbbc26.mp3",
+    "type": "audio/mpeg",
+    "length": "85428826"
+  },
+  "duration": "59:19",
+  "season_number": "4",
+  "image": "https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6",
+  "season": "4",
+  "tags": [
+    "戴雨森",
+    "真格基金",
+    "国产大模型"
+  ],
+  "archived_at": "2025-11-28T18:24:18.632956+00:00"
+}
