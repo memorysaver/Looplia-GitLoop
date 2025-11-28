@@ -228,6 +228,9 @@ class MaterialDownloader:
                 # Save raw whisper JSON for podcasts
                 if raw_data and source_type == "podcast":
                     self.save_raw_whisper(output_dir, entry, raw_data)
+                # Save raw VTT for YouTube
+                elif raw_data and source_type == "youtube":
+                    self.save_raw_vtt(output_dir, entry, raw_data)
                 # Mark as processed in persistent cache
                 self._mark_as_processed(source_type, source_key, entry_id)
                 processed += 1
@@ -266,7 +269,7 @@ class MaterialDownloader:
             Tuple of (content, raw_data) where raw_data is whisper output for podcasts
         """
         if source_type == "youtube":
-            return self.extract_youtube(entry), None
+            return self.extract_youtube(entry)  # Already returns tuple
         elif source_type == "podcast":
             return self.extract_podcast(entry)
         elif source_type in ("blogs", "news"):
@@ -275,11 +278,15 @@ class MaterialDownloader:
             logger.warning(f"Unknown source type: {source_type}")
             return None, None
 
-    def extract_youtube(self, entry: dict) -> str | None:
-        """Extract YouTube captions."""
+    def extract_youtube(self, entry: dict) -> tuple[str | None, str | None]:
+        """Extract YouTube captions.
+
+        Returns:
+            Tuple of (transcript_text, raw_vtt_content)
+        """
         video_id = entry.get("id")
         if not video_id:
-            return None
+            return None, None
 
         # Get language preference from entry or default to English
         languages = entry.get("transcript_languages", ["en"])
@@ -381,6 +388,21 @@ downloaded_at: {downloaded_at}
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(raw_data, f, ensure_ascii=False, indent=2)
         logger.info(f"Saved raw whisper JSON: {output_path.name}")
+
+    def save_raw_vtt(self, output_dir: Path, entry: dict, vtt_content: str):
+        """
+        Save raw VTT caption file for YouTube videos.
+
+        Args:
+            output_dir: Directory to save to
+            entry: Entry metadata
+            vtt_content: Raw VTT file content with timestamps
+        """
+        entry_id = entry.get("id")
+        output_path = output_dir / f"{entry_id}.vtt"
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write(vtt_content)
+        logger.info(f"Saved raw VTT caption: {output_path.name}")
 
 
 def main():

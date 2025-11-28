@@ -8,7 +8,7 @@ import os
 import re
 import tempfile
 from pathlib import Path
-from typing import Optional
+from typing import Optional, Tuple
 
 from core.utils import get_logger
 
@@ -29,7 +29,7 @@ except ImportError:
 
 def download_captions(
     video_id: str, languages: list = None, prefer_manual: bool = True
-) -> Optional[str]:
+) -> Tuple[Optional[str], Optional[str]]:
     """
     Download captions for a YouTube video.
 
@@ -39,11 +39,11 @@ def download_captions(
         prefer_manual: Prefer manual captions over auto-generated
 
     Returns:
-        Plain text transcript or None if not available
+        Tuple of (plain_text_transcript, raw_vtt_content) or (None, None) if not available
     """
     if not YTDLP_AVAILABLE:
         logger.error("yt-dlp is required for caption download")
-        return None
+        return None, None
 
     if languages is None:
         languages = ["en"]
@@ -114,7 +114,7 @@ def download_captions(
 
                 if not selected_lang:
                     logger.warning(f"No captions found for video: {video_id}")
-                    return None
+                    return None, None
 
                 logger.info(
                     f"Downloading {'auto' if is_auto else 'manual'} captions "
@@ -135,15 +135,18 @@ def download_captions(
                 vtt_files = list(temp_path.glob(f"{video_id}*.vtt"))
                 if not vtt_files:
                     logger.warning(f"No VTT file found for video: {video_id}")
-                    return None
+                    return None, None
+
+                # Read VTT content before parsing
+                vtt_content = vtt_files[0].read_text(encoding='utf-8')
 
                 # Parse VTT and extract text
                 transcript = parse_vtt(vtt_files[0])
-                return transcript
+                return transcript, vtt_content
 
         except Exception as e:
             logger.error(f"Failed to download captions for {video_id}: {e}")
-            return None
+            return None, None
 
 
 def parse_vtt(vtt_path: Path) -> str:
