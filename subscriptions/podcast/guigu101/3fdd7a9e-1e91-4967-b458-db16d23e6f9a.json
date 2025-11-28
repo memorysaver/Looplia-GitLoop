@@ -1,0 +1,36 @@
+{
+  "id": "3fdd7a9e-1e91-4967-b458-db16d23e6f9a",
+  "source_type": "podcast",
+  "title": "E156｜自动驾驶领域的GPT时刻来了？聊聊特斯拉V12、FSD入华与RoboTaxi",
+  "link": "https://sv101.fireside.fm/162",
+  "published": "2024-06-21T00:00:00+00:00",
+  "author": "硅谷101",
+  "summary": "<p>本期是关于自动驾驶的观点对决！之前我们在采访侯晓迪时，他提出的观点是：特斯拉始终在做辅助驾驶而非无人驾驶，马斯克是行业的搅局者。随后，在评论区我们也收获了不同的观点：特斯拉最近推出了V12版本的FSD，在驾驶体验上有很大提升，甚至被称作自动驾驶的“GPT时刻”。所以我们也在思考这个神秘的v12版本会不会就此改变自动驾驶行业？这一期我们来听听另一边的声音。</p>\n\n<p>当然，我们也会深入探讨FSD入华的技术难题，以及8月8日推出的Robotaxi的靠谱性分析。如果你是自动驾驶或者AI的从业者，那这期节目可不要错过。如果你也有不同观点，欢迎留言探讨！</p>\n\n<p><strong>主播</strong><br />\n泓君Jane，硅谷101创始人，播客主理人<br />\n<strong>嘉宾</strong><br />\n于振华，前特斯拉AI工程师（Twitter：@TSLA99T）<br />\n王辰晟，前特斯拉采购总监<br />\n大卫，《大小马聊科技》主播<br />\n刘冰雁，Kargo软件负责人</p>\n\n<p><strong>你将听到</strong><br />\n【关于v12的技术讨论】<br />\n05:66  FSD的v12自动驾驶全面碾压v11前的版本<br />\n09:10 v12的用户体验：真挺不错！高速表现好<br />\n17:18 端到端不是新的概念，但是特斯拉验证了<br />\n21:26 自然界有很多生物的大脑端到端模型：蜻蜓、章鱼<br />\n22:54 如果激光雷达足够便宜，是否必要做纯视觉？<br />\n25:18 对特斯拉纯视觉方案的质疑：模型的不可解释性、对传感器更敏感、视觉不可达盲区<br />\n29:21 90%公司可能不适合做端到端<br />\n36:02 特斯拉的门槛优势：算法领先、架构保密、自制芯片硬件<br />\n40:30 端到端发生在特斯拉是必然？自下而上的尝试、马斯克的决策权、数据的积累</p>\n\n<p>【关于特斯拉和马斯克】<br />\n43:56 Autopilot团队前领导Andrej Karpathy：不断探索ai边界<br />\n46:44 马斯克的思考逻辑：深度参与技术管理、相信在做的事<br />\n54:49 回应侯晓迪对特斯拉自动驾驶的质疑<br />\n59:47 特斯拉v12的行业定位：依然是L3，L4不如Waymo<br />\n60:37 和中国本土L4竞争：技术路径和商业模式都不一样</p>\n\n<p>【关于FSD入华】<br />\n01:08:34 中国的路况复杂度是美国的十倍？不一定是坏事<br />\n01:12:51 FSD在中国能一炮走红吗？地图是关键<br />\n01:16:08 特斯拉入华：车友期待、数据难采集、抓住政策窗口<br />\n01:20:00 Autopilot和FSD的区别</p>\n\n<p>【关于8月8日的robotaxi】<br />\n01:21:48 Robotaxi车型的猜想：有没有方向盘？后视镜？<br />\n01:28:03 对特斯拉robotaxi的质疑：在城市中的无人驾驶能力、robotaxi是重运营的活儿<br />\n01:29:40 robotaxi的商业化：马斯克畅想的airbnb运营模式和成本问题、打造无人出租车网络</p>\n\n<p><strong>硅谷101线下见面会</strong><br />\n硅谷101即将于6月28日在硅谷举办一场关于GPU Cloud与AI的线下活动，进行从GPU到GPU云的最新趋势分享，也聊聊如何低成本加速AI训练以及AI创业公司现在面临的机遇与挑战。</p>\n\n<p>我们邀请到了Leonis Capital合伙人、前OpenAI研究员Jenny Xiao；Fusion Fund创始合伙人张璐；FP Solutions VC联合创始人、前SpaceX核心成员Lewis Hong，来分享他们看到的AI创业领域的最新趋势，也邀请到了North Beta Labs的创始人Jonathan Zhu探讨创业公司如何打破算力瓶颈，快速向前。</p>\n\n<p>此活动是超小规模邀请制，只对AI从业者和创业者开放，参与者还将有机会获取GPU Cloud Credits以及免费算力支持。我们期待和你在硅谷线下见。报名页面：<a href=\"https://lu.ma/gcsv02y7\" rel=\"nofollow\">https://lu.ma/gcsv02y7</a></p>\n\n<p><strong>相关单集</strong><br />\n<a href=\"https://sv101.fireside.fm/156\" rel=\"nofollow\">E150｜与侯晓迪聊聊自动驾驶和搅局的马斯克</a><br />\n<a href=\"https://sv101.fireside.fm/44\" rel=\"nofollow\">S2E44｜无人车特辑｜特斯拉自动驾驶到底怎么样？</a></p>\n\n<p><strong>名词解释</strong><br />\n<strong>智猪博弈：</strong>博弈论中的一个经典模型，描述了一只大猪和一只小猪在共享食物槽时的行为。槽的一端有按钮，按下按钮后食物会流到槽的另一端。大猪按按钮的成本较小，小猪按按钮的成本较大。小猪的最佳策略是等待大猪按按钮，从而节省成本。常用于解释企业在市场中的模仿和学习行为。</p>\n\n<p><strong>Cruise Origin：</strong>Cruise和通用汽车合作开发的全电动自动驾驶汽车，专为共享出行服务设计。</p>\n\n<p><strong>后期</strong><br />\nAMei<br />\n<strong>BGM</strong><br />\nUncovered-Joseph William Morgan<br />\nSunshine Rain - Brendon Moeller<br />\nHome To You-The Neighborly</p>\n\n<p><strong>在这里找到我们</strong><br />\n公众号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜Youtube｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p>\n\n<p>本期节目仅代表嘉宾个人观点</p><p>Special Guests: 于振华, 刘冰雁, 大卫, and 王辰晟.</p>",
+  "content": "<p>本期是关于自动驾驶的观点对决！之前我们在采访侯晓迪时，他提出的观点是：特斯拉始终在做辅助驾驶而非无人驾驶，马斯克是行业的搅局者。随后，在评论区我们也收获了不同的观点：特斯拉最近推出了V12版本的FSD，在驾驶体验上有很大提升，甚至被称作自动驾驶的“GPT时刻”。所以我们也在思考这个神秘的v12版本会不会就此改变自动驾驶行业？这一期我们来听听另一边的声音。</p>\n\n<p>当然，我们也会深入探讨FSD入华的技术难题，以及8月8日推出的Robotaxi的靠谱性分析。如果你是自动驾驶或者AI的从业者，那这期节目可不要错过。如果你也有不同观点，欢迎留言探讨！</p>\n\n<p><strong>主播</strong><br />\n泓君Jane，硅谷101创始人，播客主理人<br />\n<strong>嘉宾</strong><br />\n于振华，前特斯拉AI工程师（Twitter：@TSLA99T）<br />\n王辰晟，前特斯拉采购总监<br />\n大卫，《大小马聊科技》主播<br />\n刘冰雁，Kargo软件负责人</p>\n\n<p><strong>你将听到</strong><br />\n【关于v12的技术讨论】<br />\n05:66  FSD的v12自动驾驶全面碾压v11前的版本<br />\n09:10 v12的用户体验：真挺不错！高速表现好<br />\n17:18 端到端不是新的概念，但是特斯拉验证了<br />\n21:26 自然界有很多生物的大脑端到端模型：蜻蜓、章鱼<br />\n22:54 如果激光雷达足够便宜，是否必要做纯视觉？<br />\n25:18 对特斯拉纯视觉方案的质疑：模型的不可解释性、对传感器更敏感、视觉不可达盲区<br />\n29:21 90%公司可能不适合做端到端<br />\n36:02 特斯拉的门槛优势：算法领先、架构保密、自制芯片硬件<br />\n40:30 端到端发生在特斯拉是必然？自下而上的尝试、马斯克的决策权、数据的积累</p>\n\n<p>【关于特斯拉和马斯克】<br />\n43:56 Autopilot团队前领导Andrej Karpathy：不断探索ai边界<br />\n46:44 马斯克的思考逻辑：深度参与技术管理、相信在做的事<br />\n54:49 回应侯晓迪对特斯拉自动驾驶的质疑<br />\n59:47 特斯拉v12的行业定位：依然是L3，L4不如Waymo<br />\n60:37 和中国本土L4竞争：技术路径和商业模式都不一样</p>\n\n<p>【关于FSD入华】<br />\n01:08:34 中国的路况复杂度是美国的十倍？不一定是坏事<br />\n01:12:51 FSD在中国能一炮走红吗？地图是关键<br />\n01:16:08 特斯拉入华：车友期待、数据难采集、抓住政策窗口<br />\n01:20:00 Autopilot和FSD的区别</p>\n\n<p>【关于8月8日的robotaxi】<br />\n01:21:48 Robotaxi车型的猜想：有没有方向盘？后视镜？<br />\n01:28:03 对特斯拉robotaxi的质疑：在城市中的无人驾驶能力、robotaxi是重运营的活儿<br />\n01:29:40 robotaxi的商业化：马斯克畅想的airbnb运营模式和成本问题、打造无人出租车网络</p>\n\n<p><strong>硅谷101线下见面会</strong><br />\n硅谷101即将于6月28日在硅谷举办一场关于GPU Cloud与AI的线下活动，进行从GPU到GPU云的最新趋势分享，也聊聊如何低成本加速AI训练以及AI创业公司现在面临的机遇与挑战。</p>\n\n<p>我们邀请到了Leonis Capital合伙人、前OpenAI研究员Jenny Xiao；Fusion Fund创始合伙人张璐；FP Solutions VC联合创始人、前SpaceX核心成员Lewis Hong，来分享他们看到的AI创业领域的最新趋势，也邀请到了North Beta Labs的创始人Jonathan Zhu探讨创业公司如何打破算力瓶颈，快速向前。</p>\n\n<p>此活动是超小规模邀请制，只对AI从业者和创业者开放，参与者还将有机会获取GPU Cloud Credits以及免费算力支持。我们期待和你在硅谷线下见。报名页面：<a href=\"https://lu.ma/gcsv02y7\" rel=\"nofollow\">https://lu.ma/gcsv02y7</a></p>\n\n<p><strong>相关单集</strong><br />\n<a href=\"https://sv101.fireside.fm/156\" rel=\"nofollow\">E150｜与侯晓迪聊聊自动驾驶和搅局的马斯克</a><br />\n<a href=\"https://sv101.fireside.fm/44\" rel=\"nofollow\">S2E44｜无人车特辑｜特斯拉自动驾驶到底怎么样？</a></p>\n\n<p><strong>名词解释</strong><br />\n<strong>智猪博弈：</strong>博弈论中的一个经典模型，描述了一只大猪和一只小猪在共享食物槽时的行为。槽的一端有按钮，按下按钮后食物会流到槽的另一端。大猪按按钮的成本较小，小猪按按钮的成本较大。小猪的最佳策略是等待大猪按按钮，从而节省成本。常用于解释企业在市场中的模仿和学习行为。</p>\n\n<p><strong>Cruise Origin：</strong>Cruise和通用汽车合作开发的全电动自动驾驶汽车，专为共享出行服务设计。</p>\n\n<p><strong>后期</strong><br />\nAMei<br />\n<strong>BGM</strong><br />\nUncovered-Joseph William Morgan<br />\nSunshine Rain - Brendon Moeller<br />\nHome To You-The Neighborly</p>\n\n<p><strong>在这里找到我们</strong><br />\n公众号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜Youtube｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p>\n\n<p>本期节目仅代表嘉宾个人观点</p><p>Special Guests: 于振华, 刘冰雁, 大卫, and 王辰晟.</p>",
+  "enriched_via": "rss",
+  "audio": {
+    "url": "https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/3fdd7a9e-1e91-4967-b458-db16d23e6f9a.mp3",
+    "type": "audio/mpeg",
+    "length": "87791821"
+  },
+  "duration": "1:31:26",
+  "season_number": "4",
+  "image": "https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6",
+  "season": "4",
+  "tags": [
+    "Tesla",
+    "特斯拉",
+    "Robotaxi",
+    "FSD",
+    "端到端大模型",
+    "Waymo",
+    "无人车",
+    "自动驾驶",
+    "大卫",
+    "于振华",
+    "王辰晟",
+    "刘冰雁",
+    "V12"
+  ],
+  "archived_at": "2025-11-28T09:01:38.060598+00:00"
+}
