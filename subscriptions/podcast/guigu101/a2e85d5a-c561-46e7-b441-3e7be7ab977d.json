@@ -1,0 +1,27 @@
+{
+  "id": "a2e85d5a-c561-46e7-b441-3e7be7ab977d",
+  "source_type": "podcast",
+  "title": "E135｜大模型带火的下一个风口：向量数据库",
+  "link": "https://sv101.fireside.fm/140",
+  "published": "2023-12-27T23:45:00+00:00",
+  "author": "硅谷101",
+  "summary": "<p>过去十年，产生了类似于Snowflake这样的基于云原生业务的SaaS巨头；在AI时代，向量数据库领域会不会诞生AI时代的“Snowflake”，一个新的历史性机会正在产生。</p>\n\n<p>这期节目我们邀请到了亚马逊云科技与向量数据库Zilliz来聊一聊AI Native的企业级应用。Zilliz成立于2017年，主要研发AI场景的向量数据库，在2019年开源了全球首个向量数据库产品Milvus，并且把这个产品捐赠给Linux基金会，在GitHub上获得了2.5万颗星，拥有超过5000家企业客户，目前累计融资超过1.13亿美元。</p>\n\n<p>本期节目是亚马逊云科技赞助播出的出海特辑的第三期，我们会联合出海企业的案例，探讨不同行业的出海策略与方法论。在这段访谈里，我们将分析大模型时代，为什么向量数据库尤其重要，到底什么是AI时代AI native的数据基础设施。作为出海特辑的案例之一，Zilliz也会分享他们出海遇到的挑战，以及开源社区与商业化的平衡。</p>\n\n<p><strong>【主播】</strong><br />\n泓君，《硅谷101》创始人，播客主理人<br />\n<strong>【嘉宾】</strong><br />\n栾小凡，Zilliz技术合伙人，Linux Foundation AI &amp; Data 基金会技术咨询委员成员<br />\n吴万涛，亚马逊云科技解决方案架构师</p>\n\n<p><strong>【你将听到</strong>】<br />\n02:19 向量数据库与传统数据库的区别：基于关键词去匹配vs上下文与语义相似度的匹配<br />\n05:53 大模型时代，向量数据库为什么这么重要？<br />\n07:47 非结构化数据占人类数据80%，从巨头没有盯上的领域启动<br />\n10:26 向量数据库的挑战与护城河：好的模型与算法、性能与推理成本<br />\n12:34应用场景：电商提高长尾搜索； 企业私有数据提升精度<br />\n16:41 衡量向量准确度：99%的召回率<br />\n19:00 OpenAI并不是最好的Embeding模型，开发者需要自己去试<br />\n20:34 Zilliz的商业模式：从开源到基于云的商业化<br />\n23:28 当巨头跟创业公司竞争：把选择权交给用户<br />\n27:00 行业过于早期，云巨头入场正在帮助行业成长<br />\n28:57 未来应用：适合电商、医疗、法律等数据密集型应用<br />\n29:50 AI时代的安全隐私：合规、产品、应用三个层面<br />\n33:26 安全问题打脸：向量数据经过精心设计后，可能会还原用户信息<br />\n37:38 移位更加保护隐私，但却让准确性更难</p>\n\n<p><strong>出海挑战</strong><br />\n37:35 Zilliz全球业务分布：美国营收占整体收入70%以上<br />\n38:47 SaaS产业布局的全球化考量：受美国头部用户影响大<br />\n40:16 中美SAAS产品的使用态度区别<br />\n45:00 美国市场策略：HackerNews与亚马逊云科技Marketplace</p>\n\n<p><strong>开源社区</strong><br />\n49:16 公司主导的开源项目，开源协议有可能被修改<br />\n51:17 公司主导与基金会主导，开源项目两种方式的思考<br />\n54:38 开源与商业化的代码考量：三层结构的差异化竞争<br />\n57:25 当公司发展方向与社区发生分歧，如何解决？</p>\n\n<p><strong>【相关单集】</strong><br />\n<a href=\"https://sv101.fireside.fm/138\" rel=\"nofollow\">E133｜开源打法的秘诀与AI重塑的数据库行业</a><br />\n<a href=\"https://sv101.fireside.fm/135\" rel=\"nofollow\">E130｜聊聊智能硬件出海的全球版图：大模型、 新爆款与合规陷阱</a></p>\n\n<p><strong>【后期】</strong><br />\n加菲<br />\n<strong>【BGM】</strong><br />\nCold and Blue - Roy Edwin Williams<br />\nLazy Art - Martin Landstrom<br />\nNorman - Boone River</p>\n\n<p><strong>【在这里找到我们】</strong><br />\n公众号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜Google Podcast｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p>",
+  "content": "<p>过去十年，产生了类似于Snowflake这样的基于云原生业务的SaaS巨头；在AI时代，向量数据库领域会不会诞生AI时代的“Snowflake”，一个新的历史性机会正在产生。</p>\n\n<p>这期节目我们邀请到了亚马逊云科技与向量数据库Zilliz来聊一聊AI Native的企业级应用。Zilliz成立于2017年，主要研发AI场景的向量数据库，在2019年开源了全球首个向量数据库产品Milvus，并且把这个产品捐赠给Linux基金会，在GitHub上获得了2.5万颗星，拥有超过5000家企业客户，目前累计融资超过1.13亿美元。</p>\n\n<p>本期节目是亚马逊云科技赞助播出的出海特辑的第三期，我们会联合出海企业的案例，探讨不同行业的出海策略与方法论。在这段访谈里，我们将分析大模型时代，为什么向量数据库尤其重要，到底什么是AI时代AI native的数据基础设施。作为出海特辑的案例之一，Zilliz也会分享他们出海遇到的挑战，以及开源社区与商业化的平衡。</p>\n\n<p><strong>【主播】</strong><br />\n泓君，《硅谷101》创始人，播客主理人<br />\n<strong>【嘉宾】</strong><br />\n栾小凡，Zilliz技术合伙人，Linux Foundation AI &amp; Data 基金会技术咨询委员成员<br />\n吴万涛，亚马逊云科技解决方案架构师</p>\n\n<p><strong>【你将听到</strong>】<br />\n02:19 向量数据库与传统数据库的区别：基于关键词去匹配vs上下文与语义相似度的匹配<br />\n05:53 大模型时代，向量数据库为什么这么重要？<br />\n07:47 非结构化数据占人类数据80%，从巨头没有盯上的领域启动<br />\n10:26 向量数据库的挑战与护城河：好的模型与算法、性能与推理成本<br />\n12:34应用场景：电商提高长尾搜索； 企业私有数据提升精度<br />\n16:41 衡量向量准确度：99%的召回率<br />\n19:00 OpenAI并不是最好的Embeding模型，开发者需要自己去试<br />\n20:34 Zilliz的商业模式：从开源到基于云的商业化<br />\n23:28 当巨头跟创业公司竞争：把选择权交给用户<br />\n27:00 行业过于早期，云巨头入场正在帮助行业成长<br />\n28:57 未来应用：适合电商、医疗、法律等数据密集型应用<br />\n29:50 AI时代的安全隐私：合规、产品、应用三个层面<br />\n33:26 安全问题打脸：向量数据经过精心设计后，可能会还原用户信息<br />\n37:38 移位更加保护隐私，但却让准确性更难</p>\n\n<p><strong>出海挑战</strong><br />\n37:35 Zilliz全球业务分布：美国营收占整体收入70%以上<br />\n38:47 SaaS产业布局的全球化考量：受美国头部用户影响大<br />\n40:16 中美SAAS产品的使用态度区别<br />\n45:00 美国市场策略：HackerNews与亚马逊云科技Marketplace</p>\n\n<p><strong>开源社区</strong><br />\n49:16 公司主导的开源项目，开源协议有可能被修改<br />\n51:17 公司主导与基金会主导，开源项目两种方式的思考<br />\n54:38 开源与商业化的代码考量：三层结构的差异化竞争<br />\n57:25 当公司发展方向与社区发生分歧，如何解决？</p>\n\n<p><strong>【相关单集】</strong><br />\n<a href=\"https://sv101.fireside.fm/138\" rel=\"nofollow\">E133｜开源打法的秘诀与AI重塑的数据库行业</a><br />\n<a href=\"https://sv101.fireside.fm/135\" rel=\"nofollow\">E130｜聊聊智能硬件出海的全球版图：大模型、 新爆款与合规陷阱</a></p>\n\n<p><strong>【后期】</strong><br />\n加菲<br />\n<strong>【BGM】</strong><br />\nCold and Blue - Roy Edwin Williams<br />\nLazy Art - Martin Landstrom<br />\nNorman - Boone River</p>\n\n<p><strong>【在这里找到我们】</strong><br />\n公众号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜Google Podcast｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p>",
+  "enriched_via": "rss",
+  "audio": {
+    "url": "https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/a2e85d5a-c561-46e7-b441-3e7be7ab977d.mp3",
+    "type": "audio/mpeg",
+    "length": "86188379"
+  },
+  "duration": "59:50",
+  "season_number": "4",
+  "image": "https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6",
+  "season": "4",
+  "tags": [
+    "zilliz",
+    "栾小凡",
+    "亚马逊云科技",
+    "吴万涛"
+  ],
+  "archived_at": "2025-11-28T15:35:45.958076+00:00"
+}

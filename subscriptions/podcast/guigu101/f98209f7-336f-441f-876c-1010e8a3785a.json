@@ -1,0 +1,28 @@
+{
+  "id": "f98209f7-336f-441f-876c-1010e8a3785a",
+  "source_type": "podcast",
+  "title": "E134｜OpenAI治理架构，以及非营利组织对抗微软的三大经典战役",
+  "link": "https://sv101.fireside.fm/139",
+  "published": "2023-12-18T06:00:00+00:00",
+  "author": "硅谷101",
+  "summary": "<p>在OpenAI罢免CEO Sam Altman的闹剧发生之后，OpenAI的治理结构成为关注焦点。OpenAI的结构是在非营利组织下设立了一家营利性的全资子公司，并获得了微软投资，这种操作方式在美国并不算罕见。</p>\n\n<p>每一次技术的创新都会带来公司股权结构甚至是治理方式的改变。非营利组织，法律上编号为501(c)3，并不等于不盈利。这期节目我们会给大家聊聊错综复杂的非营利组织，以及如何以一种更加开放的方式去选举董事成员与理事会，或许维基百科的治理结构是一个可以参考的方案。</p>\n\n<p>当我们聊到非营利组织时，也发现过往维基百科、Linux基金会与Mozilla基金会都曾与微软有过正面交锋，我们也会盘点这些开源组织与互联网巨头微软的三场经典战役。</p>\n\n<p><strong>【主播】</strong><br />\n陈茜，硅谷101联合创始人，《硅谷101》视频主理人<br />\n<strong>【嘉宾】</strong><br />\n张璐，Fusion Fund创始管理合伙人<br />\n周载南，D3Serve Labs CEO</p>\n\n<p><strong>【你将听到】</strong><br />\n<strong>错综复杂的非营利组织</strong><br />\n01:09 Open AI的架构选择：公益性目标与股东最大利益的冲突<br />\n04:29 非营利组织的架构：501(c)3，理事会与董事会的治理权设置<br />\n07:30 重新理解非营利组织：不等于不盈利与美国的捐赠文化<br />\n10:15 非营利性组织、NGO与501(c)3<br />\n12:07 Open AI架构考量因素分析<br />\n15:35 维基百科先例：如何同时满足普通服务器与科技巨头的爬虫，资金与道义的两难</p>\n\n<p><strong>OpenAI的架构与治理</strong><br />\n18:19 OpenAI架构与每一位董事会成员分析<br />\n23:35 为何董事Adam D'Angelo能留下来？<br />\n27:51 选择董事会成员，历史上有这些相似架构的案例<br />\n29:22 “只要OpenAI选择董事会的方式不改变，未来还会是个地雷”<br />\n30:16 维基百科的治理：7个席位，专业评审与社区联合投票的选举体制<br />\n32:03 开放式董事会如何处理重大理念分歧：泄漏项目信息被董事会驱逐与高票重新回归<br />\n34:57 剥离公司与非营利组织，OpenAI完全拆分的N种方式探讨<br />\n41:39 每次技术创新都会引入新的治理结构的变化<br />\n46:23 当科研机构无法与巨头竞争，学术界正在与华盛顿沟通保持研究的前沿性<br />\n48:20 引发热议的Q*：并没有那么神乎其神？</p>\n\n<p><strong>非营利组织与巨头之战</strong><br />\n51:15 维基百科：世界第五大站点的成长之路<br />\n52:44 Apache基金会：互联网软件与中间键基础设施的繁荣<br />\n55:36 Linux基金会：开源平台的强大生态<br />\n58:45 Mozilla基金会：浏览器的经典战役与技术进步带来的反复拉锯</p>\n\n<p><strong>【后期】</strong><br />\n加菲<br />\n<strong>【BGM】</strong><br />\nCold and Blue——Roy Edwin Williams</p>\n\n<p><strong>【在这里找到我们】</strong><br />\n公众号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜Google Podcast｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p>",
+  "content": "<p>在OpenAI罢免CEO Sam Altman的闹剧发生之后，OpenAI的治理结构成为关注焦点。OpenAI的结构是在非营利组织下设立了一家营利性的全资子公司，并获得了微软投资，这种操作方式在美国并不算罕见。</p>\n\n<p>每一次技术的创新都会带来公司股权结构甚至是治理方式的改变。非营利组织，法律上编号为501(c)3，并不等于不盈利。这期节目我们会给大家聊聊错综复杂的非营利组织，以及如何以一种更加开放的方式去选举董事成员与理事会，或许维基百科的治理结构是一个可以参考的方案。</p>\n\n<p>当我们聊到非营利组织时，也发现过往维基百科、Linux基金会与Mozilla基金会都曾与微软有过正面交锋，我们也会盘点这些开源组织与互联网巨头微软的三场经典战役。</p>\n\n<p><strong>【主播】</strong><br />\n陈茜，硅谷101联合创始人，《硅谷101》视频主理人<br />\n<strong>【嘉宾】</strong><br />\n张璐，Fusion Fund创始管理合伙人<br />\n周载南，D3Serve Labs CEO</p>\n\n<p><strong>【你将听到】</strong><br />\n<strong>错综复杂的非营利组织</strong><br />\n01:09 Open AI的架构选择：公益性目标与股东最大利益的冲突<br />\n04:29 非营利组织的架构：501(c)3，理事会与董事会的治理权设置<br />\n07:30 重新理解非营利组织：不等于不盈利与美国的捐赠文化<br />\n10:15 非营利性组织、NGO与501(c)3<br />\n12:07 Open AI架构考量因素分析<br />\n15:35 维基百科先例：如何同时满足普通服务器与科技巨头的爬虫，资金与道义的两难</p>\n\n<p><strong>OpenAI的架构与治理</strong><br />\n18:19 OpenAI架构与每一位董事会成员分析<br />\n23:35 为何董事Adam D'Angelo能留下来？<br />\n27:51 选择董事会成员，历史上有这些相似架构的案例<br />\n29:22 “只要OpenAI选择董事会的方式不改变，未来还会是个地雷”<br />\n30:16 维基百科的治理：7个席位，专业评审与社区联合投票的选举体制<br />\n32:03 开放式董事会如何处理重大理念分歧：泄漏项目信息被董事会驱逐与高票重新回归<br />\n34:57 剥离公司与非营利组织，OpenAI完全拆分的N种方式探讨<br />\n41:39 每次技术创新都会引入新的治理结构的变化<br />\n46:23 当科研机构无法与巨头竞争，学术界正在与华盛顿沟通保持研究的前沿性<br />\n48:20 引发热议的Q*：并没有那么神乎其神？</p>\n\n<p><strong>非营利组织与巨头之战</strong><br />\n51:15 维基百科：世界第五大站点的成长之路<br />\n52:44 Apache基金会：互联网软件与中间键基础设施的繁荣<br />\n55:36 Linux基金会：开源平台的强大生态<br />\n58:45 Mozilla基金会：浏览器的经典战役与技术进步带来的反复拉锯</p>\n\n<p><strong>【后期】</strong><br />\n加菲<br />\n<strong>【BGM】</strong><br />\nCold and Blue——Roy Edwin Williams</p>\n\n<p><strong>【在这里找到我们】</strong><br />\n公众号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜Google Podcast｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p>",
+  "enriched_via": "rss",
+  "audio": {
+    "url": "https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/f98209f7-336f-441f-876c-1010e8a3785a.mp3",
+    "type": "audio/mpeg",
+    "length": "89710603"
+  },
+  "duration": "1:02:17",
+  "season_number": "4",
+  "image": "https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6",
+  "season": "4",
+  "tags": [
+    "张璐",
+    "周载南",
+    "OpenAI",
+    "维基百科",
+    "非营利组织"
+  ],
+  "archived_at": "2025-11-28T15:35:45.958405+00:00"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "978242d0-d1d0-4ccf-b101-86728070ce8d",
+  "source_type": "podcast",
+  "title": "E138｜如何用大模型提升学习效率？来自1100小时的深度使用体验",
+  "link": "https://sv101.fireside.fm/143",
+  "published": "2024-01-26T23:45:00+00:00",
+  "author": "硅谷101",
+  "summary": "<p>转眼已经2024年了，这轮生成式人工智能大浪潮已经开始了16个月了。我们从各个角度聊过大模型给各行各业带来的变化，但是缺了一个视角：普通人是如何使用大模型的，尤其是学生。大概是一年以前的这个时候，在线课程供应商Study.com向1000名18岁以上的学生发起了一项调查，超过89%的学生使用ChatGPT来完成家庭作业，48%的学生用ChatGPT完成小测验，53%的学生用ChatGPT写论文，22%的学生用ChatGPT生成论文大纲。</p>\n\n<p>我就在好奇，大模型是如何帮助这些学生来学习的。但要找到真正把大模型用的好的学生嘉宾并不容易。直到同事给我推荐了本期嘉宾Siqi，他是从ChatGPT发布就开始使用，知道OpenAI和这些大模型公司的每一次宕机，准确来说他不算学生，但是抱着学生的心态在想学习，马上也要在大公司内部转到大模型的组，我们就来看看他是如何成为ChatGPT的高阶玩家的。</p>\n\n<p>这期节目我们录制于2023年11月，恰逢OpenAI开发者大会之后。跟他聊完的这两个月里，我种草了很多功能也解锁了很多新用法，有机会我再来跟大家聊一聊我们如何在播客和视频产品中用生成式人工智能技术来辅助我们做内容，欢迎持续关注我们。</p>\n\n<p><strong>【主播】</strong><br />\n泓君，硅谷101创始人，播客主理人<br />\n<strong>【嘉宾】</strong><br />\n左斯琦，大模型深度使用者</p>\n\n<p><strong>【你将听到】</strong><br />\n01:50 学习和使用ChatGPT的五个步骤<br />\n05:07 用Rag与API学习哲学：一次下载几百篇文献的问答学习法<br />\n10:44  大模型辅助下的数学学习：从被动接受者到老师视角挑错<br />\n17:22 ChatGPT证明题正确率是30%，沟通超过5-6轮就会忘掉之前的问题<br />\n19:00 挑战一排代码也不写，10个小时做一款小游戏<br />\n23:39 Siqi版的Character.ai ：十几个小时打造尼采或者黑格尔人格<br />\n25:52 ChatGPT与Claude.ai、Bard的区别<br />\n29:00 把流程化的事情扔给GPTs<br />\n33:17 OpenAI在提高效率降低成本，而不是提升它的准确性<br />\n33:40 最感兴趣的方向：自我提升的AI Agent<br />\n37:42 当GenAI遇上思维导图：无法既宏观又细节</p>\n\n<p>40:06 智商测试只与做智商测试的能力有关，与智商无关<br />\n41:52 大模型能解决什么问题比是不是有意识更有意义<br />\n44:00 哲学的本质就是Clarify Question<br />\n45:54 当奖励系统失效，如何跳脱出成年人的职场阶梯<br />\n47:08 聊聊哲学、数学与计算机的共同点与艺术美感</p>\n\n<p><strong>【相关信息】</strong><br />\n播客中提到使用大模型学习的<strong>五个步骤</strong>：</p>\n\n<ol>\n<li>ChatGPT做总结，全局理解，记在spreadsheet上</li>\n<li>Audible/speechify听</li>\n<li>spreadsheet复习，费曼法自问</li>\n<li>用chatgpt提问题，做比较，扩展延伸到相关的问题和领域</li>\n<li>用RAG + GPT API做research</li>\n</ol>\n\n<p><strong>播客中提到的小游戏画面</strong><br />\n<a href=\"https://ibb.co/Sc2NpYy\"><img alt=\"oo0-Bey-Hero-Profil\" border=\"0\" src=\"https://i.ibb.co/cwPJdf3/oo0-Bey-Hero-Profil.png\" /></a></p>\n\n<p>*<em>与黑格尔和尼采的对话截图 *</em><br />\n<a href=\"https://ibb.co/FHk8tM9\"><img alt=\"You-What-is-Life\" border=\"0\" src=\"https://i.ibb.co/hYx2vjk/You-What-is-Life.png\" /></a></p>\n\n<p><strong>【后期】</strong><br />\nAMEI<br />\n<strong>【BGM】</strong><br />\nSimple Pleasantries - Arthur Benson </p>\n\n<p><strong>【在这里找到我们】</strong><br />\n公众号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜Google Podcast｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p>",
+  "content": "<p>转眼已经2024年了，这轮生成式人工智能大浪潮已经开始了16个月了。我们从各个角度聊过大模型给各行各业带来的变化，但是缺了一个视角：普通人是如何使用大模型的，尤其是学生。大概是一年以前的这个时候，在线课程供应商Study.com向1000名18岁以上的学生发起了一项调查，超过89%的学生使用ChatGPT来完成家庭作业，48%的学生用ChatGPT完成小测验，53%的学生用ChatGPT写论文，22%的学生用ChatGPT生成论文大纲。</p>\n\n<p>我就在好奇，大模型是如何帮助这些学生来学习的。但要找到真正把大模型用的好的学生嘉宾并不容易。直到同事给我推荐了本期嘉宾Siqi，他是从ChatGPT发布就开始使用，知道OpenAI和这些大模型公司的每一次宕机，准确来说他不算学生，但是抱着学生的心态在想学习，马上也要在大公司内部转到大模型的组，我们就来看看他是如何成为ChatGPT的高阶玩家的。</p>\n\n<p>这期节目我们录制于2023年11月，恰逢OpenAI开发者大会之后。跟他聊完的这两个月里，我种草了很多功能也解锁了很多新用法，有机会我再来跟大家聊一聊我们如何在播客和视频产品中用生成式人工智能技术来辅助我们做内容，欢迎持续关注我们。</p>\n\n<p><strong>【主播】</strong><br />\n泓君，硅谷101创始人，播客主理人<br />\n<strong>【嘉宾】</strong><br />\n左斯琦，大模型深度使用者</p>\n\n<p><strong>【你将听到】</strong><br />\n01:50 学习和使用ChatGPT的五个步骤<br />\n05:07 用Rag与API学习哲学：一次下载几百篇文献的问答学习法<br />\n10:44  大模型辅助下的数学学习：从被动接受者到老师视角挑错<br />\n17:22 ChatGPT证明题正确率是30%，沟通超过5-6轮就会忘掉之前的问题<br />\n19:00 挑战一排代码也不写，10个小时做一款小游戏<br />\n23:39 Siqi版的Character.ai ：十几个小时打造尼采或者黑格尔人格<br />\n25:52 ChatGPT与Claude.ai、Bard的区别<br />\n29:00 把流程化的事情扔给GPTs<br />\n33:17 OpenAI在提高效率降低成本，而不是提升它的准确性<br />\n33:40 最感兴趣的方向：自我提升的AI Agent<br />\n37:42 当GenAI遇上思维导图：无法既宏观又细节</p>\n\n<p>40:06 智商测试只与做智商测试的能力有关，与智商无关<br />\n41:52 大模型能解决什么问题比是不是有意识更有意义<br />\n44:00 哲学的本质就是Clarify Question<br />\n45:54 当奖励系统失效，如何跳脱出成年人的职场阶梯<br />\n47:08 聊聊哲学、数学与计算机的共同点与艺术美感</p>\n\n<p><strong>【相关信息】</strong><br />\n播客中提到使用大模型学习的<strong>五个步骤</strong>：</p>\n\n<ol>\n<li>ChatGPT做总结，全局理解，记在spreadsheet上</li>\n<li>Audible/speechify听</li>\n<li>spreadsheet复习，费曼法自问</li>\n<li>用chatgpt提问题，做比较，扩展延伸到相关的问题和领域</li>\n<li>用RAG + GPT API做research</li>\n</ol>\n\n<p><strong>播客中提到的小游戏画面</strong><br />\n<a href=\"https://ibb.co/Sc2NpYy\"><img alt=\"oo0-Bey-Hero-Profil\" border=\"0\" src=\"https://i.ibb.co/cwPJdf3/oo0-Bey-Hero-Profil.png\" /></a></p>\n\n<p>*<em>与黑格尔和尼采的对话截图 *</em><br />\n<a href=\"https://ibb.co/FHk8tM9\"><img alt=\"You-What-is-Life\" border=\"0\" src=\"https://i.ibb.co/hYx2vjk/You-What-is-Life.png\" /></a></p>\n\n<p><strong>【后期】</strong><br />\nAMEI<br />\n<strong>【BGM】</strong><br />\nSimple Pleasantries - Arthur Benson </p>\n\n<p><strong>【在这里找到我们】</strong><br />\n公众号：硅谷101<br />\n收听渠道：苹果｜小宇宙｜喜马拉雅｜蜻蜓FM｜网易云音乐｜QQ音乐｜荔枝播客<br />\n海外用户：Apple Podcast｜Spotify｜TuneIn｜Google Podcast｜Amazon Music<br />\n联系我们：<a href=\"mailto:podcast@sv101.net\" rel=\"nofollow\">podcast@sv101.net</a></p>",
+  "enriched_via": "rss",
+  "audio": {
+    "url": "https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/978242d0-d1d0-4ccf-b101-86728070ce8d.mp3",
+    "type": "audio/mpeg",
+    "length": "72385106"
+  },
+  "duration": "50:15",
+  "season_number": "4",
+  "image": "https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6",
+  "season": "4",
+  "tags": [
+    "ChatGPT",
+    "学生",
+    "深度体验",
+    "大模型",
+    "左斯琦"
+  ],
+  "archived_at": "2025-11-28T15:35:45.957005+00:00"
+}
