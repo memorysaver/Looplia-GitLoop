@@ -1,0 +1,1 @@
+"""News subscription handler module."""

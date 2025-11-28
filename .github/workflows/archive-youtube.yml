@@ -1,0 +1,44 @@
+name: Archive YouTube Subscriptions
+
+on:
+  schedule:
+    # Run every hour on the hour
+    - cron: '0 * * * *'
+  workflow_dispatch:
+    inputs:
+      source_key:
+        description: 'Specific source key to process'
+        required: false
+        default: ''
+      force_reprocess:
+        description: 'Force reprocess existing entries'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+
+jobs:
+  archive-youtube:
+    if: false  # Disabled during migration - enable after validation
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Run YouTube Archiver
+        env:
+          SOURCE_KEY: ${{ github.event.inputs.source_key }}
+          FORCE_REPROCESS: ${{ github.event.inputs.force_reprocess }}
+          YT_COOKIES_FROM_BROWSER: chrome
+        run: cd scripts/youtube && python3 archiver.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add subscriptions/youtube/
+          git diff --staged --quiet || git commit -m "chore: archive YouTube subscriptions [automated]"
+          git push

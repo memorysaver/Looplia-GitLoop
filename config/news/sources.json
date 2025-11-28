@@ -1,0 +1,22 @@
+{
+  "version": "3.0.0",
+  "type": "news",
+  "metadata": {
+    "description": "News aggregator subscriptions",
+    "requires_cookies": false,
+    "requires_ytdlp": false,
+    "runner": "ubuntu-latest"
+  },
+  "sources": [
+    {
+      "key": "hackernews",
+      "name": "Hacker News",
+      "type": "news",
+      "url": "https://hackernewsrss.com/feed.xml",
+      "enabled": true,
+      "options": {
+        "max_entries_per_run": 30
+      }
+    }
+  ]
+}

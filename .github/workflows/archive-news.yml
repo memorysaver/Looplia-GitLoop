@@ -1,0 +1,48 @@
+name: Archive News Subscriptions
+
+on:
+  schedule:
+    # Run every hour at :45 (staggered)
+    - cron: '45 * * * *'
+  workflow_dispatch:
+    inputs:
+      source_key:
+        description: 'Specific source key to process'
+        required: false
+        default: ''
+      force_reprocess:
+        description: 'Force reprocess existing entries'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+
+jobs:
+  archive-news:
+    if: false  # Disabled during migration - enable after validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install feedparser requests
+
+      - name: Run News Archiver
+        env:
+          SOURCE_KEY: ${{ github.event.inputs.source_key }}
+          FORCE_REPROCESS: ${{ github.event.inputs.force_reprocess }}
+        run: cd scripts/news && python3 archiver.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add subscriptions/news/
+          git diff --staged --quiet || git commit -m "chore: archive news subscriptions [automated]"
+          git push

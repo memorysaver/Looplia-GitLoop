@@ -1,0 +1,23 @@
+{
+  "version": "3.0.0",
+  "type": "podcast",
+  "metadata": {
+    "description": "Podcast RSS feed subscriptions",
+    "requires_cookies": false,
+    "requires_ytdlp": false,
+    "runner": "ubuntu-latest"
+  },
+  "sources": [
+    {
+      "key": "guigu101",
+      "name": "矽谷101",
+      "type": "podcast",
+      "url": "https://podcasts.apple.com/tw/podcast/%E7%A1%85%E8%B0%B7101/id1498541229",
+      "enabled": true,
+      "options": {
+        "use_ytdlp": true,
+        "max_entries_per_run": 10
+      }
+    }
+  ]
+}

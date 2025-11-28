@@ -1,0 +1,1 @@
+"""YouTube subscription handler module."""

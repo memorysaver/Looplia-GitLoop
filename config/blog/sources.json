@@ -1,0 +1,11 @@
+{
+  "version": "3.0.0",
+  "type": "blog",
+  "metadata": {
+    "description": "Blog RSS feed subscriptions",
+    "requires_cookies": false,
+    "requires_ytdlp": false,
+    "runner": "ubuntu-latest"
+  },
+  "sources": []
+}
