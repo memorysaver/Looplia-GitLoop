@@ -236,6 +236,28 @@ def transcribe_with_whisperkit_raw(audio_path: Path, episode_id: str) -> Optiona
         return None
 
 
+def resolve_redirect_url(url: str) -> str:
+    """
+    Resolve redirects to get the final URL.
+    Groq API doesn't follow redirects, so we need the final URL.
+
+    Args:
+        url: Original URL that may redirect
+
+    Returns:
+        Final URL after following redirects
+    """
+    try:
+        response = requests.head(url, allow_redirects=True, timeout=30)
+        final_url = response.url
+        if final_url != url:
+            logger.info(f"Resolved redirect: {url[:50]}... -> {final_url[:50]}...")
+        return final_url
+    except Exception as e:
+        logger.warning(f"Failed to resolve redirect for {url}: {e}")
+        return url
+
+
 def transcribe_with_groq(audio_url: str, episode_id: str) -> Optional[str]:
     """
     Transcribe audio using Groq Cloud Whisper API.
@@ -264,9 +286,12 @@ def transcribe_with_groq(audio_url: str, episode_id: str) -> Optional[str]:
     try:
         client = Groq(api_key=api_key)
 
+        # Resolve redirects first (Groq doesn't follow them)
+        final_url = resolve_redirect_url(audio_url)
+
         # Use URL directly for large files (Groq downloads it)
         transcription = client.audio.transcriptions.create(
-            url=audio_url,
+            url=final_url,
             model="whisper-large-v3-turbo",
             response_format="verbose_json",
             timestamp_granularities=["segment"],
