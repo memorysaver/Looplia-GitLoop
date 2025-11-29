@@ -1,0 +1,26 @@
+{
+  "id": "a9c958f3-e206-4455-baa4-f8a118bf8cb8",
+  "source_type": "podcast",
+  "title": "23: 人工智能又一里程碑式突破，GPT-3红了",
+  "link": "https://sv101.fireside.fm/23",
+  "published": "2020-07-25T01:00:00+00:00",
+  "author": "硅谷101",
+  "summary": "<p>主播｜泓君 <br />\n嘉宾｜徐皞<br />\n后期｜穆正东</p>\n\n<p>从上周开始，一个新的语言模型GPT-3在硅谷迅速成为了Twitter的热搜关键词。</p>\n\n<p>有人工智能公司的CEO们看到这个技术演示以后被吓到了，硅谷的风险投资人们也终于不再讨论政治了。</p>\n\n<p>在我自己看完它的一些演示之后，感觉它未来去取代深度记者不是没有可能。甚至可以说，它可能会深远的影响未来5-10年，甚至更久。</p>\n\n<p>有人将它称作是Alpha Go与发明比特币之后最大的技术进步，也不乏批评者认为，我们过分高估了这个技术。GPT-3到底是什么？我们也用它做了一些实验。</p>\n\n<p><em>如果大家对音频中提到的小实验感兴趣，欢迎前往《硅谷101》微信公众号（svstyle）玩一玩，我们将在下次更新的时候公布结果。片尾也给听众发放了一个小福利，大家最想问GPT-3什么问题，或者有什么论述想看GPT-3续写，欢迎给我们留言，我们会选择一两条最有趣的问题，交给机器回答。</em></p>\n\n<p>本期节目由《硅谷101》与《<a href=\"https://guiguzaozhidao.fireside.fm/\" rel=\"nofollow\">硅谷早知道</a>》联合播出。</p>\n\n<hr />\n\n<p><strong>【主播】</strong><br />\n泓君，《硅谷101》主持人</p>\n\n<p><strong>【嘉宾】</strong><br />\n徐皞，硅谷人工智能创投家</p>\n\n<hr />\n\n<p><strong>【本期讨论热点】</strong></p>\n\n<p>【05:40】GPT-3及它的突破是什么？</p>\n\n<p>【11:39】互联网上没发生的事情，GPT-3并不能预测</p>\n\n<p>【13:05】续写《红楼梦》后四十回？Yes</p>\n\n<p>【16:46】Open AI的历史及目标</p>\n\n<p>【20:42】如何申请API接口，第一批使用者来自Y Combinaotr</p>\n\n<p>【21:55】90%的程序员会被机器取代吗？GPT-3的回答</p>\n\n<p>【27:06】为何说GPT-3有取代VC与记者的可能</p>\n\n<p>【30:29】搜集数据截止到1月份，GPT-3不懂疫情</p>\n\n<p>【31:20】“不是看它能做什么，而是它不能做什么”</p>\n\n<p>【33:30】质疑：GPT-3是否是对GPT-2有很大的提升</p>\n\n<p>【36:54】再训练一个GPT-3？完全可以</p>\n\n<p>【40:31】防止机器作恶难，GPT-3发钓鱼邮件更简单</p>\n\n<p>【45:36】人工智能越强大，偏见越严重</p>\n\n<p>【46:52】摩尔定律减缓？当软件增长速度超过硬件速度</p>\n\n<p>【53:12】人工智能最大的商业化是卖广告</p>\n\n<p>【54:17】GPT-3今天的准确度还达不到商业化应用</p>\n\n<hr />\n\n<p><strong>【相关资料】</strong><br />\npaper链接：<a href=\"https://arxiv.org/abs/2005.14165\" rel=\"nofollow\">https://arxiv.org/abs/2005.14165</a><br />\ngithub链接：<a href=\"https://github.com/openai/gpt-3\" rel=\"nofollow\">https://github.com/openai/gpt-3</a></p>\n\n<hr />\n\n<p><strong>【节目互动】</strong><br />\n国内：苹果播客 | 喜马拉雅 | 小宇宙 | 网易云音乐|蜻蜓<br />\n海外：苹果Podcast | Google Play | Spotify<br />\n联系邮箱：<a href=\"mailto:thesiliconvalleyer@gmail.com\" rel=\"nofollow\">thesiliconvalleyer@gmail.com</a></p><p>Special Guest: 徐皞.</p>",
+  "content": "<p>主播｜泓君 <br />\n嘉宾｜徐皞<br />\n后期｜穆正东</p>\n\n<p>从上周开始，一个新的语言模型GPT-3在硅谷迅速成为了Twitter的热搜关键词。</p>\n\n<p>有人工智能公司的CEO们看到这个技术演示以后被吓到了，硅谷的风险投资人们也终于不再讨论政治了。</p>\n\n<p>在我自己看完它的一些演示之后，感觉它未来去取代深度记者不是没有可能。甚至可以说，它可能会深远的影响未来5-10年，甚至更久。</p>\n\n<p>有人将它称作是Alpha Go与发明比特币之后最大的技术进步，也不乏批评者认为，我们过分高估了这个技术。GPT-3到底是什么？我们也用它做了一些实验。</p>\n\n<p><em>如果大家对音频中提到的小实验感兴趣，欢迎前往《硅谷101》微信公众号（svstyle）玩一玩，我们将在下次更新的时候公布结果。片尾也给听众发放了一个小福利，大家最想问GPT-3什么问题，或者有什么论述想看GPT-3续写，欢迎给我们留言，我们会选择一两条最有趣的问题，交给机器回答。</em></p>\n\n<p>本期节目由《硅谷101》与《<a href=\"https://guiguzaozhidao.fireside.fm/\" rel=\"nofollow\">硅谷早知道</a>》联合播出。</p>\n\n<hr />\n\n<p><strong>【主播】</strong><br />\n泓君，《硅谷101》主持人</p>\n\n<p><strong>【嘉宾】</strong><br />\n徐皞，硅谷人工智能创投家</p>\n\n<hr />\n\n<p><strong>【本期讨论热点】</strong></p>\n\n<p>【05:40】GPT-3及它的突破是什么？</p>\n\n<p>【11:39】互联网上没发生的事情，GPT-3并不能预测</p>\n\n<p>【13:05】续写《红楼梦》后四十回？Yes</p>\n\n<p>【16:46】Open AI的历史及目标</p>\n\n<p>【20:42】如何申请API接口，第一批使用者来自Y Combinaotr</p>\n\n<p>【21:55】90%的程序员会被机器取代吗？GPT-3的回答</p>\n\n<p>【27:06】为何说GPT-3有取代VC与记者的可能</p>\n\n<p>【30:29】搜集数据截止到1月份，GPT-3不懂疫情</p>\n\n<p>【31:20】“不是看它能做什么，而是它不能做什么”</p>\n\n<p>【33:30】质疑：GPT-3是否是对GPT-2有很大的提升</p>\n\n<p>【36:54】再训练一个GPT-3？完全可以</p>\n\n<p>【40:31】防止机器作恶难，GPT-3发钓鱼邮件更简单</p>\n\n<p>【45:36】人工智能越强大，偏见越严重</p>\n\n<p>【46:52】摩尔定律减缓？当软件增长速度超过硬件速度</p>\n\n<p>【53:12】人工智能最大的商业化是卖广告</p>\n\n<p>【54:17】GPT-3今天的准确度还达不到商业化应用</p>\n\n<hr />\n\n<p><strong>【相关资料】</strong><br />\npaper链接：<a href=\"https://arxiv.org/abs/2005.14165\" rel=\"nofollow\">https://arxiv.org/abs/2005.14165</a><br />\ngithub链接：<a href=\"https://github.com/openai/gpt-3\" rel=\"nofollow\">https://github.com/openai/gpt-3</a></p>\n\n<hr />\n\n<p><strong>【节目互动】</strong><br />\n国内：苹果播客 | 喜马拉雅 | 小宇宙 | 网易云音乐|蜻蜓<br />\n海外：苹果Podcast | Google Play | Spotify<br />\n联系邮箱：<a href=\"mailto:thesiliconvalleyer@gmail.com\" rel=\"nofollow\">thesiliconvalleyer@gmail.com</a></p><p>Special Guest: 徐皞.</p>",
+  "enriched_via": "rss",
+  "audio": {
+    "url": "https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/a9c958f3-e206-4455-baa4-f8a118bf8cb8.mp3",
+    "type": "audio/mpeg",
+    "length": "80832794"
+  },
+  "duration": "56:07",
+  "season_number": "1",
+  "image": "https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6",
+  "season": "1",
+  "tags": [
+    "GPT-3",
+    "硅谷101",
+    "Open AI"
+  ],
+  "archived_at": "2025-11-29T02:47:25.135662+00:00"
+}
