@@ -1,0 +1,65 @@
+{
+  "id": "GJ5jTgcbRHA",
+  "source_type": "youtube",
+  "url": "https://www.youtube.com/watch?v=GJ5jTgcbRHA",
+  "title": "Getting started with projects in Claude.ai",
+  "description": "Discover how to use Projects in Claude to organize your work with persistent context and custom instructions. This tutorial walks you through creating your first project, adding a knowledge base, setting up project instructions, and collaborating with team members. Learn how Projects can help you maintain continuity across conversations and tailor Claude's responses to your specific needs—from brand guidelines to research initiatives to content creation workflows.",
+  "channel": "Anthropic",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "channel_url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+  "uploader": "Anthropic",
+  "duration": 428,
+  "duration_string": "7:08",
+  "view_count": 7509,
+  "like_count": 333,
+  "comment_count": 18,
+  "published": "20251202",
+  "thumbnail": "https://i.ytimg.com/vi_webp/GJ5jTgcbRHA/maxresdefault.webp",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/GJ5jTgcbRHA/3.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/GJ5jTgcbRHA/3.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/GJ5jTgcbRHA/2.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/GJ5jTgcbRHA/2.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/GJ5jTgcbRHA/1.jpg",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": null,
+  "transcript": {
+    "available": true,
+    "language": "en",
+    "auto_generated": true,
+    "formats": [
+      "json3",
+      "srv1",
+      "srv2",
+      "srv3",
+      "ttml",
+      "srt",
+      "vtt"
+    ]
+  },
+  "archived_at": "2025-12-03T02:15:35.187707+00:00"
+}

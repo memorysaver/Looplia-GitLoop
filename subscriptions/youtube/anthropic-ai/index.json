@@ -19,7 +19,11 @@
     "NGOAUJtdk-4",
     "CBneTpXF1CQ",
     "a8PmR-fNQ_0",
-    "s-avRazvmLg"
+    "s-avRazvmLg",
+    "xatyxfEevZA",
+    "R-KJgjIrh24",
+    "GJ5jTgcbRHA",
+    "0vZ_UVLhSQQ"
   ],
   "entries": [
     {
@@ -126,8 +130,36 @@
       "published": "20251020",
       "archived_at": "2025-11-28T15:43:36.483071+00:00",
       "file": "s-avRazvmLg.json"
+    },
+    {
+      "id": "xatyxfEevZA",
+      "title": "AI Fluency for nonprofits course trailer",
+      "published": "20251202",
+      "archived_at": "2025-12-03T02:15:29.775877+00:00",
+      "file": "xatyxfEevZA.json"
+    },
+    {
+      "id": "R-KJgjIrh24",
+      "title": "Getting started with research in Claude.ai",
+      "published": "20251202",
+      "archived_at": "2025-12-03T02:15:32.640575+00:00",
+      "file": "R-KJgjIrh24.json"
+    },
+    {
+      "id": "GJ5jTgcbRHA",
+      "title": "Getting started with projects in Claude.ai",
+      "published": "20251202",
+      "archived_at": "2025-12-03T02:15:35.187707+00:00",
+      "file": "GJ5jTgcbRHA.json"
+    },
+    {
+      "id": "0vZ_UVLhSQQ",
+      "title": "Getting started with Claude.ai",
+      "published": "20251202",
+      "archived_at": "2025-12-03T02:15:37.806658+00:00",
+      "file": "0vZ_UVLhSQQ.json"
     }
   ],
-  "last_updated": "2025-11-28T15:43:36.484239+00:00",
-  "total_entries": 15
+  "last_updated": "2025-12-03T02:15:37.807283+00:00",
+  "total_entries": 19
 }

@@ -1,0 +1,65 @@
+{
+  "id": "R-KJgjIrh24",
+  "source_type": "youtube",
+  "url": "https://www.youtube.com/watch?v=R-KJgjIrh24",
+  "title": "Getting started with research in Claude.ai",
+  "description": "See how Claude's Research feature transforms how you find and analyze information. This tutorial demonstrates how to use Research for comprehensive, multi-source analysis that would typically take hours of manual work. Learn how to craft effective research prompts, understand how Research works alongside extended thinking, and discover use cases like market analysis, competitive research, and event planning.",
+  "channel": "Anthropic",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "channel_url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+  "uploader": "Anthropic",
+  "duration": 170,
+  "duration_string": "2:50",
+  "view_count": 5318,
+  "like_count": 245,
+  "comment_count": 19,
+  "published": "20251202",
+  "thumbnail": "https://i.ytimg.com/vi_webp/R-KJgjIrh24/maxresdefault.webp",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/R-KJgjIrh24/3.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/R-KJgjIrh24/3.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/R-KJgjIrh24/2.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/R-KJgjIrh24/2.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/R-KJgjIrh24/1.jpg",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": null,
+  "transcript": {
+    "available": true,
+    "language": "en",
+    "auto_generated": true,
+    "formats": [
+      "json3",
+      "srv1",
+      "srv2",
+      "srv3",
+      "ttml",
+      "srt",
+      "vtt"
+    ]
+  },
+  "archived_at": "2025-12-03T02:15:32.640575+00:00"
+}
