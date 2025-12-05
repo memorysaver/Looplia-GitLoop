@@ -23,7 +23,8 @@
     "xatyxfEevZA",
     "R-KJgjIrh24",
     "GJ5jTgcbRHA",
-    "0vZ_UVLhSQQ"
+    "0vZ_UVLhSQQ",
+    "I9aGC6Ui3eE"
   ],
   "entries": [
     {
@@ -158,8 +159,15 @@
       "published": "20251202",
       "archived_at": "2025-12-03T02:15:37.806658+00:00",
       "file": "0vZ_UVLhSQQ.json"
+    },
+    {
+      "id": "I9aGC6Ui3eE",
+      "title": "A philosopher answers questions about AI",
+      "published": "20251205",
+      "archived_at": "2025-12-05T16:22:21.186128+00:00",
+      "file": "I9aGC6Ui3eE.json"
     }
   ],
-  "last_updated": "2025-12-03T02:15:37.807283+00:00",
-  "total_entries": 19
+  "last_updated": "2025-12-05T16:22:21.187230+00:00",
+  "total_entries": 20
 }
