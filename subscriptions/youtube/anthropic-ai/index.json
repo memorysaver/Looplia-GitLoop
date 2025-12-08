@@ -24,7 +24,8 @@
     "R-KJgjIrh24",
     "GJ5jTgcbRHA",
     "0vZ_UVLhSQQ",
-    "I9aGC6Ui3eE"
+    "I9aGC6Ui3eE",
+    "tJP6SKfo49c"
   ],
   "entries": [
     {
@@ -166,8 +167,15 @@
       "published": "20251205",
       "archived_at": "2025-12-05T16:22:21.186128+00:00",
       "file": "I9aGC6Ui3eE.json"
+    },
+    {
+      "id": "tJP6SKfo49c",
+      "title": "How Anthropic uses Claude in Legal",
+      "published": "20251208",
+      "archived_at": "2025-12-08T17:03:47.884309+00:00",
+      "file": "tJP6SKfo49c.json"
     }
   ],
-  "last_updated": "2025-12-05T16:22:21.187230+00:00",
-  "total_entries": 20
+  "last_updated": "2025-12-08T17:03:47.885217+00:00",
+  "total_entries": 21
 }
