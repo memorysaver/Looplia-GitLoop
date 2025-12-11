@@ -25,7 +25,8 @@
     "GJ5jTgcbRHA",
     "0vZ_UVLhSQQ",
     "I9aGC6Ui3eE",
-    "tJP6SKfo49c"
+    "tJP6SKfo49c",
+    "_jjSS0qGFbI"
   ],
   "entries": [
     {
@@ -174,8 +175,15 @@
       "published": "20251208",
       "archived_at": "2025-12-08T17:03:47.884309+00:00",
       "file": "tJP6SKfo49c.json"
+    },
+    {
+      "id": "_jjSS0qGFbI",
+      "title": "Getting started with connectors in Claude.ai",
+      "published": "20251211",
+      "archived_at": "2025-12-11T18:06:16.331603+00:00",
+      "file": "_jjSS0qGFbI.json"
     }
   ],
-  "last_updated": "2025-12-08T17:03:47.885217+00:00",
-  "total_entries": 21
+  "last_updated": "2025-12-11T18:06:23.135722+00:00",
+  "total_entries": 22
 }

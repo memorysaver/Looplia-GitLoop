@@ -1,0 +1,65 @@
+{
+  "id": "_jjSS0qGFbI",
+  "source_type": "youtube",
+  "url": "https://www.youtube.com/watch?v=_jjSS0qGFbI",
+  "title": "Getting started with connectors in Claude.ai",
+  "description": "Learn how to supercharge Claude by connecting the tools you already use. This video shows you how to set up connectors that give Claude access to your files, apps, and workflows.",
+  "channel": "Anthropic",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "channel_url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+  "uploader": "Anthropic",
+  "duration": 223,
+  "duration_string": "3:43",
+  "view_count": 881,
+  "like_count": 81,
+  "comment_count": 9,
+  "published": "20251211",
+  "thumbnail": "https://i.ytimg.com/vi_webp/_jjSS0qGFbI/maxresdefault.webp",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/_jjSS0qGFbI/3.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/_jjSS0qGFbI/3.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/_jjSS0qGFbI/2.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/_jjSS0qGFbI/2.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/_jjSS0qGFbI/1.jpg",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": null,
+  "transcript": {
+    "available": true,
+    "language": "en",
+    "auto_generated": true,
+    "formats": [
+      "json3",
+      "srv1",
+      "srv2",
+      "srv3",
+      "ttml",
+      "srt",
+      "vtt"
+    ]
+  },
+  "archived_at": "2025-12-11T18:06:16.331603+00:00"
+}
