@@ -26,7 +26,8 @@
     "0vZ_UVLhSQQ",
     "I9aGC6Ui3eE",
     "tJP6SKfo49c",
-    "_jjSS0qGFbI"
+    "_jjSS0qGFbI",
+    "PLyCki2K0Lg"
   ],
   "entries": [
     {
@@ -182,8 +183,15 @@
       "published": "20251211",
       "archived_at": "2025-12-11T18:06:16.331603+00:00",
       "file": "_jjSS0qGFbI.json"
+    },
+    {
+      "id": "PLyCki2K0Lg",
+      "title": "Why we built—and donated—the Model Context Protocol (MCP)",
+      "published": "20251211",
+      "archived_at": "2025-12-12T02:05:30.317917+00:00",
+      "file": "PLyCki2K0Lg.json"
     }
   ],
-  "last_updated": "2025-12-11T18:06:23.135722+00:00",
-  "total_entries": 22
+  "last_updated": "2025-12-12T02:05:38.728690+00:00",
+  "total_entries": 23
 }

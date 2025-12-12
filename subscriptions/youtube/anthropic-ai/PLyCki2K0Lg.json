@@ -1,0 +1,146 @@
+{
+  "id": "PLyCki2K0Lg",
+  "source_type": "youtube",
+  "url": "https://www.youtube.com/watch?v=PLyCki2K0Lg",
+  "title": "Why we built—and donated—the Model Context Protocol (MCP)",
+  "description": "Anthropic's Stuart Ritchie speaks with co-creator David Soria Parra about the development of the Model Context Protocol (MCP), an open standard to connect AI to external tools and services—and why Anthropic is donating it to the Linux Foundation.\n\n00:00 - What is MCP?\n01:21 - The problem MCP solves\n02:46 - The USB-C analogy\n03:45 - How MCP began\n05:36 - What makes MCP different\n08:05 - Community adoption\n09:54 - Standards without mandates\n11:05 - From Anthropic hackathon to Hacker News\n13:37 - The decision to open source\n15:18 - Donating MCP to the Linux Foundation\n17:27 - The Agentic AI Foundation\n20:34 - Criticisms of MCP\n28:21 - The future of MCP\n30:58 - What have people built with MCP?\n32:53 - Advice for non-developers\n34:58 - What David is most proud of",
+  "channel": "Anthropic",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "channel_url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+  "uploader": "Anthropic",
+  "duration": 2132,
+  "duration_string": "35:32",
+  "view_count": 2020,
+  "like_count": 120,
+  "comment_count": 5,
+  "published": "20251211",
+  "thumbnail": "https://i.ytimg.com/vi_webp/PLyCki2K0Lg/maxresdefault.webp",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/PLyCki2K0Lg/3.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/PLyCki2K0Lg/3.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/PLyCki2K0Lg/2.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/PLyCki2K0Lg/2.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/PLyCki2K0Lg/1.jpg",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": [
+    {
+      "start_time": 0.0,
+      "title": "What is MCP?",
+      "end_time": 81.0
+    },
+    {
+      "start_time": 81.0,
+      "title": "The problem MCP solves",
+      "end_time": 166.0
+    },
+    {
+      "start_time": 166.0,
+      "title": "The USB-C analogy",
+      "end_time": 225.0
+    },
+    {
+      "start_time": 225.0,
+      "title": "How MCP began",
+      "end_time": 336.0
+    },
+    {
+      "start_time": 336.0,
+      "title": "What makes MCP different",
+      "end_time": 485.0
+    },
+    {
+      "start_time": 485.0,
+      "title": "Community adoption",
+      "end_time": 594.0
+    },
+    {
+      "start_time": 594.0,
+      "title": "Standards without mandates",
+      "end_time": 665.0
+    },
+    {
+      "start_time": 665.0,
+      "title": "From Anthropic hackathon to Hacker News",
+      "end_time": 817.0
+    },
+    {
+      "start_time": 817.0,
+      "title": "The decision to open source",
+      "end_time": 918.0
+    },
+    {
+      "start_time": 918.0,
+      "title": "Donating MCP to the Linux Foundation",
+      "end_time": 1047.0
+    },
+    {
+      "start_time": 1047.0,
+      "title": "The Agentic AI Foundation",
+      "end_time": 1234.0
+    },
+    {
+      "start_time": 1234.0,
+      "title": "Criticisms of MCP",
+      "end_time": 1701.0
+    },
+    {
+      "start_time": 1701.0,
+      "title": "The future of MCP",
+      "end_time": 1858.0
+    },
+    {
+      "start_time": 1858.0,
+      "title": "What have people built with MCP?",
+      "end_time": 1973.0
+    },
+    {
+      "start_time": 1973.0,
+      "title": "Advice for non-developers",
+      "end_time": 2098.0
+    },
+    {
+      "start_time": 2098.0,
+      "title": "What David is most proud of",
+      "end_time": 2132
+    }
+  ],
+  "transcript": {
+    "available": true,
+    "language": "en",
+    "auto_generated": true,
+    "formats": [
+      "json3",
+      "srv1",
+      "srv2",
+      "srv3",
+      "ttml",
+      "srt",
+      "vtt"
+    ]
+  },
+  "archived_at": "2025-12-12T02:05:30.317917+00:00"
+}
