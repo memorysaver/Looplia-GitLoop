@@ -28,7 +28,8 @@
     "tJP6SKfo49c",
     "_jjSS0qGFbI",
     "PLyCki2K0Lg",
-    "Uh98_aGhAuY"
+    "Uh98_aGhAuY",
+    "i9U_b-8KKno"
   ],
   "entries": [
     {
@@ -198,8 +199,15 @@
       "published": "20251216",
       "archived_at": "2025-12-17T01:47:10.847987+00:00",
       "file": "Uh98_aGhAuY.json"
+    },
+    {
+      "id": "i9U_b-8KKno",
+      "title": "Binti helps social workers license foster families faster with Claude",
+      "published": "20251217",
+      "archived_at": "2025-12-18T03:12:39.940928+00:00",
+      "file": "i9U_b-8KKno.json"
     }
   ],
-  "last_updated": "2025-12-17T01:47:21.722410+00:00",
-  "total_entries": 24
+  "last_updated": "2025-12-18T03:12:49.645704+00:00",
+  "total_entries": 25
 }
