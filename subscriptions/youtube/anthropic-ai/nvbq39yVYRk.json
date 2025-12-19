@@ -1,0 +1,65 @@
+{
+  "id": "nvbq39yVYRk",
+  "source_type": "youtube",
+  "url": "https://www.youtube.com/watch?v=nvbq39yVYRk",
+  "title": "What is sycophancy in AI models?",
+  "description": "Learn what AI researchers mean when they talk about sycophancy, when it's more likely to show up in conversations, and tactics you can use to steer AI towards truth.",
+  "channel": "Anthropic",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "channel_url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+  "uploader": "Anthropic",
+  "duration": 368,
+  "duration_string": "6:08",
+  "view_count": 6713,
+  "like_count": 515,
+  "comment_count": 54,
+  "published": "20251218",
+  "thumbnail": "https://i.ytimg.com/vi_webp/nvbq39yVYRk/maxresdefault.webp",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/nvbq39yVYRk/3.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/nvbq39yVYRk/3.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/nvbq39yVYRk/2.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/nvbq39yVYRk/2.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/nvbq39yVYRk/1.jpg",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": null,
+  "transcript": {
+    "available": true,
+    "language": "en",
+    "auto_generated": true,
+    "formats": [
+      "json3",
+      "srv1",
+      "srv2",
+      "srv3",
+      "ttml",
+      "srt",
+      "vtt"
+    ]
+  },
+  "archived_at": "2025-12-19T05:23:01.034645+00:00"
+}

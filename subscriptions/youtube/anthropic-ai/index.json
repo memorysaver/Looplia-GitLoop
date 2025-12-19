@@ -29,7 +29,10 @@
     "_jjSS0qGFbI",
     "PLyCki2K0Lg",
     "Uh98_aGhAuY",
-    "i9U_b-8KKno"
+    "i9U_b-8KKno",
+    "nvbq39yVYRk",
+    "rBJnWMD0Pho",
+    "5KTHvKCrQ00"
   ],
   "entries": [
     {
@@ -206,8 +209,29 @@
       "published": "20251217",
       "archived_at": "2025-12-18T03:12:39.940928+00:00",
       "file": "i9U_b-8KKno.json"
+    },
+    {
+      "id": "nvbq39yVYRk",
+      "title": "What is sycophancy in AI models?",
+      "published": "20251218",
+      "archived_at": "2025-12-19T05:23:01.034645+00:00",
+      "file": "nvbq39yVYRk.json"
+    },
+    {
+      "id": "rBJnWMD0Pho",
+      "title": "Let Claude handle work in your browser",
+      "published": "20251218",
+      "archived_at": "2025-12-19T05:23:04.851064+00:00",
+      "file": "rBJnWMD0Pho.json"
+    },
+    {
+      "id": "5KTHvKCrQ00",
+      "title": "Claude ran a business in our office",
+      "published": "20251218",
+      "archived_at": "2025-12-19T05:23:07.749711+00:00",
+      "file": "5KTHvKCrQ00.json"
     }
   ],
-  "last_updated": "2025-12-18T03:12:49.645704+00:00",
-  "total_entries": 25
+  "last_updated": "2025-12-19T05:23:18.817132+00:00",
+  "total_entries": 28
 }

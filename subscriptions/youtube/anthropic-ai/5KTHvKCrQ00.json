@@ -1,0 +1,96 @@
+{
+  "id": "5KTHvKCrQ00",
+  "source_type": "youtube",
+  "url": "https://www.youtube.com/watch?v=5KTHvKCrQ00",
+  "title": "Claude ran a business in our office",
+  "description": "For a large part of 2025, we ran Project Vend: an experiment where we let Claude manage a small business in the Anthropic office. We learned a lot from how close it was to success—and the curious ways that it failed—about the plausible, strange, not-too-distant future in which AI models might autonomously run things in the real economy.\n\nThe shopkeeper (who we named Claudius) had to source products, set prices, manage inventory, and deal with customers. Things got really, really weird.\n\nRead more about the experiment: https://www.anthropic.com/research/project-vend-2 \n\n0:00 Background on Project Vend\n0:35 How a transaction works\n1:27 Claudius's naïveté\n2:29 An identity crisis\n3:57 The CEO agent\n5:04 Conclusion",
+  "channel": "Anthropic",
+  "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+  "channel_url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+  "uploader": "Anthropic",
+  "duration": 370,
+  "duration_string": "6:10",
+  "view_count": 47605,
+  "like_count": 2605,
+  "comment_count": 126,
+  "published": "20251218",
+  "thumbnail": "https://i.ytimg.com/vi_webp/5KTHvKCrQ00/maxresdefault.webp",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/5KTHvKCrQ00/3.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/5KTHvKCrQ00/3.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/5KTHvKCrQ00/2.jpg",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/5KTHvKCrQ00/2.webp",
+      "width": null,
+      "height": null
+    },
+    {
+      "url": "https://i.ytimg.com/vi/5KTHvKCrQ00/1.jpg",
+      "width": null,
+      "height": null
+    }
+  ],
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": [
+    {
+      "start_time": 0.0,
+      "title": "Background on Project Vend",
+      "end_time": 35.0
+    },
+    {
+      "start_time": 35.0,
+      "title": "How a transaction works",
+      "end_time": 87.0
+    },
+    {
+      "start_time": 87.0,
+      "title": "Claudius's naïveté",
+      "end_time": 149.0
+    },
+    {
+      "start_time": 149.0,
+      "title": "An identity crisis",
+      "end_time": 237.0
+    },
+    {
+      "start_time": 237.0,
+      "title": "The CEO agent",
+      "end_time": 304.0
+    },
+    {
+      "start_time": 304.0,
+      "title": "Conclusion",
+      "end_time": 370
+    }
+  ],
+  "transcript": {
+    "available": true,
+    "language": "en",
+    "auto_generated": false,
+    "formats": [
+      "json3",
+      "srv1",
+      "srv2",
+      "srv3",
+      "ttml",
+      "srt",
+      "vtt"
+    ]
+  },
+  "archived_at": "2025-12-19T05:23:07.749711+00:00"
+}
