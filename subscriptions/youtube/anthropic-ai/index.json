@@ -32,7 +32,9 @@
     "i9U_b-8KKno",
     "nvbq39yVYRk",
     "rBJnWMD0Pho",
-    "5KTHvKCrQ00"
+    "5KTHvKCrQ00",
+    "N5yJJA0NCU0",
+    "UAmKyyZ-b9E"
   ],
   "entries": [
     {
@@ -230,8 +232,22 @@
       "published": "20251218",
       "archived_at": "2025-12-19T05:23:07.749711+00:00",
       "file": "5KTHvKCrQ00.json"
+    },
+    {
+      "id": "N5yJJA0NCU0",
+      "title": "AI on campus",
+      "published": "20260112",
+      "archived_at": "2026-01-13T01:20:35.178204+00:00",
+      "file": "N5yJJA0NCU0.json"
+    },
+    {
+      "id": "UAmKyyZ-b9E",
+      "title": "Introducing Cowork: Claude Code for the rest of your work",
+      "published": "20260112",
+      "archived_at": "2026-01-13T01:20:37.366288+00:00",
+      "file": "UAmKyyZ-b9E.json"
     }
   ],
-  "last_updated": "2025-12-19T05:23:18.817132+00:00",
-  "total_entries": 28
+  "last_updated": "2026-01-13T01:20:49.875250+00:00",
+  "total_entries": 30
 }
